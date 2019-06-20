@@ -1,0 +1,1563 @@
+[*] Starting node2 node
+[*] Waiting for Constellation/Tessera to start...
+[*] Starting node2 node
+[*] geth --verbosity 6 --datadir qdata --raft --nodiscover --gcmode=archive --networkid 36934 --rpc --rpcaddr 0.0.0.0 --rpcapi admin,db,eth,debug,miner,net,shh,txpool,personal,web3,quorum,raft --emitcheckpoints --raftport 22003 --rpcport 22000 --port 22001 --nat extip:10.50.0.3
+WARN [06-20|04:41:02.420] Sanitizing cache to Go's GC limits       provided=1024 updated=641
+DEBUG[06-20|04:41:02.420] Sanitizing Go's GC trigger               percent=100
+INFO [06-20|04:41:02.422] Maximum peer count                       ETH=25 LES=0 total=25
+DEBUG[06-20|04:41:02.423] FS scan times                            list=129.851µs set=10.152µs diff=10.828µs
+TRACE[06-20|04:41:02.423] Started watching keystore folder         path=/node2/node/qdata/keystore
+TRACE[06-20|04:41:02.444] Handled keystore changes                 time=20.897519ms
+INFO [06-20|04:41:02.450] Starting peer-to-peer node               instance=Geth/v1.8.12-stable/linux-amd64/go1.10.2
+INFO [06-20|04:41:02.450] Allocated cache and file handles         database=/node2/node/qdata/geth/chaindata cache=480 handles=524288
+INFO [06-20|04:41:02.697] Initialised chain configuration          config="{ChainID: 36934 Homestead: 0 DAO: <nil> DAOSupport: false EIP150: 1 EIP155: 0 EIP158: 1 Byzantium: 1 IsQuorum: true Constantinople: <nil> Engine: unknown}"
+WARN [06-20|04:41:02.697] Ethash used in full fake mode 
+INFO [06-20|04:41:02.697] Initialising Ethereum protocol           versions="[63 62]" network=36934
+INFO [06-20|04:41:02.699] Loaded most recent local header          number=0 hash=547d03…5e39d3 td=0
+INFO [06-20|04:41:02.699] Loaded most recent local full block      number=0 hash=547d03…5e39d3 td=0
+INFO [06-20|04:41:02.699] Loaded most recent local fast block      number=0 hash=547d03…5e39d3 td=0
+DEBUG[06-20|04:41:02.700] Reinjecting stale transactions           count=0
+INFO [06-20|04:41:02.700] Regenerated local transaction journal    transactions=0 accounts=0
+DEBUG[06-20|04:41:02.702] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+INFO [06-20|04:41:02.745] Starting P2P networking 
+INFO [06-20|04:41:02.746] RLPx listener up                         self="enode://53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e@[::]:22001?discport=0"
+INFO [06-20|04:41:02.746] starting raft protocol handler 
+INFO [06-20|04:41:02.747] loaded the latest applied index          lastAppliedIndex=0
+INFO [06-20|04:41:02.747] replaying WAL 
+TRACE[06-20|04:41:02.749] Accepted connection                      addr=10.50.0.4:54366
+INFO [06-20|04:41:02.746] Mapped network port                      proto=tcp extport=22001 intport=22001 interface=ExtIP(10.50.0.3)
+TRACE[06-20|04:41:02.746] New dial task                            task="staticdial b6976a6e71bd65ac 10.50.0.2:22001"
+TRACE[06-20|04:41:02.750] New dial task                            task="staticdial 53f17d79f3b36441 10.50.0.3:22001"
+TRACE[06-20|04:41:02.750] New dial task                            task="staticdial d13780ba2b8daf50 10.50.0.4:22001"
+TRACE[06-20|04:41:02.750] New dial task                            task="staticdial 9f5a916121dd31ad 10.50.0.5:22001"
+TRACE[06-20|04:41:02.750] New dial task                            task="staticdial 1da5e54ff64b475f 10.50.0.6:22001"
+TRACE[06-20|04:41:02.761] Accepted connection                      addr=10.50.0.3:59628
+TRACE[06-20|04:41:02.795] Quorum permissioning                     id=9f5a916121dd31ad addr=10.50.0.5:22001 conn=staticdial EnableNodePermission=false DataDir=/node2/node/qdata Current Node ID=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e Node Name=Geth/v1.8.12-stable/linux-amd64/go1.10.2 Dialed Dest="enode://9f5a916121dd31ad9da95fd4bc9feb6e4b8ab6986982609528f95da5e24f638cbda9f1ae313d54adf8560fcb37ed91ff071c25448605f14961cf8da942b36fad@10.50.0.5:22001?discport=0&raftport=22003" Connection ID=9f5a916121dd31ad Connection String=9f5a916121dd31ad9da95fd4bc9feb6e4b8ab6986982609528f95da5e24f638cbda9f1ae313d54adf8560fcb37ed91ff071c25448605f14961cf8da942b36fad
+TRACE[06-20|04:41:02.795] Node Permissioning is Disabled.          id=9f5a916121dd31ad addr=10.50.0.5:22001 conn=staticdial
+DEBUG[06-20|04:41:02.796] Adding p2p peer                          name=Geth/v1.8.12-stable/... addr=10.50.0.5:22001 peers=1
+TRACE[06-20|04:41:02.796] connection set up                        id=9f5a916121dd31ad addr=10.50.0.5:22001 conn=staticdial inbound=false
+TRACE[06-20|04:41:02.796] Dial task done                           task="staticdial 9f5a916121dd31ad 10.50.0.5:22001"
+TRACE[06-20|04:41:02.797] Starting protocol eth/63                 id=9f5a916121dd31ad conn=staticdial
+DEBUG[06-20|04:41:02.797] Ethereum peer connected                  id=9f5a916121dd31ad conn=staticdial name=Geth/v1.8.12-stable/linux-amd64/go1.10.2
+TRACE[06-20|04:41:02.802] Quorum permissioning                     id=53f17d79f3b36441 addr=10.50.0.3:59628 conn=inbound    EnableNodePermission=false DataDir=/node2/node/qdata Current Node ID=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e Node Name=Geth/v1.8.12-stable/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=53f17d79f3b36441 Connection String=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e
+TRACE[06-20|04:41:02.822] Node Permissioning is Disabled.          id=53f17d79f3b36441 addr=10.50.0.3:59628 conn=inbound
+TRACE[06-20|04:41:02.823] Rejected peer before protocol handshake  id=53f17d79f3b36441 addr=10.50.0.3:59628 conn=inbound    err="connected to self"
+TRACE[06-20|04:41:02.823] Setting up connection failed             id=53f17d79f3b36441 err="connected to self"
+TRACE[06-20|04:41:02.803] Quorum permissioning                     id=1da5e54ff64b475f addr=10.50.0.6:22001 conn=staticdial EnableNodePermission=false DataDir=/node2/node/qdata Current Node ID=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e Node Name=Geth/v1.8.12-stable/linux-amd64/go1.10.2 Dialed Dest="enode://1da5e54ff64b475f4ffa3d6581cdc1b576eef942f77d7489a9d23f36c028aaed3e312137d06e51d359222a951ecdeca571b1c6a0d0cc3a3839dfc31904da002d@10.50.0.6:22001?discport=0&raftport=22003" Connection ID=1da5e54ff64b475f Connection String=1da5e54ff64b475f4ffa3d6581cdc1b576eef942f77d7489a9d23f36c028aaed3e312137d06e51d359222a951ecdeca571b1c6a0d0cc3a3839dfc31904da002d
+TRACE[06-20|04:41:02.823] Node Permissioning is Disabled.          id=1da5e54ff64b475f addr=10.50.0.6:22001 conn=staticdial
+TRACE[06-20|04:41:02.804] Quorum permissioning                     id=53f17d79f3b36441 addr=10.50.0.3:22001 conn=staticdial EnableNodePermission=false DataDir=/node2/node/qdata Current Node ID=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e Node Name=Geth/v1.8.12-stable/linux-amd64/go1.10.2 Dialed Dest="enode://53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e@10.50.0.3:22001?discport=0&raftport=22003" Connection ID=53f17d79f3b36441 Connection String=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e
+TRACE[06-20|04:41:02.825] Node Permissioning is Disabled.          id=53f17d79f3b36441 addr=10.50.0.3:22001 conn=staticdial
+TRACE[06-20|04:41:02.825] Rejected peer before protocol handshake  id=53f17d79f3b36441 addr=10.50.0.3:22001 conn=staticdial err="connected to self"
+TRACE[06-20|04:41:02.825] Setting up connection failed             id=53f17d79f3b36441 err="connected to self"
+TRACE[06-20|04:41:02.825] Dial error                               task="staticdial 53f17d79f3b36441 10.50.0.3:22001" err="connected to self"
+TRACE[06-20|04:41:02.809] Quorum permissioning                     id=d13780ba2b8daf50 addr=10.50.0.4:22001 conn=staticdial EnableNodePermission=false DataDir=/node2/node/qdata Current Node ID=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e Node Name=Geth/v1.8.12-stable/linux-amd64/go1.10.2 Dialed Dest="enode://d13780ba2b8daf500e30189fa28b8e6fd20b6b75c9bf6e9ecf579808a16cd11d4241be0a2d007a4e6dd6edb268f754ad97313d3d3d5b739b0b0eac90c31c0cb0@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=d13780ba2b8daf50 Connection String=d13780ba2b8daf500e30189fa28b8e6fd20b6b75c9bf6e9ecf579808a16cd11d4241be0a2d007a4e6dd6edb268f754ad97313d3d3d5b739b0b0eac90c31c0cb0
+TRACE[06-20|04:41:02.816] Quorum permissioning                     id=d13780ba2b8daf50 addr=10.50.0.4:54366 conn=inbound    EnableNodePermission=false DataDir=/node2/node/qdata Current Node ID=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e Node Name=Geth/v1.8.12-stable/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=d13780ba2b8daf50 Connection String=d13780ba2b8daf500e30189fa28b8e6fd20b6b75c9bf6e9ecf579808a16cd11d4241be0a2d007a4e6dd6edb268f754ad97313d3d3d5b739b0b0eac90c31c0cb0
+TRACE[06-20|04:41:02.826] Registering sync peer                    peer=9f5a916121dd31ad
+DEBUG[06-20|04:41:02.827] Adding p2p peer                          name=Geth/v1.8.12-stable/...                  addr=10.50.0.6:22001 peers=2
+TRACE[06-20|04:41:02.828] Node Permissioning is Disabled.          id=d13780ba2b8daf50 addr=10.50.0.4:22001 conn=staticdial
+TRACE[06-20|04:41:02.828] Node Permissioning is Disabled.          id=d13780ba2b8daf50 addr=10.50.0.4:54366 conn=inbound
+TRACE[06-20|04:41:02.828] Dial task done                           task="staticdial 53f17d79f3b36441 10.50.0.3:22001"
+TRACE[06-20|04:41:02.828] connection set up                        id=1da5e54ff64b475f addr=10.50.0.6:22001 conn=staticdial inbound=false
+TRACE[06-20|04:41:02.828] Starting protocol eth/63                 id=1da5e54ff64b475f conn=staticdial
+DEBUG[06-20|04:41:02.830] Ethereum peer connected                  id=1da5e54ff64b475f conn=staticdial name=Geth/v1.8.12-stable/linux-amd64/go1.10.2
+TRACE[06-20|04:41:02.830] Dial task done                           task="staticdial 1da5e54ff64b475f 10.50.0.6:22001"
+TRACE[06-20|04:41:02.834] Registering sync peer                    peer=1da5e54ff64b475f
+DEBUG[06-20|04:41:02.834] Relaxed downloader QoS values            rtt=20s confidence=0.500 ttl=1m0s
+DEBUG[06-20|04:41:02.834] Adding p2p peer                          name=Geth/v1.8.12-stable/...                  addr=10.50.0.4:22001 peers=3
+TRACE[06-20|04:41:02.834] Rejected peer                            id=d13780ba2b8daf50 addr=10.50.0.4:54366 conn=inbound    err="already connected"
+TRACE[06-20|04:41:02.834] Starting protocol eth/63                 id=d13780ba2b8daf50 conn=staticdial
+DEBUG[06-20|04:41:02.835] Ethereum peer connected                  id=d13780ba2b8daf50 conn=staticdial name=Geth/v1.8.12-stable/linux-amd64/go1.10.2
+TRACE[06-20|04:41:02.835] Setting up connection failed             id=d13780ba2b8daf50 err="already connected"
+TRACE[06-20|04:41:02.835] connection set up                        id=d13780ba2b8daf50 addr=10.50.0.4:22001 conn=staticdial inbound=false
+TRACE[06-20|04:41:02.835] Dial task done                           task="staticdial d13780ba2b8daf50 10.50.0.4:22001"
+TRACE[06-20|04:41:02.835] Registering sync peer                    peer=d13780ba2b8daf50
+DEBUG[06-20|04:41:02.836] Relaxed downloader QoS values            rtt=20s confidence=0.333 ttl=1m0s
+TRACE[06-20|04:41:02.837] Quorum permissioning                     id=b6976a6e71bd65ac addr=10.50.0.2:22001 conn=staticdial EnableNodePermission=false DataDir=/node2/node/qdata Current Node ID=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e Node Name=Geth/v1.8.12-stable/linux-amd64/go1.10.2 Dialed Dest="enode://b6976a6e71bd65acffb60d194d48b51ed070bc52aed790c195e5746d4844f5ac863b740d81fc46e042dc62e084745650dfcb2f8b970528e8a734a4c36a836a8a@10.50.0.2:22001?discport=0&raftport=22003" Connection ID=b6976a6e71bd65ac Connection String=b6976a6e71bd65acffb60d194d48b51ed070bc52aed790c195e5746d4844f5ac863b740d81fc46e042dc62e084745650dfcb2f8b970528e8a734a4c36a836a8a
+TRACE[06-20|04:41:02.837] Node Permissioning is Disabled.          id=b6976a6e71bd65ac addr=10.50.0.2:22001 conn=staticdial
+DEBUG[06-20|04:41:02.838] Adding p2p peer                          name=Geth/v1.8.12-stable/...                  addr=10.50.0.2:22001 peers=4
+TRACE[06-20|04:41:02.838] connection set up                        id=b6976a6e71bd65ac addr=10.50.0.2:22001 conn=staticdial inbound=false
+TRACE[06-20|04:41:02.838] Starting protocol eth/63                 id=b6976a6e71bd65ac conn=staticdial
+DEBUG[06-20|04:41:02.839] Ethereum peer connected                  id=b6976a6e71bd65ac conn=staticdial name=Geth/v1.8.12-stable/linux-amd64/go1.10.2
+TRACE[06-20|04:41:02.838] Dial task done                           task="staticdial b6976a6e71bd65ac 10.50.0.2:22001"
+TRACE[06-20|04:41:02.839] New dial task                            task="wait for dial hist expire (29.957691071s)"
+TRACE[06-20|04:41:02.845] Registering sync peer                    peer=b6976a6e71bd65ac
+DEBUG[06-20|04:41:02.845] Relaxed downloader QoS values            rtt=20s confidence=0.250 ttl=1m0s
+INFO [06-20|04:41:02.869] loading WAL                              term=0 index=0
+INFO [06-20|04:41:02.888] startRaft                                raft ID=2
+INFO [06-20|04:41:02.888] starting a new raft log                  initial cluster size of=5
+2019-06-20 04:41:02.888793 I | rafthttp: starting peer 1...
+TRACE[06-20|04:41:02.888] Adding static node                       node="enode://b6976a6e71bd65acffb60d194d48b51ed070bc52aed790c195e5746d4844f5ac863b740d81fc46e042dc62e084745650dfcb2f8b970528e8a734a4c36a836a8a@10.50.0.2:22001?discport=0"
+2019-06-20 04:41:02.888961 I | rafthttp: started HTTP pipelining with peer 1
+2019-06-20 04:41:02.890967 I | rafthttp: started streaming with peer 1 (writer)
+2019-06-20 04:41:02.895556 I | rafthttp: started peer 1
+2019-06-20 04:41:02.895686 I | rafthttp: added peer 1
+2019-06-20 04:41:02.895877 I | rafthttp: starting peer 3...
+2019-06-20 04:41:02.896099 I | rafthttp: started HTTP pipelining with peer 3
+2019-06-20 04:41:02.897376 I | rafthttp: started streaming with peer 1 (stream MsgApp v2 reader)
+2019-06-20 04:41:02.898252 I | rafthttp: started streaming with peer 1 (stream Message reader)
+2019-06-20 04:41:02.912501 I | rafthttp: peer 1 became active
+2019-06-20 04:41:02.912630 I | rafthttp: established a TCP streaming connection with peer 1 (stream MsgApp v2 reader)
+2019-06-20 04:41:02.920701 I | rafthttp: started streaming with peer 3 (writer)
+2019-06-20 04:41:02.922742 I | rafthttp: started streaming with peer 3 (writer)
+TRACE[06-20|04:41:02.920] Adding static node                       node="enode://d13780ba2b8daf500e30189fa28b8e6fd20b6b75c9bf6e9ecf579808a16cd11d4241be0a2d007a4e6dd6edb268f754ad97313d3d3d5b739b0b0eac90c31c0cb0@10.50.0.4:22001?discport=0"
+2019-06-20 04:41:02.923013 I | rafthttp: started peer 3
+2019-06-20 04:41:02.923132 I | rafthttp: added peer 3
+2019-06-20 04:41:02.923322 I | rafthttp: starting peer 4...
+2019-06-20 04:41:02.923402 I | rafthttp: started HTTP pipelining with peer 4
+2019-06-20 04:41:02.925139 I | rafthttp: started streaming with peer 3 (stream MsgApp v2 reader)
+2019-06-20 04:41:02.925889 I | rafthttp: started streaming with peer 3 (stream Message reader)
+2019-06-20 04:41:02.939611 I | rafthttp: started streaming with peer 1 (writer)
+TRACE[06-20|04:41:02.926] Adding static node                       node="enode://9f5a916121dd31ad9da95fd4bc9feb6e4b8ab6986982609528f95da5e24f638cbda9f1ae313d54adf8560fcb37ed91ff071c25448605f14961cf8da942b36fad@10.50.0.5:22001?discport=0"
+2019-06-20 04:41:02.958504 I | rafthttp: started streaming with peer 4 (writer)
+2019-06-20 04:41:02.972738 I | rafthttp: started streaming with peer 4 (writer)
+2019-06-20 04:41:02.972796 I | rafthttp: established a TCP streaming connection with peer 1 (stream Message reader)
+2019-06-20 04:41:02.972863 I | rafthttp: started peer 4
+2019-06-20 04:41:02.972931 I | rafthttp: added peer 4
+TRACE[06-20|04:41:02.973] Adding static node                       node="enode://1da5e54ff64b475f4ffa3d6581cdc1b576eef942f77d7489a9d23f36c028aaed3e312137d06e51d359222a951ecdeca571b1c6a0d0cc3a3839dfc31904da002d@10.50.0.6:22001?discport=0"
+2019-06-20 04:41:02.973323 I | rafthttp: started streaming with peer 4 (stream Message reader)
+2019-06-20 04:41:02.974004 I | rafthttp: started streaming with peer 4 (stream MsgApp v2 reader)
+2019-06-20 04:41:02.974692 I | rafthttp: starting peer 5...
+2019-06-20 04:41:02.974797 I | rafthttp: started HTTP pipelining with peer 5
+2019-06-20 04:41:02.981801 I | rafthttp: peer 4 became active
+2019-06-20 04:41:02.981859 I | rafthttp: established a TCP streaming connection with peer 4 (stream MsgApp v2 reader)
+2019-06-20 04:41:02.989354 I | rafthttp: established a TCP streaming connection with peer 4 (stream Message reader)
+2019-06-20 04:41:03.009838 I | rafthttp: started peer 5
+2019-06-20 04:41:03.010021 I | rafthttp: added peer 5
+raft2019/06/20 04:41:03 INFO: 2 became follower at term 0
+raft2019/06/20 04:41:03 INFO: newRaft 2 [peers: [], term: 0, commit: 0, applied: 0, lastindex: 0, lastterm: 0]
+raft2019/06/20 04:41:03 INFO: 2 became follower at term 1
+DEBUG[06-20|04:41:03.010] InProc registered                        service=&{node:0xc4201e1900} namespace=admin
+DEBUG[06-20|04:41:03.010] InProc registered                        service=&{node:0xc4201e1900} namespace=admin
+2019-06-20 04:41:03.011435 I | rafthttp: started streaming with peer 5 (writer)
+2019-06-20 04:41:03.011504 I | rafthttp: started streaming with peer 5 (writer)
+2019-06-20 04:41:03.011692 I | rafthttp: started streaming with peer 5 (stream MsgApp v2 reader)
+2019-06-20 04:41:03.011900 I | rafthttp: started streaming with peer 5 (stream Message reader)
+DEBUG[06-20|04:41:03.011] InProc registered                        service="&{mu:{state:0 sema:0} cpuW:<nil> cpuFile: traceW:<nil> traceFile:}" namespace=debug
+DEBUG[06-20|04:41:03.012] InProc registered                        service=&{node:0xc4201e1900}                                                 namespace=debug
+DEBUG[06-20|04:41:03.013] InProc registered                        service=&{stack:0xc4201e1900}                                                namespace=web3
+DEBUG[06-20|04:41:03.013] InProc registered                        service=&{b:0xc42029b040}                                                    namespace=eth
+DEBUG[06-20|04:41:03.013] InProc registered                        service=&{b:0xc42029b040}                                                    namespace=eth
+2019-06-20 04:41:03.014794 I | rafthttp: peer 5 became active
+2019-06-20 04:41:03.014881 I | rafthttp: established a TCP streaming connection with peer 5 (stream MsgApp v2 reader)
+2019-06-20 04:41:03.017626 I | rafthttp: established a TCP streaming connection with peer 5 (stream Message reader)
+DEBUG[06-20|04:41:03.018] InProc registered                        service="&{b:0xc42029b040 nonceLock:0xc420063930}"                           namespace=eth
+2019-06-20 04:41:03.022806 I | rafthttp: established a TCP streaming connection with peer 1 (stream Message writer)
+2019-06-20 04:41:03.022874 I | rafthttp: established a TCP streaming connection with peer 1 (stream MsgApp v2 writer)
+DEBUG[06-20|04:41:03.022] InProc registered                        service=&{b:0xc42029b040}                                                    namespace=txpool
+DEBUG[06-20|04:41:03.023] InProc registered                        service=&{b:0xc42029b040}                                                    namespace=debug
+DEBUG[06-20|04:41:03.023] InProc registered                        service=&{b:0xc42029b040}                                                    namespace=debug
+DEBUG[06-20|04:41:03.023] InProc registered                        service=&{am:0xc4202ad450}                                                   namespace=eth
+DEBUG[06-20|04:41:03.023] InProc registered                        service="&{am:0xc4202ad450 nonceLock:0xc420063930 b:0xc42029b040}"           namespace=personal
+DEBUG[06-20|04:41:03.023] InProc registered                        service=&{e:0xc4203e0700}                                                    namespace=eth
+DEBUG[06-20|04:41:03.024] InProc registered                        service="&{e:0xc4203e0700 agent:0xc4202d8a00}"                               namespace=eth
+DEBUG[06-20|04:41:03.024] InProc registered                        service="&{d:0xc4202b04e0 mux:0xc42035a570 installSyncSubscription:0xc4202a8f00 uninstallSyncSubscription:0xc4202a8f60}" namespace=eth
+DEBUG[06-20|04:41:03.024] InProc registered                        service=&{e:0xc4203e0700}                                                                                                namespace=miner
+DEBUG[06-20|04:41:03.024] InProc registered                        service="&{backend:0xc42029b040 mux:0xc42035a570 quit:<nil> chainDb:0xc4200dc370 events:0xc4200c39a0 filtersMu:{state:0 sema:0} filters:map[]}" namespace=eth
+DEBUG[06-20|04:41:03.024] InProc registered                        service=&{eth:0xc4203e0700}                                                                                                                     namespace=admin
+DEBUG[06-20|04:41:03.024] InProc registered                        service=&{eth:0xc4203e0700}                                                                                                                     namespace=debug
+DEBUG[06-20|04:41:03.025] InProc registered                        service="&{config:0xc420344090 eth:0xc4203e0700}"                                                                                               namespace=debug
+DEBUG[06-20|04:41:03.025] InProc registered                        service="&{net:0xc4201e1b80 networkVersion:36934}"                                                                                              namespace=net
+DEBUG[06-20|04:41:03.025] InProc registered                        service=&{raftService:0xc420403260}                                                                                                             namespace=raft
+DEBUG[06-20|04:41:03.026] IPC registered                           namespace=admin
+DEBUG[06-20|04:41:03.026] IPC registered                           namespace=admin
+DEBUG[06-20|04:41:03.026] IPC registered                           namespace=debug
+DEBUG[06-20|04:41:03.026] IPC registered                           namespace=debug
+DEBUG[06-20|04:41:03.026] IPC registered                           namespace=web3
+DEBUG[06-20|04:41:03.026] IPC registered                           namespace=eth
+DEBUG[06-20|04:41:03.026] IPC registered                           namespace=eth
+DEBUG[06-20|04:41:03.027] IPC registered                           namespace=eth
+DEBUG[06-20|04:41:03.027] IPC registered                           namespace=txpool
+DEBUG[06-20|04:41:03.027] IPC registered                           namespace=debug
+DEBUG[06-20|04:41:03.027] IPC registered                           namespace=debug
+DEBUG[06-20|04:41:03.027] IPC registered                           namespace=eth
+DEBUG[06-20|04:41:03.027] IPC registered                           namespace=personal
+DEBUG[06-20|04:41:03.027] IPC registered                           namespace=eth
+DEBUG[06-20|04:41:03.027] IPC registered                           namespace=eth
+DEBUG[06-20|04:41:03.027] IPC registered                           namespace=eth
+INFO [06-20|04:41:03.024] ignoring expected ConfChangeAddNode for initial peer raft id=1
+DEBUG[06-20|04:41:03.027] IPC registered                           namespace=miner
+DEBUG[06-20|04:41:03.028] IPC registered                           namespace=eth
+DEBUG[06-20|04:41:03.028] IPC registered                           namespace=admin
+DEBUG[06-20|04:41:03.028] IPC registered                           namespace=debug
+DEBUG[06-20|04:41:03.028] IPC registered                           namespace=debug
+DEBUG[06-20|04:41:03.028] IPC registered                           namespace=net
+DEBUG[06-20|04:41:03.028] IPC registered                           namespace=raft
+INFO [06-20|04:41:03.027] start snapshot                           applied index=0 last snapshot index=0
+INFO [06-20|04:41:03.029] IPC endpoint opened                      url=/node2/node/qdata/geth.ipc
+DEBUG[06-20|04:41:03.029] HTTP registered                          namespace=admin
+DEBUG[06-20|04:41:03.029] HTTP registered                          namespace=admin
+DEBUG[06-20|04:41:03.029] HTTP registered                          namespace=debug
+DEBUG[06-20|04:41:03.029] HTTP registered                          namespace=debug
+DEBUG[06-20|04:41:03.029] HTTP registered                          namespace=web3
+DEBUG[06-20|04:41:03.029] HTTP registered                          namespace=eth
+DEBUG[06-20|04:41:03.029] HTTP registered                          namespace=eth
+DEBUG[06-20|04:41:03.030] HTTP registered                          namespace=eth
+DEBUG[06-20|04:41:03.030] HTTP registered                          namespace=txpool
+DEBUG[06-20|04:41:03.030] HTTP registered                          namespace=debug
+DEBUG[06-20|04:41:03.030] HTTP registered                          namespace=debug
+DEBUG[06-20|04:41:03.030] HTTP registered                          namespace=eth
+DEBUG[06-20|04:41:03.030] HTTP registered                          namespace=personal
+DEBUG[06-20|04:41:03.030] HTTP registered                          namespace=eth
+DEBUG[06-20|04:41:03.030] HTTP registered                          namespace=eth
+DEBUG[06-20|04:41:03.030] HTTP registered                          namespace=eth
+DEBUG[06-20|04:41:03.031] HTTP registered                          namespace=miner
+DEBUG[06-20|04:41:03.031] HTTP registered                          namespace=eth
+DEBUG[06-20|04:41:03.031] HTTP registered                          namespace=admin
+DEBUG[06-20|04:41:03.031] HTTP registered                          namespace=debug
+DEBUG[06-20|04:41:03.031] HTTP registered                          namespace=debug
+DEBUG[06-20|04:41:03.031] HTTP registered                          namespace=net
+DEBUG[06-20|04:41:03.031] HTTP registered                          namespace=raft
+INFO [06-20|04:41:03.031] HTTP endpoint opened                     url=http://0.0.0.0:22000       cors=* vhosts=localhost
+DEBUG[06-20|04:41:03.031] WebSocket registered                     service=&{node:0xc4201e1900}                                                                                                                    namespace=admin
+DEBUG[06-20|04:41:03.032] WebSocket registered                     service=&{node:0xc4201e1900}                                                                                                                    namespace=admin
+DEBUG[06-20|04:41:03.032] WebSocket registered                     service="&{mu:{state:0 sema:0} cpuW:<nil> cpuFile: traceW:<nil> traceFile:}"                                                                    namespace=debug
+DEBUG[06-20|04:41:03.032] WebSocket registered                     service=&{node:0xc4201e1900}                                                                                                                    namespace=debug
+DEBUG[06-20|04:41:03.032] WebSocket registered                     service=&{stack:0xc4201e1900}                                                                                                                   namespace=web3
+DEBUG[06-20|04:41:03.032] WebSocket registered                     service=&{b:0xc42029b040}                                                                                                                       namespace=eth
+DEBUG[06-20|04:41:03.033] WebSocket registered                     service=&{b:0xc42029b040}                                                                                                                       namespace=eth
+DEBUG[06-20|04:41:03.033] WebSocket registered                     service="&{b:0xc42029b040 nonceLock:0xc420063930}"                                                                                              namespace=eth
+DEBUG[06-20|04:41:03.033] WebSocket registered                     service=&{b:0xc42029b040}                                                                                                                       namespace=txpool
+DEBUG[06-20|04:41:03.033] WebSocket registered                     service=&{b:0xc42029b040}                                                                                                                       namespace=debug
+DEBUG[06-20|04:41:03.033] WebSocket registered                     service=&{b:0xc42029b040}                                                                                                                       namespace=debug
+DEBUG[06-20|04:41:03.033] WebSocket registered                     service=&{am:0xc4202ad450}                                                                                                                      namespace=eth
+DEBUG[06-20|04:41:03.034] WebSocket registered                     service="&{am:0xc4202ad450 nonceLock:0xc420063930 b:0xc42029b040}"                                                                              namespace=personal
+DEBUG[06-20|04:41:03.034] WebSocket registered                     service=&{e:0xc4203e0700}                                                                                                                       namespace=eth
+DEBUG[06-20|04:41:03.034] WebSocket registered                     service="&{e:0xc4203e0700 agent:0xc4202d8a00}"                                                                                                  namespace=eth
+DEBUG[06-20|04:41:03.034] WebSocket registered                     service="&{d:0xc4202b04e0 mux:0xc42035a570 installSyncSubscription:0xc4202a8f00 uninstallSyncSubscription:0xc4202a8f60}"                        namespace=eth
+DEBUG[06-20|04:41:03.034] WebSocket registered                     service=&{e:0xc4203e0700}                                                                                                                       namespace=miner
+DEBUG[06-20|04:41:03.034] WebSocket registered                     service="&{backend:0xc42029b040 mux:0xc42035a570 quit:<nil> chainDb:0xc4200dc370 events:0xc4200c39a0 filtersMu:{state:0 sema:0} filters:map[]}" namespace=eth
+DEBUG[06-20|04:41:03.034] WebSocket registered                     service=&{eth:0xc4203e0700}                                                                                                                     namespace=admin
+DEBUG[06-20|04:41:03.034] WebSocket registered                     service=&{eth:0xc4203e0700}                                                                                                                     namespace=debug
+DEBUG[06-20|04:41:03.035] WebSocket registered                     service="&{config:0xc420344090 eth:0xc4203e0700}"                                                                                               namespace=debug
+DEBUG[06-20|04:41:03.035] WebSocket registered                     service="&{net:0xc4201e1b80 networkVersion:36934}"                                                                                              namespace=net
+DEBUG[06-20|04:41:03.035] WebSocket registered                     service=&{raftService:0xc420403260}                                                                                                             namespace=raft
+DEBUG[06-20|04:41:03.035] Allowed origin(s) for WS RPC interface [*]
+ 
+INFO [06-20|04:41:03.035] WebSocket endpoint opened                url=ws://[::]:22005
+2019-06-20 04:41:03.038093 I | rafthttp: peer 3 became active
+2019-06-20 04:41:03.038175 I | rafthttp: established a TCP streaming connection with peer 3 (stream Message writer)
+2019-06-20 04:41:03.038340 I | rafthttp: established a TCP streaming connection with peer 3 (stream MsgApp v2 writer)
+INFO [06-20|04:41:03.042] compacted log                            index=0
+INFO [06-20|04:41:03.042] persisted the latest applied index       index=1
+INFO [06-20|04:41:03.042] ignoring expected ConfChangeAddNode for initial peer raft id=2
+INFO [06-20|04:41:03.042] start snapshot                           applied index=1 last snapshot index=1
+2019-06-20 04:41:03.043419 E | rafthttp: failed to dial 3 on stream MsgApp v2 (dial tcp 10.50.0.4:22003: connect: connection refused)
+2019-06-20 04:41:03.043503 I | rafthttp: peer 3 became inactive
+INFO [06-20|04:41:03.057] compacted log                            index=1
+INFO [06-20|04:41:03.057] persisted the latest applied index       index=2
+INFO [06-20|04:41:03.057] ignoring expected ConfChangeAddNode for initial peer raft id=3
+INFO [06-20|04:41:03.057] start snapshot                           applied index=2 last snapshot index=2
+raft2019/06/20 04:41:03 INFO: 2 [term: 1] received a MsgHeartbeat message with higher term from 5 [term: 2]
+raft2019/06/20 04:41:03 INFO: 2 became follower at term 2
+raft2019/06/20 04:41:03 INFO: raft.node: 2 elected leader 5 at term 2
+INFO [06-20|04:41:03.067] QUORUM-CHECKPOINT                        name=BECAME-VERIFIER
+2019-06-20 04:41:03.088866 I | rafthttp: established a TCP streaming connection with peer 5 (stream MsgApp v2 writer)
+2019-06-20 04:41:03.209414 I | rafthttp: established a TCP streaming connection with peer 5 (stream Message writer)
+2019-06-20 04:41:03.209571 I | rafthttp: established a TCP streaming connection with peer 4 (stream Message writer)
+2019-06-20 04:41:03.209668 I | rafthttp: established a TCP streaming connection with peer 4 (stream MsgApp v2 writer)
+2019-06-20 04:41:03.209770 I | rafthttp: peer 3 became active
+2019-06-20 04:41:03.209889 I | rafthttp: established a TCP streaming connection with peer 3 (stream MsgApp v2 reader)
+2019-06-20 04:41:03.210436 I | rafthttp: established a TCP streaming connection with peer 3 (stream Message reader)
+INFO [06-20|04:41:03.096] compacted log                            index=2
+INFO [06-20|04:41:03.212] persisted the latest applied index       index=3
+INFO [06-20|04:41:03.213] ignoring expected ConfChangeAddNode for initial peer raft id=4
+INFO [06-20|04:41:03.214] start snapshot                           applied index=3 last snapshot index=3
+INFO [06-20|04:41:03.251] compacted log                            index=3
+INFO [06-20|04:41:03.252] persisted the latest applied index       index=4
+INFO [06-20|04:41:03.252] ignoring expected ConfChangeAddNode for initial peer raft id=5
+INFO [06-20|04:41:03.253] start snapshot                           applied index=4 last snapshot index=4
+INFO [06-20|04:41:03.267] compacted log                            index=4
+INFO [06-20|04:41:03.269] persisted the latest applied index       index=5
+INFO [06-20|04:41:03.280] persisted the latest applied index       index=6
+TRACE[06-20|04:41:07.072] Pooled new future transaction            hash=a343c4…45eb9b from=0xe5645bd4B52ca4D08a04A4F577A9aF347DD9926F to=nil
+TRACE[06-20|04:41:07.072] Promoting queued transaction             hash=a343c4…45eb9b
+TRACE[06-20|04:41:07.072] Promoting queued transaction             hash=a343c4…45eb9b
+TRACE[06-20|04:41:07.072] Broadcast transaction                    hash=a343c4…45eb9b recipients=3
+TRACE[06-20|04:41:07.074] Broadcast transactions                   id=9f5a916121dd31ad conn=staticdial count=1
+TRACE[06-20|04:41:07.076] Discarding already known transaction     hash=a343c4…45eb9b
+TRACE[06-20|04:41:07.075] Broadcast transactions                   id=d13780ba2b8daf50 conn=staticdial count=1
+TRACE[06-20|04:41:07.078] Broadcast transactions                   id=1da5e54ff64b475f conn=staticdial count=1
+INFO [06-20|04:41:07.119] QUORUM-CHECKPOINT                        name=TX-ACCEPTED                              tx=0xa343c4f8ffc7e2b3a0491713149ca83039cbc74278fcb12fa5136eb48345eb9b
+DEBUG[06-20|04:41:07.126] Trie cache stats after commit            misses=0 unloads=0
+DEBUG[06-20|04:41:07.128] Trie cache stats after commit            misses=0 unloads=0
+DEBUG[06-20|04:41:07.128] Trie cache stats after commit            misses=0 unloads=0
+DEBUG[06-20|04:41:07.128] Persisted trie from memory database      nodes=0 size=0.00B time=7.714µs     gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+DEBUG[06-20|04:41:07.129] Persisted trie from memory database      nodes=6 size=10.15kB time=465.895µs   gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+DEBUG[06-20|04:41:07.131] Inserted new block                       number=1 hash=1642fe…128b89 uncles=0 txs=1 gas=2534393 elapsed=11.408ms
+INFO [06-20|04:41:07.132] Imported new chain segment               blocks=1 txs=1 mgas=2.534 elapsed=12.523ms mgasps=202.367 number=1 hash=1642fe…128b89 cache=0.00B
+INFO [06-20|04:41:07.132] QUORUM-CHECKPOINT                        name=BLOCK-CREATED                            block=1642fe0e87618dcae4b4674649d71cbf94a7b7495181e1843b83eebb65128b89
+INFO [06-20|04:41:07.132] persisted the latest applied index       index=7
+DEBUG[06-20|04:41:07.132] Reinjecting stale transactions           count=0
+TRACE[06-20|04:41:07.132] Removed old pending transaction          hash=a343c4…45eb9b
+raft2019/06/20 04:41:16 INFO: 2 is starting a new election at term 2
+raft2019/06/20 04:41:17 INFO: 2 became candidate at term 3
+raft2019/06/20 04:41:17 INFO: 2 received MsgVoteResp from 2 at term 3
+raft2019/06/20 04:41:17 INFO: 2 [logterm: 2, index: 7] sent MsgVote request to 1 at term 3
+raft2019/06/20 04:41:18 INFO: 2 [logterm: 2, index: 7] sent MsgVote request to 3 at term 3
+raft2019/06/20 04:41:18 INFO: 2 [logterm: 2, index: 7] sent MsgVote request to 4 at term 3
+INFO [06-20|04:41:18.770] Etherbase automatically configured       address=0x48Ea3c7C7EA659a0c46F8b88207B9d7A56361491
+raft2019/06/20 04:41:18 INFO: 2 [logterm: 2, index: 7] sent MsgVote request to 5 at term 3
+raft2019/06/20 04:41:18 INFO: raft.node: 2 lost leader 5 at term 3
+raft2019/06/20 04:41:18 INFO: 2 [term: 3] ignored a MsgHeartbeat message with lower term from 5 [term: 2]
+raft2019/06/20 04:41:18 INFO: 2 [logterm: 2, index: 7, vote: 2] rejected MsgVote from 3 [logterm: 2, index: 7] at term 3
+raft2019/06/20 04:41:18 INFO: 2 became follower at term 3
+raft2019/06/20 04:41:18 INFO: raft.node: 2 elected leader 3 at term 3
+INFO [06-20|04:41:18.924] QUORUM-CHECKPOINT                        name=BECAME-VERIFIER
+INFO [06-20|04:41:19.217] QUORUM-CHECKPOINT                        name=BECAME-VERIFIER
+raft2019/06/20 04:41:20 INFO: 2 [term: 3] ignored a MsgHeartbeat message with lower term from 5 [term: 2]
+raft2019/06/20 04:41:20 INFO: 2 [term: 3] ignored a MsgHeartbeat message with lower term from 5 [term: 2]
+raft2019/06/20 04:41:20 INFO: 2 [term: 3] ignored a MsgHeartbeat message with lower term from 5 [term: 2]
+raft2019/06/20 04:41:20 INFO: 2 [term: 3] ignored a MsgHeartbeat message with lower term from 5 [term: 2]
+raft2019/06/20 04:41:20 INFO: 2 [term: 3] ignored a MsgHeartbeat message with lower term from 5 [term: 2]
+raft2019/06/20 04:41:20 INFO: 2 [term: 3] ignored a MsgHeartbeat message with lower term from 5 [term: 2]
+raft2019/06/20 04:41:20 INFO: 2 [term: 3] ignored a MsgHeartbeat message with lower term from 5 [term: 2]
+raft2019/06/20 04:41:20 INFO: 2 [term: 3] ignored a MsgHeartbeat message with lower term from 5 [term: 2]
+raft2019/06/20 04:41:20 INFO: 2 [term: 3] ignored a MsgHeartbeat message with lower term from 5 [term: 2]
+raft2019/06/20 04:41:20 INFO: 2 [term: 3] ignored a MsgHeartbeat message with lower term from 5 [term: 2]
+raft2019/06/20 04:41:20 INFO: 2 [term: 3] ignored a MsgHeartbeat message with lower term from 5 [term: 2]
+raft2019/06/20 04:41:20 INFO: 2 [term: 3] ignored a MsgHeartbeat message with lower term from 5 [term: 2]
+raft2019/06/20 04:41:20 INFO: 2 [term: 3] ignored a MsgHeartbeat message with lower term from 5 [term: 2]
+raft2019/06/20 04:41:20 INFO: 2 [term: 3] ignored a MsgHeartbeat message with lower term from 5 [term: 2]
+raft2019/06/20 04:41:20 INFO: 2 [term: 3] received a MsgVote message with higher term from 1 [term: 4]
+raft2019/06/20 04:41:20 INFO: 2 became follower at term 4
+raft2019/06/20 04:41:20 INFO: 2 [logterm: 3, index: 8, vote: 0] cast MsgVote for 1 [logterm: 3, index: 8] at term 4
+raft2019/06/20 04:41:20 INFO: raft.node: 2 lost leader 3 at term 4
+INFO [06-20|04:41:20.738] QUORUM-CHECKPOINT                        name=BECAME-VERIFIER
+raft2019/06/20 04:41:21 INFO: 2 is starting a new election at term 4
+raft2019/06/20 04:41:21 INFO: 2 became candidate at term 5
+raft2019/06/20 04:41:21 INFO: 2 received MsgVoteResp from 2 at term 5
+raft2019/06/20 04:41:21 INFO: 2 [logterm: 3, index: 8] sent MsgVote request to 1 at term 5
+raft2019/06/20 04:41:21 INFO: 2 [logterm: 3, index: 8] sent MsgVote request to 3 at term 5
+raft2019/06/20 04:41:21 INFO: 2 [logterm: 3, index: 8] sent MsgVote request to 4 at term 5
+2019-06-20 04:41:22.886077 W | rafthttp: lost the TCP streaming connection with peer 5 (stream MsgApp v2 reader)
+2019-06-20 04:41:22.887520 E | rafthttp: failed to read 5 on stream MsgApp v2 (read tcp 10.50.0.3:40414->10.50.0.6:22003: i/o timeout)
+2019-06-20 04:41:22.887609 I | rafthttp: peer 5 became inactive
+2019-06-20 04:41:22.887694 W | rafthttp: lost the TCP streaming connection with peer 5 (stream Message reader)
+raft2019/06/20 04:41:22 INFO: 2 [logterm: 3, index: 8] sent MsgVote request to 5 at term 5
+raft2019/06/20 04:41:22 INFO: 2 [logterm: 3, index: 8, vote: 2] rejected MsgVote from 1 [logterm: 3, index: 8] at term 5
+raft2019/06/20 04:41:22 INFO: 2 [term: 5] ignored a MsgHeartbeat message with lower term from 3 [term: 3]
+DEBUG[06-20|04:41:22.897] Recalculated downloader QoS values       rtt=20s confidence=0.625 ttl=1m0s
+2019-06-20 04:41:22.898671 W | rafthttp: lost the TCP streaming connection with peer 4 (stream MsgApp v2 reader)
+2019-06-20 04:41:22.898810 E | rafthttp: failed to read 4 on stream MsgApp v2 (read tcp 10.50.0.3:54552->10.50.0.5:22003: i/o timeout)
+2019-06-20 04:41:22.898842 I | rafthttp: peer 4 became inactive
+2019-06-20 04:41:22.899119 W | rafthttp: lost the TCP streaming connection with peer 4 (stream Message reader)
+2019-06-20 04:41:24.056199 W | wal: sync duration of 1.165912366s, expected less than 1s
+raft2019/06/20 04:41:24 INFO: 2 [term: 5] received a MsgVote message with higher term from 1 [term: 6]
+raft2019/06/20 04:41:24 INFO: 2 became follower at term 6
+raft2019/06/20 04:41:24 INFO: 2 [logterm: 3, index: 8, vote: 0] cast MsgVote for 1 [logterm: 3, index: 8] at term 6
+raft2019/06/20 04:41:24 INFO: 2 [term: 6] ignored a MsgVoteResp message with lower term from 3 [term: 5]
+DEBUG[06-20|04:41:24.440] VM returned with error                   err="invalid opcode 0xfe"
+DEBUG[06-20|04:41:24.444] Executing EVM call finished              runtime=6.910711ms
+raft2019/06/20 04:41:24 INFO: raft.node: 2 elected leader 1 at term 6
+INFO [06-20|04:41:24.713] QUORUM-CHECKPOINT                        name=BECAME-VERIFIER
+2019-06-20 04:41:25.825842 W | wal: sync duration of 1.11269602s, expected less than 1s
+2019-06-20 04:41:25.979714 I | rafthttp: peer 4 became active
+2019-06-20 04:41:25.979786 I | rafthttp: established a TCP streaming connection with peer 4 (stream Message reader)
+2019-06-20 04:41:28.218758 I | rafthttp: established a TCP streaming connection with peer 4 (stream MsgApp v2 reader)
+INFO [06-20|04:41:29.552] persisted the latest applied index       index=8
+INFO [06-20|04:41:29.554] persisted the latest applied index       index=9
+2019-06-20 04:41:31.856064 W | rafthttp: lost the TCP streaming connection with peer 4 (stream Message reader)
+2019-06-20 04:41:31.858852 E | rafthttp: failed to read 4 on stream Message (read tcp 10.50.0.3:54682->10.50.0.5:22003: i/o timeout)
+2019-06-20 04:41:31.858958 I | rafthttp: peer 4 became inactive
+2019-06-20 04:41:32.335070 W | rafthttp: closed an existing TCP streaming connection with peer 3 (stream Message writer)
+2019-06-20 04:41:32.335169 I | rafthttp: established a TCP streaming connection with peer 3 (stream Message writer)
+TRACE[06-20|04:41:33.469] Dial task done                           task="wait for dial hist expire (29.957691071s)"
+TRACE[06-20|04:41:33.720] New dial task                            task="staticdial 53f17d79f3b36441 10.50.0.3:22001"
+TRACE[06-20|04:41:33.737] Accepted connection                      addr=10.50.0.3:59888
+2019-06-20 04:41:36.431395 W | rafthttp: closed an existing TCP streaming connection with peer 1 (stream MsgApp v2 writer)
+2019-06-20 04:41:36.431467 I | rafthttp: established a TCP streaming connection with peer 1 (stream MsgApp v2 writer)
+2019-06-20 04:41:36.468393 W | rafthttp: closed an existing TCP streaming connection with peer 3 (stream MsgApp v2 writer)
+2019-06-20 04:41:36.468474 I | rafthttp: established a TCP streaming connection with peer 3 (stream MsgApp v2 writer)
+2019-06-20 04:41:38.105865 W | rafthttp: lost the TCP streaming connection with peer 4 (stream MsgApp v2 reader)
+TRACE[06-20|04:41:38.536] Quorum permissioning                     id=53f17d79f3b36441 addr=10.50.0.3:59888 conn=inbound    EnableNodePermission=false DataDir=/node2/node/qdata Current Node ID=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e Node Name=Geth/v1.8.12-stable/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=53f17d79f3b36441 Connection String=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e
+TRACE[06-20|04:41:38.599] Node Permissioning is Disabled.          id=53f17d79f3b36441 addr=10.50.0.3:59888 conn=inbound
+TRACE[06-20|04:41:38.599] Rejected peer before protocol handshake  id=53f17d79f3b36441 addr=10.50.0.3:59888 conn=inbound    err="connected to self"
+TRACE[06-20|04:41:38.600] Setting up connection failed             id=53f17d79f3b36441 err="connected to self"
+TRACE[06-20|04:41:38.539] Quorum permissioning                     id=53f17d79f3b36441 addr=10.50.0.3:22001 conn=staticdial EnableNodePermission=false DataDir=/node2/node/qdata Current Node ID=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e Node Name=Geth/v1.8.12-stable/linux-amd64/go1.10.2 Dialed Dest="enode://53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e@10.50.0.3:22001?discport=0&raftport=22003" Connection ID=53f17d79f3b36441 Connection String=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e
+TRACE[06-20|04:41:38.600] Node Permissioning is Disabled.          id=53f17d79f3b36441 addr=10.50.0.3:22001 conn=staticdial
+TRACE[06-20|04:41:38.600] Rejected peer before protocol handshake  id=53f17d79f3b36441 addr=10.50.0.3:22001 conn=staticdial err="connected to self"
+TRACE[06-20|04:41:38.608] Setting up connection failed             id=53f17d79f3b36441 err="connected to self"
+TRACE[06-20|04:41:38.609] Dial error                               task="staticdial 53f17d79f3b36441 10.50.0.3:22001" err="connected to self"
+TRACE[06-20|04:41:38.609] Dial task done                           task="staticdial 53f17d79f3b36441 10.50.0.3:22001"
+TRACE[06-20|04:41:38.609] New dial task                            task="wait for dial hist expire (29.999985797s)"
+DEBUG[06-20|04:41:44.117] Recalculated downloader QoS values       rtt=20s confidence=0.812 ttl=1m0s
+raft2019/06/20 04:41:50 INFO: 2 [term: 6] received a MsgVote message with higher term from 3 [term: 7]
+raft2019/06/20 04:41:50 INFO: 2 became follower at term 7
+raft2019/06/20 04:41:50 INFO: 2 [logterm: 6, index: 9, vote: 0] cast MsgVote for 3 [logterm: 6, index: 9] at term 7
+raft2019/06/20 04:41:50 INFO: raft.node: 2 lost leader 1 at term 7
+INFO [06-20|04:41:50.327] QUORUM-CHECKPOINT                        name=BECAME-VERIFIER
+raft2019/06/20 04:41:51 INFO: 2 [term: 7] received a MsgVote message with higher term from 3 [term: 8]
+raft2019/06/20 04:41:51 INFO: 2 became follower at term 8
+raft2019/06/20 04:41:51 INFO: 2 [logterm: 6, index: 9, vote: 0] cast MsgVote for 3 [logterm: 6, index: 9] at term 8
+2019-06-20 04:41:51.518863 W | wal: sync duration of 1.191578596s, expected less than 1s
+TRACE[06-20|04:41:51.794] Pooled new future transaction            hash=2ed4cd…30b03d from=0xe5645bd4B52ca4D08a04A4F577A9aF347DD9926F to=0x1faDB5864Bb655e4a2BAD70B908DA6A6b1ADE4f7
+TRACE[06-20|04:41:51.794] Promoting queued transaction             hash=2ed4cd…30b03d
+TRACE[06-20|04:41:51.794] Promoting queued transaction             hash=2ed4cd…30b03d
+TRACE[06-20|04:41:51.794] Broadcast transaction                    hash=2ed4cd…30b03d recipients=3
+TRACE[06-20|04:41:51.795] Broadcast transactions                   id=d13780ba2b8daf50 conn=staticdial count=1
+TRACE[06-20|04:41:51.795] Broadcast transactions                   id=1da5e54ff64b475f conn=staticdial count=1
+TRACE[06-20|04:41:51.796] Broadcast transactions                   id=9f5a916121dd31ad conn=staticdial count=1
+TRACE[06-20|04:41:51.893] Discarding already known transaction     hash=2ed4cd…30b03d
+raft2019/06/20 04:41:52 INFO: raft.node: 2 elected leader 3 at term 8
+INFO [06-20|04:41:52.833] QUORUM-CHECKPOINT                        name=BECAME-VERIFIER
+raft2019/06/20 04:41:55 INFO: 2 is starting a new election at term 8
+raft2019/06/20 04:41:55 INFO: 2 became candidate at term 9
+raft2019/06/20 04:41:57 INFO: 2 received MsgVoteResp from 2 at term 9
+raft2019/06/20 04:41:57 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 3 at term 9
+raft2019/06/20 04:41:57 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 4 at term 9
+raft2019/06/20 04:41:57 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 5 at term 9
+raft2019/06/20 04:41:57 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 1 at term 9
+raft2019/06/20 04:41:57 INFO: raft.node: 2 lost leader 3 at term 9
+raft2019/06/20 04:41:57 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 1 [logterm: 8, index: 10] at term 9
+raft2019/06/20 04:41:57 INFO: 2 [term: 9] ignored a MsgApp message with lower term from 3 [term: 8]
+raft2019/06/20 04:41:57 INFO: 2 is starting a new election at term 9
+raft2019/06/20 04:41:57 INFO: 2 became candidate at term 10
+raft2019/06/20 04:41:57 INFO: 2 received MsgVoteResp from 2 at term 10
+raft2019/06/20 04:41:57 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 1 at term 10
+raft2019/06/20 04:41:57 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 3 at term 10
+raft2019/06/20 04:41:57 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 4 at term 10
+raft2019/06/20 04:41:57 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 5 at term 10
+raft2019/06/20 04:41:57 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 1 [logterm: 8, index: 10] at term 10
+raft2019/06/20 04:41:57 INFO: 2 [term: 10] ignored a MsgApp message with lower term from 3 [term: 8]
+raft2019/06/20 04:41:57 INFO: 2 [term: 10] ignored a MsgApp message with lower term from 3 [term: 8]
+raft2019/06/20 04:41:57 INFO: 2 [term: 10] ignored a MsgApp message with lower term from 3 [term: 8]
+raft2019/06/20 04:41:57 INFO: 2 [term: 10] ignored a MsgApp message with lower term from 3 [term: 8]
+raft2019/06/20 04:41:57 INFO: 2 [term: 10] ignored a MsgApp message with lower term from 3 [term: 8]
+raft2019/06/20 04:41:57 INFO: 2 [term: 10] ignored a MsgApp message with lower term from 3 [term: 8]
+raft2019/06/20 04:41:57 INFO: 2 [term: 10] ignored a MsgApp message with lower term from 3 [term: 8]
+raft2019/06/20 04:41:57 INFO: 2 [term: 10] ignored a MsgApp message with lower term from 3 [term: 8]
+INFO [06-20|04:41:57.284] QUORUM-CHECKPOINT                        name=BECAME-VERIFIER
+raft2019/06/20 04:41:57 INFO: 2 [term: 10] ignored a MsgApp message with lower term from 3 [term: 8]
+raft2019/06/20 04:41:57 INFO: 2 [term: 10] ignored a MsgApp message with lower term from 3 [term: 8]
+raft2019/06/20 04:41:57 INFO: 2 [term: 10] ignored a MsgApp message with lower term from 3 [term: 8]
+raft2019/06/20 04:41:57 INFO: 2 [term: 10] ignored a MsgApp message with lower term from 3 [term: 8]
+raft2019/06/20 04:41:57 INFO: 2 [term: 10] ignored a MsgApp message with lower term from 3 [term: 8]
+raft2019/06/20 04:41:57 INFO: 2 [term: 10] ignored a MsgApp message with lower term from 3 [term: 8]
+raft2019/06/20 04:41:57 INFO: 2 [term: 10] ignored a MsgApp message with lower term from 3 [term: 8]
+raft2019/06/20 04:41:57 INFO: 2 [term: 10] ignored a MsgApp message with lower term from 3 [term: 8]
+raft2019/06/20 04:41:57 INFO: 2 [term: 10] ignored a MsgApp message with lower term from 3 [term: 8]
+raft2019/06/20 04:41:57 INFO: 2 [term: 10] ignored a MsgApp message with lower term from 3 [term: 8]
+raft2019/06/20 04:41:57 INFO: 2 received MsgVoteResp rejection from 3 at term 10
+raft2019/06/20 04:41:57 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 1 vote rejections
+raft2019/06/20 04:41:57 INFO: 2 received MsgVoteResp rejection from 1 at term 10
+raft2019/06/20 04:41:57 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 2 vote rejections
+DEBUG[06-20|04:41:58.701] Transaction pool status report           executable=1 queued=0 stales=0
+raft2019/06/20 04:41:58 INFO: 2 is starting a new election at term 10
+raft2019/06/20 04:41:58 INFO: 2 became candidate at term 11
+raft2019/06/20 04:41:58 INFO: 2 received MsgVoteResp from 2 at term 11
+raft2019/06/20 04:41:58 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 1 at term 11
+raft2019/06/20 04:41:58 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 3 at term 11
+raft2019/06/20 04:41:58 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 4 at term 11
+raft2019/06/20 04:41:58 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 5 at term 11
+raft2019/06/20 04:41:58 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 1 [logterm: 8, index: 10] at term 11
+raft2019/06/20 04:41:58 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 3 [logterm: 8, index: 12] at term 11
+raft2019/06/20 04:41:58 INFO: 2 received MsgVoteResp rejection from 1 at term 11
+raft2019/06/20 04:41:58 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 1 vote rejections
+raft2019/06/20 04:41:58 INFO: 2 received MsgVoteResp rejection from 3 at term 11
+raft2019/06/20 04:41:58 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 2 vote rejections
+raft2019/06/20 04:42:00 INFO: 2 is starting a new election at term 11
+raft2019/06/20 04:42:00 INFO: 2 became candidate at term 12
+raft2019/06/20 04:42:00 INFO: 2 received MsgVoteResp from 2 at term 12
+raft2019/06/20 04:42:00 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 1 at term 12
+raft2019/06/20 04:42:00 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 3 at term 12
+raft2019/06/20 04:42:00 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 4 at term 12
+raft2019/06/20 04:42:00 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 5 at term 12
+raft2019/06/20 04:42:00 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 1 [logterm: 8, index: 10] at term 12
+raft2019/06/20 04:42:00 INFO: 2 received MsgVoteResp rejection from 1 at term 12
+raft2019/06/20 04:42:00 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 1 vote rejections
+raft2019/06/20 04:42:01 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 3 [logterm: 8, index: 12] at term 12
+raft2019/06/20 04:42:01 INFO: 2 received MsgVoteResp rejection from 3 at term 12
+raft2019/06/20 04:42:01 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 2 vote rejections
+raft2019/06/20 04:42:02 INFO: 2 [term: 12] received a MsgVote message with higher term from 1 [term: 13]
+raft2019/06/20 04:42:02 INFO: 2 became follower at term 13
+raft2019/06/20 04:42:02 INFO: 2 [logterm: 8, index: 10, vote: 0] cast MsgVote for 1 [logterm: 8, index: 10] at term 13
+raft2019/06/20 04:42:02 INFO: 2 [logterm: 8, index: 10, vote: 1] rejected MsgVote from 3 [logterm: 8, index: 12] at term 13
+DEBUG[06-20|04:42:04.120] Recalculated downloader QoS values       rtt=20s confidence=0.906 ttl=1m0s
+raft2019/06/20 04:42:04 INFO: 2 [term: 13] received a MsgVote message with higher term from 3 [term: 14]
+raft2019/06/20 04:42:04 INFO: 2 became follower at term 14
+raft2019/06/20 04:42:04 INFO: 2 [logterm: 8, index: 10, vote: 0] cast MsgVote for 3 [logterm: 8, index: 12] at term 14
+raft2019/06/20 04:42:04 INFO: 2 [logterm: 8, index: 10, vote: 3] rejected MsgVote from 1 [logterm: 8, index: 10] at term 14
+raft2019/06/20 04:42:06 INFO: 2 is starting a new election at term 14
+raft2019/06/20 04:42:06 INFO: 2 became candidate at term 15
+raft2019/06/20 04:42:06 INFO: 2 received MsgVoteResp from 2 at term 15
+raft2019/06/20 04:42:06 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 3 at term 15
+raft2019/06/20 04:42:06 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 4 at term 15
+raft2019/06/20 04:42:06 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 5 at term 15
+raft2019/06/20 04:42:06 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 1 at term 15
+raft2019/06/20 04:42:06 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 1 [logterm: 8, index: 10] at term 15
+raft2019/06/20 04:42:06 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 3 [logterm: 8, index: 12] at term 15
+raft2019/06/20 04:42:07 INFO: 2 received MsgVoteResp rejection from 1 at term 15
+raft2019/06/20 04:42:07 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 1 vote rejections
+raft2019/06/20 04:42:07 INFO: 2 received MsgVoteResp rejection from 3 at term 15
+raft2019/06/20 04:42:07 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 2 vote rejections
+raft2019/06/20 04:42:07 INFO: 2 is starting a new election at term 15
+raft2019/06/20 04:42:07 INFO: 2 became candidate at term 16
+raft2019/06/20 04:42:07 INFO: 2 received MsgVoteResp from 2 at term 16
+raft2019/06/20 04:42:07 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 1 at term 16
+raft2019/06/20 04:42:07 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 3 at term 16
+raft2019/06/20 04:42:07 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 4 at term 16
+raft2019/06/20 04:42:07 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 5 at term 16
+raft2019/06/20 04:42:08 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 3 [logterm: 8, index: 12] at term 16
+raft2019/06/20 04:42:08 INFO: 2 [term: 16] received a MsgVote message with higher term from 3 [term: 17]
+raft2019/06/20 04:42:08 INFO: 2 became follower at term 17
+raft2019/06/20 04:42:08 INFO: 2 [logterm: 8, index: 10, vote: 0] cast MsgVote for 3 [logterm: 8, index: 12] at term 17
+raft2019/06/20 04:42:08 INFO: 2 [term: 17] ignored a MsgVote message with lower term from 1 [term: 16]
+TRACE[06-20|04:42:08.609] Dial task done                           task="wait for dial hist expire (29.999985797s)"
+TRACE[06-20|04:42:08.609] New dial task                            task="staticdial 53f17d79f3b36441 10.50.0.3:22001"
+TRACE[06-20|04:42:08.610] Accepted connection                      addr=10.50.0.3:60070
+raft2019/06/20 04:42:09 INFO: raft.node: 2 elected leader 3 at term 17
+raft2019/06/20 04:42:09 INFO: 2 [term: 17] received a MsgVote message with higher term from 1 [term: 18]
+raft2019/06/20 04:42:09 INFO: 2 became follower at term 18
+raft2019/06/20 04:42:09 INFO: 2 [logterm: 8, index: 10, vote: 0] cast MsgVote for 1 [logterm: 8, index: 10] at term 18
+raft2019/06/20 04:42:09 INFO: raft.node: 2 lost leader 3 at term 18
+INFO [06-20|04:42:09.867] QUORUM-CHECKPOINT                        name=BECAME-VERIFIER
+INFO [06-20|04:42:09.870] QUORUM-CHECKPOINT                        name=BECAME-VERIFIER
+TRACE[06-20|04:42:10.006] Quorum permissioning                     id=53f17d79f3b36441 addr=10.50.0.3:60070 conn=inbound    EnableNodePermission=false DataDir=/node2/node/qdata Current Node ID=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e Node Name=Geth/v1.8.12-stable/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=53f17d79f3b36441 Connection String=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e
+TRACE[06-20|04:42:10.012] Node Permissioning is Disabled.          id=53f17d79f3b36441 addr=10.50.0.3:60070 conn=inbound
+TRACE[06-20|04:42:10.013] Rejected peer before protocol handshake  id=53f17d79f3b36441 addr=10.50.0.3:60070 conn=inbound    err="connected to self"
+TRACE[06-20|04:42:10.090] Setting up connection failed             id=53f17d79f3b36441 err="connected to self"
+raft2019/06/20 04:42:10 INFO: 2 [term: 18] ignored a MsgApp message with lower term from 3 [term: 17]
+raft2019/06/20 04:42:10 INFO: 2 [term: 18] ignored a MsgHeartbeat message with lower term from 3 [term: 17]
+raft2019/06/20 04:42:11 INFO: 2 is starting a new election at term 18
+raft2019/06/20 04:42:11 INFO: 2 became candidate at term 19
+raft2019/06/20 04:42:11 INFO: 2 received MsgVoteResp from 2 at term 19
+raft2019/06/20 04:42:11 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 3 at term 19
+raft2019/06/20 04:42:11 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 4 at term 19
+raft2019/06/20 04:42:11 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 5 at term 19
+raft2019/06/20 04:42:11 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 1 at term 19
+TRACE[06-20|04:42:11.507] Quorum permissioning                     id=53f17d79f3b36441 addr=10.50.0.3:22001 conn=staticdial EnableNodePermission=false DataDir=/node2/node/qdata Current Node ID=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e Node Name=Geth/v1.8.12-stable/linux-amd64/go1.10.2 Dialed Dest="enode://53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e@10.50.0.3:22001?discport=0&raftport=22003" Connection ID=53f17d79f3b36441 Connection String=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e
+TRACE[06-20|04:42:11.507] Node Permissioning is Disabled.          id=53f17d79f3b36441 addr=10.50.0.3:22001 conn=staticdial
+TRACE[06-20|04:42:11.508] Rejected peer before protocol handshake  id=53f17d79f3b36441 addr=10.50.0.3:22001 conn=staticdial err="connected to self"
+TRACE[06-20|04:42:11.508] Setting up connection failed             id=53f17d79f3b36441 err="connected to self"
+TRACE[06-20|04:42:11.511] Dial error                               task="staticdial 53f17d79f3b36441 10.50.0.3:22001" err="connected to self"
+TRACE[06-20|04:42:11.511] Dial task done                           task="staticdial 53f17d79f3b36441 10.50.0.3:22001"
+TRACE[06-20|04:42:11.511] New dial task                            task="wait for dial hist expire (29.99998806s)"
+raft2019/06/20 04:42:11 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 1 [logterm: 8, index: 10] at term 19
+raft2019/06/20 04:42:11 INFO: 2 received MsgVoteResp rejection from 1 at term 19
+raft2019/06/20 04:42:11 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 1 vote rejections
+raft2019/06/20 04:42:12 INFO: 2 received MsgVoteResp rejection from 3 at term 19
+raft2019/06/20 04:42:12 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 2 vote rejections
+raft2019/06/20 04:42:12 INFO: 2 is starting a new election at term 19
+raft2019/06/20 04:42:12 INFO: 2 became candidate at term 20
+raft2019/06/20 04:42:12 INFO: 2 received MsgVoteResp from 2 at term 20
+raft2019/06/20 04:42:12 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 1 at term 20
+raft2019/06/20 04:42:12 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 3 at term 20
+raft2019/06/20 04:42:12 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 4 at term 20
+raft2019/06/20 04:42:12 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 5 at term 20
+raft2019/06/20 04:42:13 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 1 [logterm: 8, index: 10] at term 20
+raft2019/06/20 04:42:13 INFO: 2 received MsgVoteResp rejection from 1 at term 20
+raft2019/06/20 04:42:13 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 1 vote rejections
+raft2019/06/20 04:42:13 INFO: 2 received MsgVoteResp rejection from 3 at term 20
+raft2019/06/20 04:42:13 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 2 vote rejections
+raft2019/06/20 04:42:14 INFO: 2 is starting a new election at term 20
+raft2019/06/20 04:42:14 INFO: 2 became candidate at term 21
+raft2019/06/20 04:42:14 INFO: 2 received MsgVoteResp from 2 at term 21
+raft2019/06/20 04:42:14 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 5 at term 21
+raft2019/06/20 04:42:14 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 1 at term 21
+raft2019/06/20 04:42:14 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 3 at term 21
+raft2019/06/20 04:42:14 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 4 at term 21
+raft2019/06/20 04:42:15 INFO: 2 received MsgVoteResp rejection from 3 at term 21
+raft2019/06/20 04:42:15 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 1 vote rejections
+raft2019/06/20 04:42:16 INFO: 2 is starting a new election at term 21
+raft2019/06/20 04:42:16 INFO: 2 became candidate at term 22
+raft2019/06/20 04:42:16 INFO: 2 received MsgVoteResp from 2 at term 22
+raft2019/06/20 04:42:16 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 5 at term 22
+raft2019/06/20 04:42:16 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 1 at term 22
+raft2019/06/20 04:42:16 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 3 at term 22
+raft2019/06/20 04:42:16 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 4 at term 22
+raft2019/06/20 04:42:16 INFO: 2 [term: 22] ignored a MsgVote message with lower term from 1 [term: 21]
+raft2019/06/20 04:42:16 INFO: 2 [term: 22] ignored a MsgVoteResp message with lower term from 1 [term: 21]
+raft2019/06/20 04:42:17 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 1 [logterm: 8, index: 10] at term 22
+raft2019/06/20 04:42:17 INFO: 2 received MsgVoteResp rejection from 1 at term 22
+raft2019/06/20 04:42:17 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 1 vote rejections
+raft2019/06/20 04:42:17 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 3 [logterm: 17, index: 14] at term 22
+raft2019/06/20 04:42:17 INFO: 2 received MsgVoteResp rejection from 3 at term 22
+raft2019/06/20 04:42:17 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 2 vote rejections
+raft2019/06/20 04:42:18 INFO: 2 is starting a new election at term 22
+raft2019/06/20 04:42:18 INFO: 2 became candidate at term 23
+raft2019/06/20 04:42:18 INFO: 2 received MsgVoteResp from 2 at term 23
+raft2019/06/20 04:42:18 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 3 at term 23
+raft2019/06/20 04:42:18 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 4 at term 23
+raft2019/06/20 04:42:18 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 5 at term 23
+raft2019/06/20 04:42:18 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 1 at term 23
+raft2019/06/20 04:42:18 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 1 [logterm: 8, index: 10] at term 23
+raft2019/06/20 04:42:18 INFO: 2 received MsgVoteResp rejection from 1 at term 23
+raft2019/06/20 04:42:18 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 1 vote rejections
+raft2019/06/20 04:42:19 INFO: 2 received MsgVoteResp rejection from 3 at term 23
+raft2019/06/20 04:42:19 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 2 vote rejections
+raft2019/06/20 04:42:19 INFO: 2 is starting a new election at term 23
+raft2019/06/20 04:42:19 INFO: 2 became candidate at term 24
+raft2019/06/20 04:42:19 INFO: 2 received MsgVoteResp from 2 at term 24
+raft2019/06/20 04:42:19 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 5 at term 24
+raft2019/06/20 04:42:19 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 1 at term 24
+raft2019/06/20 04:42:19 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 3 at term 24
+raft2019/06/20 04:42:19 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 4 at term 24
+raft2019/06/20 04:42:20 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 1 [logterm: 8, index: 10] at term 24
+raft2019/06/20 04:42:20 INFO: 2 received MsgVoteResp rejection from 1 at term 24
+raft2019/06/20 04:42:20 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 1 vote rejections
+raft2019/06/20 04:42:20 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 3 [logterm: 17, index: 14] at term 24
+raft2019/06/20 04:42:20 INFO: 2 received MsgVoteResp rejection from 3 at term 24
+raft2019/06/20 04:42:20 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 2 vote rejections
+raft2019/06/20 04:42:21 INFO: 2 is starting a new election at term 24
+raft2019/06/20 04:42:21 INFO: 2 became candidate at term 25
+raft2019/06/20 04:42:21 INFO: 2 received MsgVoteResp from 2 at term 25
+raft2019/06/20 04:42:21 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 1 at term 25
+raft2019/06/20 04:42:21 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 3 at term 25
+raft2019/06/20 04:42:21 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 4 at term 25
+raft2019/06/20 04:42:21 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 5 at term 25
+raft2019/06/20 04:42:22 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 3 [logterm: 17, index: 14] at term 25
+raft2019/06/20 04:42:22 INFO: 2 received MsgVoteResp rejection from 3 at term 25
+raft2019/06/20 04:42:22 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 1 vote rejections
+raft2019/06/20 04:42:22 INFO: 2 received MsgVoteResp from 1 at term 25
+raft2019/06/20 04:42:22 INFO: 2 [quorum:3] has received 2 MsgVoteResp votes and 1 vote rejections
+raft2019/06/20 04:42:23 INFO: 2 is starting a new election at term 25
+raft2019/06/20 04:42:23 INFO: 2 became candidate at term 26
+raft2019/06/20 04:42:23 INFO: 2 received MsgVoteResp from 2 at term 26
+raft2019/06/20 04:42:23 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 3 at term 26
+raft2019/06/20 04:42:23 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 4 at term 26
+raft2019/06/20 04:42:23 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 5 at term 26
+raft2019/06/20 04:42:23 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 1 at term 26
+raft2019/06/20 04:42:24 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 3 [logterm: 17, index: 14] at term 26
+raft2019/06/20 04:42:24 INFO: 2 received MsgVoteResp rejection from 3 at term 26
+raft2019/06/20 04:42:24 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 1 vote rejections
+DEBUG[06-20|04:42:24.120] Recalculated downloader QoS values       rtt=20s confidence=0.953 ttl=1m0s
+raft2019/06/20 04:42:24 INFO: 2 received MsgVoteResp rejection from 1 at term 26
+raft2019/06/20 04:42:24 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 2 vote rejections
+raft2019/06/20 04:42:25 INFO: 2 is starting a new election at term 26
+raft2019/06/20 04:42:25 INFO: 2 became candidate at term 27
+raft2019/06/20 04:42:25 INFO: 2 received MsgVoteResp from 2 at term 27
+raft2019/06/20 04:42:25 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 3 at term 27
+raft2019/06/20 04:42:25 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 4 at term 27
+raft2019/06/20 04:42:25 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 5 at term 27
+raft2019/06/20 04:42:25 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 1 at term 27
+raft2019/06/20 04:42:25 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 3 [logterm: 17, index: 14] at term 27
+raft2019/06/20 04:42:26 INFO: 2 received MsgVoteResp rejection from 3 at term 27
+raft2019/06/20 04:42:26 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 1 vote rejections
+raft2019/06/20 04:42:26 INFO: 2 is starting a new election at term 27
+raft2019/06/20 04:42:26 INFO: 2 became candidate at term 28
+raft2019/06/20 04:42:26 INFO: 2 received MsgVoteResp from 2 at term 28
+raft2019/06/20 04:42:26 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 1 at term 28
+raft2019/06/20 04:42:26 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 3 at term 28
+raft2019/06/20 04:42:26 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 4 at term 28
+raft2019/06/20 04:42:26 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 5 at term 28
+raft2019/06/20 04:42:27 INFO: 2 [term: 28] ignored a MsgVote message with lower term from 1 [term: 27]
+raft2019/06/20 04:42:27 INFO: 2 [term: 28] ignored a MsgVoteResp message with lower term from 1 [term: 27]
+raft2019/06/20 04:42:27 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 3 [logterm: 17, index: 14] at term 28
+raft2019/06/20 04:42:27 INFO: 2 received MsgVoteResp rejection from 3 at term 28
+raft2019/06/20 04:42:27 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 1 vote rejections
+raft2019/06/20 04:42:27 INFO: 2 received MsgVoteResp rejection from 1 at term 28
+raft2019/06/20 04:42:27 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 2 vote rejections
+raft2019/06/20 04:42:29 INFO: 2 is starting a new election at term 28
+raft2019/06/20 04:42:29 INFO: 2 became candidate at term 29
+raft2019/06/20 04:42:29 INFO: 2 received MsgVoteResp from 2 at term 29
+raft2019/06/20 04:42:29 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 3 at term 29
+raft2019/06/20 04:42:29 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 4 at term 29
+raft2019/06/20 04:42:29 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 5 at term 29
+raft2019/06/20 04:42:29 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 1 at term 29
+raft2019/06/20 04:42:29 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 3 [logterm: 17, index: 14] at term 29
+raft2019/06/20 04:42:29 INFO: 2 received MsgVoteResp rejection from 3 at term 29
+raft2019/06/20 04:42:29 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 1 vote rejections
+raft2019/06/20 04:42:29 INFO: 2 received MsgVoteResp rejection from 1 at term 29
+raft2019/06/20 04:42:29 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 2 vote rejections
+raft2019/06/20 04:42:30 INFO: 2 is starting a new election at term 29
+raft2019/06/20 04:42:30 INFO: 2 became candidate at term 30
+raft2019/06/20 04:42:30 INFO: 2 received MsgVoteResp from 2 at term 30
+raft2019/06/20 04:42:30 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 1 at term 30
+raft2019/06/20 04:42:30 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 3 at term 30
+raft2019/06/20 04:42:30 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 4 at term 30
+raft2019/06/20 04:42:31 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 5 at term 30
+raft2019/06/20 04:42:31 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 3 [logterm: 17, index: 14] at term 30
+raft2019/06/20 04:42:31 INFO: 2 is starting a new election at term 30
+raft2019/06/20 04:42:31 INFO: 2 became candidate at term 31
+raft2019/06/20 04:42:31 INFO: 2 received MsgVoteResp from 2 at term 31
+raft2019/06/20 04:42:31 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 1 at term 31
+raft2019/06/20 04:42:31 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 3 at term 31
+raft2019/06/20 04:42:31 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 4 at term 31
+raft2019/06/20 04:42:31 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 5 at term 31
+raft2019/06/20 04:42:31 INFO: 2 [term: 31] ignored a MsgVoteResp message with lower term from 3 [term: 30]
+raft2019/06/20 04:42:31 INFO: 2 [term: 31] ignored a MsgVoteResp message with lower term from 1 [term: 30]
+raft2019/06/20 04:42:33 INFO: 2 received MsgVoteResp rejection from 3 at term 31
+raft2019/06/20 04:42:33 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 1 vote rejections
+raft2019/06/20 04:42:33 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 1 [logterm: 8, index: 10] at term 31
+raft2019/06/20 04:42:33 INFO: 2 received MsgVoteResp rejection from 1 at term 31
+raft2019/06/20 04:42:33 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 2 vote rejections
+raft2019/06/20 04:42:34 INFO: 2 is starting a new election at term 31
+raft2019/06/20 04:42:34 INFO: 2 became candidate at term 32
+raft2019/06/20 04:42:34 INFO: 2 received MsgVoteResp from 2 at term 32
+raft2019/06/20 04:42:34 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 4 at term 32
+raft2019/06/20 04:42:34 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 5 at term 32
+raft2019/06/20 04:42:34 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 1 at term 32
+raft2019/06/20 04:42:34 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 3 at term 32
+raft2019/06/20 04:42:35 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 1 [logterm: 8, index: 10] at term 32
+raft2019/06/20 04:42:35 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 3 [logterm: 17, index: 14] at term 32
+2019-06-20 04:42:36.015579 W | wal: sync duration of 1.271311583s, expected less than 1s
+TRACE[06-20|04:42:42.644] Dial task done                           task="wait for dial hist expire (29.99998806s)"
+raft2019/06/20 04:42:50 INFO: 2 [term: 32] received a MsgVote message with higher term from 1 [term: 33]
+raft2019/06/20 04:44:53 INFO: 2 became follower at term 33
+raft2019/06/20 04:44:54 INFO: 2 [logterm: 8, index: 10, vote: 0] cast MsgVote for 1 [logterm: 8, index: 10] at term 33
+2019-06-20 04:44:53.977641 W | rafthttp: lost the TCP streaming connection with peer 1 (stream Message reader)
+2019-06-20 04:44:54.108362 E | rafthttp: failed to read 1 on stream Message (read tcp 10.50.0.3:38746->10.50.0.2:22003: i/o timeout)
+2019-06-20 04:44:54.108437 I | rafthttp: peer 1 became inactive
+2019-06-20 04:44:54.109885 W | rafthttp: lost the TCP streaming connection with peer 1 (stream MsgApp v2 reader)
+TRACE[06-20|04:42:53.488] New dial task                            task="staticdial 53f17d79f3b36441 10.50.0.3:22001"
+DEBUG[06-20|04:44:53.875] Ethereum message handling failed         id=b6976a6e71bd65ac conn=staticdial err=EOF
+DEBUG[06-20|04:44:54.117] Removing Ethereum peer                   peer=b6976a6e71bd65ac
+TRACE[06-20|04:44:54.117] Unregistering sync peer                  peer=b6976a6e71bd65ac
+DEBUG[06-20|04:44:54.122] Removing p2p peer                        id=b6976a6e71bd65ac conn=staticdial duration=3m51.283s peers=3 req=false err="read tcp 10.50.0.3:47538->10.50.0.2:22001: i/o timeout"
+TRACE[06-20|04:44:54.127] New dial task                            task="staticdial b6976a6e71bd65ac 10.50.0.2:22001"
+DEBUG[06-20|04:43:58.610] Ethereum message handling failed         id=1da5e54ff64b475f conn=staticdial err=EOF
+DEBUG[06-20|04:44:54.128] Removing Ethereum peer                   peer=1da5e54ff64b475f
+TRACE[06-20|04:44:54.128] Unregistering sync peer                  peer=1da5e54ff64b475f
+DEBUG[06-20|04:44:54.130] Removing p2p peer                        id=1da5e54ff64b475f conn=staticdial duration=3m51.303s peers=2 req=false err="read tcp 10.50.0.3:37628->10.50.0.6:22001: i/o timeout"
+raft2019/06/20 04:44:54 INFO: 2 [logterm: 8, index: 10, vote: 1] rejected MsgVote from 3 [logterm: 17, index: 14] at term 33
+TRACE[06-20|04:44:54.131] New dial task                            task="staticdial 1da5e54ff64b475f 10.50.0.6:22001"
+raft2019/06/20 04:44:54 INFO: 2 [term: 33] received a MsgVote message with higher term from 3 [term: 34]
+raft2019/06/20 04:44:54 INFO: 2 became follower at term 34
+raft2019/06/20 04:44:54 INFO: 2 [logterm: 8, index: 10, vote: 0] cast MsgVote for 3 [logterm: 17, index: 14] at term 34
+2019-06-20 04:44:54.133660 I | rafthttp: peer 4 became active
+2019-06-20 04:44:54.133727 I | rafthttp: established a TCP streaming connection with peer 4 (stream Message reader)
+DEBUG[06-20|04:44:54.009] Ethereum message handling failed         id=9f5a916121dd31ad conn=staticdial err=EOF
+DEBUG[06-20|04:44:54.136] Removing Ethereum peer                   peer=9f5a916121dd31ad
+TRACE[06-20|04:44:54.136] Unregistering sync peer                  peer=9f5a916121dd31ad
+DEBUG[06-20|04:44:54.136] Removing p2p peer                        id=9f5a916121dd31ad conn=staticdial duration=3m51.340s peers=1 req=false err="read tcp 10.50.0.3:56212->10.50.0.5:22001: i/o timeout"
+TRACE[06-20|04:44:54.137] New dial task                            task="staticdial 9f5a916121dd31ad 10.50.0.5:22001"
+DEBUG[06-20|04:43:58.498] Recalculated downloader QoS values       rtt=20s confidence=0.977 ttl=1m0s
+DEBUG[06-20|04:44:54.041] Ethereum message handling failed         id=d13780ba2b8daf50 conn=staticdial err=EOF
+DEBUG[06-20|04:44:54.138] Removing Ethereum peer                   peer=d13780ba2b8daf50
+TRACE[06-20|04:44:54.139] Unregistering sync peer                  peer=d13780ba2b8daf50
+DEBUG[06-20|04:44:54.140] Removing p2p peer                        id=d13780ba2b8daf50 conn=staticdial duration=3m51.305s peers=0 req=false err="read tcp 10.50.0.3:39444->10.50.0.4:22001: i/o timeout"
+TRACE[06-20|04:44:54.141] New dial task                            task="staticdial d13780ba2b8daf50 10.50.0.4:22001"
+TRACE[06-20|04:44:54.147] Accepted connection                      addr=10.50.0.3:60254
+TRACE[06-20|04:44:54.148] Accepted connection                      addr=10.50.0.4:55006
+TRACE[06-20|04:44:54.401] Accepted connection                      addr=10.50.0.5:49656
+raft2019/06/20 04:44:54 INFO: 2 [term: 34] ignored a MsgVoteResp message with lower term from 4 [term: 9]
+raft2019/06/20 04:44:54 INFO: 2 [term: 34] ignored a MsgVoteResp message with lower term from 4 [term: 19]
+2019-06-20 04:44:54.440026 W | rafthttp: lost the TCP streaming connection with peer 4 (stream Message reader)
+2019-06-20 04:44:54.441157 I | rafthttp: established a TCP streaming connection with peer 4 (stream MsgApp v2 reader)
+raft2019/06/20 04:44:54 INFO: 2 [term: 34] received a MsgVote message with higher term from 3 [term: 35]
+raft2019/06/20 04:44:54 INFO: 2 became follower at term 35
+raft2019/06/20 04:44:54 INFO: 2 [logterm: 8, index: 10, vote: 0] cast MsgVote for 3 [logterm: 17, index: 14] at term 35
+2019-06-20 04:44:54.624431 I | rafthttp: established a TCP streaming connection with peer 4 (stream Message reader)
+TRACE[06-20|04:44:54.431] Quorum permissioning                     id=53f17d79f3b36441 addr=10.50.0.3:60254 conn=inbound    EnableNodePermission=false DataDir=/node2/node/qdata Current Node ID=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e Node Name=Geth/v1.8.12-stable/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=53f17d79f3b36441 Connection String=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e
+TRACE[06-20|04:44:54.625] Node Permissioning is Disabled.          id=53f17d79f3b36441 addr=10.50.0.3:60254 conn=inbound
+raft2019/06/20 04:44:54 INFO: 2 [term: 35] ignored a MsgVoteResp message with lower term from 4 [term: 20]
+raft2019/06/20 04:44:54 INFO: 2 [term: 35] ignored a MsgVoteResp message with lower term from 4 [term: 21]
+raft2019/06/20 04:44:54 INFO: 2 [term: 35] ignored a MsgVoteResp message with lower term from 4 [term: 22]
+raft2019/06/20 04:44:54 INFO: 2 [term: 35] ignored a MsgVoteResp message with lower term from 4 [term: 23]
+raft2019/06/20 04:44:54 INFO: 2 [term: 35] ignored a MsgVoteResp message with lower term from 4 [term: 24]
+raft2019/06/20 04:44:54 INFO: 2 [term: 35] ignored a MsgVoteResp message with lower term from 4 [term: 30]
+raft2019/06/20 04:44:54 INFO: 2 [term: 35] ignored a MsgVoteResp message with lower term from 4 [term: 31]
+raft2019/06/20 04:44:54 INFO: 2 [term: 35] ignored a MsgVoteResp message with lower term from 4 [term: 32]
+TRACE[06-20|04:44:54.501] Quorum permissioning                     id=53f17d79f3b36441 addr=10.50.0.3:22001 conn=staticdial EnableNodePermission=false DataDir=/node2/node/qdata Current Node ID=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e Node Name=Geth/v1.8.12-stable/linux-amd64/go1.10.2 Dialed Dest="enode://53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e@10.50.0.3:22001?discport=0&raftport=22003" Connection ID=53f17d79f3b36441 Connection String=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e
+TRACE[06-20|04:44:54.571] Quorum permissioning                     id=d13780ba2b8daf50 addr=10.50.0.4:22001 conn=staticdial EnableNodePermission=false DataDir=/node2/node/qdata Current Node ID=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e Node Name=Geth/v1.8.12-stable/linux-amd64/go1.10.2 Dialed Dest="enode://d13780ba2b8daf500e30189fa28b8e6fd20b6b75c9bf6e9ecf579808a16cd11d4241be0a2d007a4e6dd6edb268f754ad97313d3d3d5b739b0b0eac90c31c0cb0@10.50.0.4:22001?discport=0"                Connection ID=d13780ba2b8daf50 Connection String=d13780ba2b8daf500e30189fa28b8e6fd20b6b75c9bf6e9ecf579808a16cd11d4241be0a2d007a4e6dd6edb268f754ad97313d3d3d5b739b0b0eac90c31c0cb0
+TRACE[06-20|04:44:54.571] Quorum permissioning                     id=d13780ba2b8daf50 addr=10.50.0.4:55006 conn=inbound    EnableNodePermission=false DataDir=/node2/node/qdata Current Node ID=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e Node Name=Geth/v1.8.12-stable/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=d13780ba2b8daf50 Connection String=d13780ba2b8daf500e30189fa28b8e6fd20b6b75c9bf6e9ecf579808a16cd11d4241be0a2d007a4e6dd6edb268f754ad97313d3d3d5b739b0b0eac90c31c0cb0
+TRACE[06-20|04:44:54.603] Quorum permissioning                     id=9f5a916121dd31ad addr=10.50.0.5:22001 conn=staticdial EnableNodePermission=false DataDir=/node2/node/qdata Current Node ID=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e Node Name=Geth/v1.8.12-stable/linux-amd64/go1.10.2 Dialed Dest="enode://9f5a916121dd31ad9da95fd4bc9feb6e4b8ab6986982609528f95da5e24f638cbda9f1ae313d54adf8560fcb37ed91ff071c25448605f14961cf8da942b36fad@10.50.0.5:22001?discport=0"                Connection ID=9f5a916121dd31ad Connection String=9f5a916121dd31ad9da95fd4bc9feb6e4b8ab6986982609528f95da5e24f638cbda9f1ae313d54adf8560fcb37ed91ff071c25448605f14961cf8da942b36fad
+TRACE[06-20|04:44:54.631] Rejected peer before protocol handshake  id=53f17d79f3b36441 addr=10.50.0.3:60254 conn=inbound    err="connected to self"
+TRACE[06-20|04:44:54.661] Node Permissioning is Disabled.          id=d13780ba2b8daf50 addr=10.50.0.4:22001 conn=staticdial
+TRACE[06-20|04:44:54.661] Node Permissioning is Disabled.          id=d13780ba2b8daf50 addr=10.50.0.4:55006 conn=inbound
+TRACE[06-20|04:44:54.662] Node Permissioning is Disabled.          id=9f5a916121dd31ad addr=10.50.0.5:22001 conn=staticdial
+TRACE[06-20|04:44:54.654] Node Permissioning is Disabled.          id=53f17d79f3b36441 addr=10.50.0.3:22001 conn=staticdial
+TRACE[06-20|04:44:54.686] Setting up connection failed             id=53f17d79f3b36441 err="connected to self"
+DEBUG[06-20|04:44:54.715] Adding p2p peer                          name=Geth/v1.8.12-stable/...                  addr=10.50.0.4:22001 peers=1
+2019-06-20 04:44:54.725806 W | rafthttp: lost the TCP streaming connection with peer 5 (stream MsgApp v2 writer)
+TRACE[06-20|04:44:54.717] Starting protocol eth/63                 id=d13780ba2b8daf50 conn=staticdial
+TRACE[06-20|04:44:54.717] connection set up                        id=d13780ba2b8daf50 addr=10.50.0.4:22001 conn=staticdial inbound=false
+TRACE[06-20|04:44:54.717] Rejected peer before protocol handshake  id=53f17d79f3b36441 addr=10.50.0.3:22001 conn=staticdial err="connected to self"
+DEBUG[06-20|04:44:54.730] Ethereum peer connected                  id=d13780ba2b8daf50 conn=staticdial name=Geth/v1.8.12-stable/linux-amd64/go1.10.2
+TRACE[06-20|04:44:54.730] Dial task done                           task="staticdial d13780ba2b8daf50 10.50.0.4:22001"
+TRACE[06-20|04:44:54.731] Setting up connection failed             id=53f17d79f3b36441 err="connected to self"
+TRACE[06-20|04:44:54.731] Quorum permissioning                     id=9f5a916121dd31ad addr=10.50.0.5:49656 conn=inbound    EnableNodePermission=false DataDir=/node2/node/qdata Current Node ID=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e Node Name=Geth/v1.8.12-stable/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=9f5a916121dd31ad Connection String=9f5a916121dd31ad9da95fd4bc9feb6e4b8ab6986982609528f95da5e24f638cbda9f1ae313d54adf8560fcb37ed91ff071c25448605f14961cf8da942b36fad
+TRACE[06-20|04:44:54.744] Node Permissioning is Disabled.          id=9f5a916121dd31ad addr=10.50.0.5:49656 conn=inbound
+DEBUG[06-20|04:44:54.737] Adding p2p peer                          name=Geth/v1.8.12-stable/...                  addr=10.50.0.5:22001 peers=2
+TRACE[06-20|04:44:54.742] Dial error                               task="staticdial 53f17d79f3b36441 10.50.0.3:22001" err="connected to self"
+TRACE[06-20|04:44:54.746] Dial task done                           task="staticdial 53f17d79f3b36441 10.50.0.3:22001"
+TRACE[06-20|04:44:54.746] Starting protocol eth/63                 id=9f5a916121dd31ad conn=staticdial
+TRACE[06-20|04:44:54.746] connection set up                        id=9f5a916121dd31ad addr=10.50.0.5:22001 conn=staticdial inbound=false
+TRACE[06-20|04:44:54.752] Dial task done                           task="staticdial 9f5a916121dd31ad 10.50.0.5:22001"
+TRACE[06-20|04:44:54.745] Rejected peer before protocol handshake  id=9f5a916121dd31ad addr=10.50.0.5:49656 conn=inbound    err="already connected"
+TRACE[06-20|04:44:54.746] Rejected peer                            id=d13780ba2b8daf50 addr=10.50.0.4:55006 conn=inbound    err="already connected"
+TRACE[06-20|04:44:54.754] Registering sync peer                    peer=d13780ba2b8daf50
+DEBUG[06-20|04:44:54.753] Ethereum peer connected                  id=9f5a916121dd31ad conn=staticdial name=Geth/v1.8.12-stable/linux-amd64/go1.10.2
+TRACE[06-20|04:44:54.760] Sending batch of transactions            id=d13780ba2b8daf50 conn=staticdial count=1 bytes=781.00B
+TRACE[06-20|04:44:54.762] Setting up connection failed             id=d13780ba2b8daf50 err="already connected"
+TRACE[06-20|04:44:54.772] Setting up connection failed             id=9f5a916121dd31ad err="already connected"
+TRACE[06-20|04:44:54.774] Registering sync peer                    peer=9f5a916121dd31ad
+DEBUG[06-20|04:44:54.775] Relaxed downloader QoS values            rtt=20s confidence=0.500 ttl=1m0s
+TRACE[06-20|04:44:54.779] Sending batch of transactions            id=9f5a916121dd31ad conn=staticdial count=1 bytes=781.00B
+TRACE[06-20|04:44:54.776] Discarding already known transaction     hash=2ed4cd…30b03d
+TRACE[06-20|04:44:54.793] Discarding already known transaction     hash=2ed4cd…30b03d
+2019-06-20 04:44:54.888171 E | rafthttp: failed to write 3 on stream Message (write tcp 10.50.0.3:22003->10.50.0.4:37400: write: broken pipe)
+2019-06-20 04:44:54.888270 I | rafthttp: peer 3 became inactive
+2019-06-20 04:44:54.894269 W | rafthttp: lost the TCP streaming connection with peer 3 (stream Message writer)
+INFO [06-20|04:44:54.895] peer is currently unreachable            peer id=3
+TRACE[06-20|04:44:54.954] Failed RLPx handshake                    addr=10.50.0.2:22001 conn=staticdial err="read tcp 10.50.0.3:48170->10.50.0.2:22001: read: connection reset by peer"
+TRACE[06-20|04:44:54.955] Setting up connection failed             id=0000000000000000 err="read tcp 10.50.0.3:48170->10.50.0.2:22001: read: connection reset by peer"
+TRACE[06-20|04:44:54.955] Dial error                               task="staticdial b6976a6e71bd65ac 10.50.0.2:22001" err="read tcp 10.50.0.3:48170->10.50.0.2:22001: read: connection reset by peer"
+TRACE[06-20|04:44:54.956] Dial task done                           task="staticdial b6976a6e71bd65ac 10.50.0.2:22001"
+2019-06-20 04:44:55.246086 I | rafthttp: peer 3 became active
+2019-06-20 04:44:55.246395 I | rafthttp: established a TCP streaming connection with peer 3 (stream Message writer)
+2019-06-20 04:44:55.341836 W | rafthttp: closed an existing TCP streaming connection with peer 3 (stream MsgApp v2 writer)
+2019-06-20 04:44:55.342062 I | rafthttp: established a TCP streaming connection with peer 3 (stream MsgApp v2 writer)
+raft2019/06/20 04:44:56 INFO: 2 is starting a new election at term 35
+raft2019/06/20 04:44:56 INFO: 2 became candidate at term 36
+raft2019/06/20 04:44:56 INFO: 2 received MsgVoteResp from 2 at term 36
+raft2019/06/20 04:44:56 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 1 at term 36
+raft2019/06/20 04:44:56 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 3 at term 36
+raft2019/06/20 04:44:56 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 4 at term 36
+raft2019/06/20 04:44:56 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 5 at term 36
+raft2019/06/20 04:44:56 INFO: 2 received MsgVoteResp from 4 at term 36
+raft2019/06/20 04:44:56 INFO: 2 [quorum:3] has received 2 MsgVoteResp votes and 0 vote rejections
+raft2019/06/20 04:44:56 INFO: 2 received MsgVoteResp rejection from 3 at term 36
+raft2019/06/20 04:44:56 INFO: 2 [quorum:3] has received 2 MsgVoteResp votes and 1 vote rejections
+raft2019/06/20 04:44:57 INFO: 2 is starting a new election at term 36
+raft2019/06/20 04:44:57 INFO: 2 became candidate at term 37
+raft2019/06/20 04:44:57 INFO: 2 received MsgVoteResp from 2 at term 37
+raft2019/06/20 04:44:57 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 1 at term 37
+raft2019/06/20 04:44:57 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 3 at term 37
+raft2019/06/20 04:44:57 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 4 at term 37
+raft2019/06/20 04:44:57 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 5 at term 37
+raft2019/06/20 04:44:57 INFO: 2 received MsgVoteResp rejection from 3 at term 37
+raft2019/06/20 04:44:57 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 1 vote rejections
+raft2019/06/20 04:44:57 INFO: 2 received MsgVoteResp from 4 at term 37
+raft2019/06/20 04:44:57 INFO: 2 [quorum:3] has received 2 MsgVoteResp votes and 1 vote rejections
+TRACE[06-20|04:44:58.005] Accepted connection                      addr=10.50.0.6:40296
+raft2019/06/20 04:44:59 INFO: 2 is starting a new election at term 37
+raft2019/06/20 04:44:59 INFO: 2 became candidate at term 38
+raft2019/06/20 04:44:59 INFO: 2 received MsgVoteResp from 2 at term 38
+raft2019/06/20 04:44:59 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 4 at term 38
+raft2019/06/20 04:44:59 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 5 at term 38
+raft2019/06/20 04:44:59 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 1 at term 38
+raft2019/06/20 04:44:59 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 3 at term 38
+TRACE[06-20|04:44:59.159] Failed RLPx handshake                    addr=10.50.0.6:22001 conn=staticdial err="read tcp 10.50.0.3:38264->10.50.0.6:22001: i/o timeout"
+TRACE[06-20|04:44:59.160] Setting up connection failed             id=0000000000000000 err="read tcp 10.50.0.3:38264->10.50.0.6:22001: i/o timeout"
+TRACE[06-20|04:44:59.160] Dial error                               task="staticdial 1da5e54ff64b475f 10.50.0.6:22001" err="read tcp 10.50.0.3:38264->10.50.0.6:22001: i/o timeout"
+TRACE[06-20|04:44:59.160] Dial task done                           task="staticdial 1da5e54ff64b475f 10.50.0.6:22001"
+TRACE[06-20|04:44:59.160] New dial task                            task="wait for dial hist expire (25.575758014s)"
+raft2019/06/20 04:44:59 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 3 [logterm: 17, index: 14] at term 38
+raft2019/06/20 04:44:59 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 4 [logterm: 6, index: 9] at term 38
+raft2019/06/20 04:44:59 INFO: 2 received MsgVoteResp rejection from 4 at term 38
+raft2019/06/20 04:44:59 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 1 vote rejections
+2019-06-20 04:44:59.748419 W | rafthttp: lost the TCP streaming connection with peer 1 (stream MsgApp v2 writer)
+2019-06-20 04:45:00.469232 I | rafthttp: peer 5 became active
+2019-06-20 04:45:00.469382 I | rafthttp: established a TCP streaming connection with peer 5 (stream Message reader)
+2019-06-20 04:45:00.472981 I | rafthttp: established a TCP streaming connection with peer 5 (stream MsgApp v2 reader)
+raft2019/06/20 04:45:00 INFO: 2 [term: 38] received a MsgVote message with higher term from 3 [term: 39]
+raft2019/06/20 04:45:00 INFO: 2 became follower at term 39
+raft2019/06/20 04:45:00 INFO: 2 [logterm: 8, index: 10, vote: 0] cast MsgVote for 3 [logterm: 17, index: 14] at term 39
+raft2019/06/20 04:45:00 INFO: 2 [logterm: 8, index: 10, vote: 3] rejected MsgVote from 4 [logterm: 6, index: 9] at term 39
+2019-06-20 04:45:01.043002 I | rafthttp: established a TCP streaming connection with peer 5 (stream MsgApp v2 writer)
+2019-06-20 04:45:02.243538 W | rafthttp: lost the TCP streaming connection with peer 1 (stream Message writer)
+INFO [06-20|04:45:02.243] peer is currently unreachable            peer id=1
+INFO [06-20|04:45:02.259] peer is currently unreachable            peer id=1
+raft2019/06/20 04:45:02 INFO: 2 [term: 39] received a MsgVote message with higher term from 3 [term: 40]
+raft2019/06/20 04:45:02 INFO: 2 became follower at term 40
+raft2019/06/20 04:45:02 INFO: 2 [logterm: 8, index: 10, vote: 0] cast MsgVote for 3 [logterm: 17, index: 14] at term 40
+TRACE[06-20|04:45:02.538] Quorum permissioning                     id=1da5e54ff64b475f addr=10.50.0.6:40296 conn=inbound    EnableNodePermission=false DataDir=/node2/node/qdata Current Node ID=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e Node Name=Geth/v1.8.12-stable/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=1da5e54ff64b475f Connection String=1da5e54ff64b475f4ffa3d6581cdc1b576eef942f77d7489a9d23f36c028aaed3e312137d06e51d359222a951ecdeca571b1c6a0d0cc3a3839dfc31904da002d
+TRACE[06-20|04:45:02.538] Node Permissioning is Disabled.          id=1da5e54ff64b475f addr=10.50.0.6:40296 conn=inbound
+TRACE[06-20|04:45:03.005] Failed proto handshake                   id=1da5e54ff64b475f addr=10.50.0.6:40296 conn=inbound    err="read tcp 10.50.0.3:22001->10.50.0.6:40296: i/o timeout"
+TRACE[06-20|04:45:03.006] Setting up connection failed             id=1da5e54ff64b475f err="read tcp 10.50.0.3:22001->10.50.0.6:40296: i/o timeout"
+raft2019/06/20 04:45:04 INFO: 2 is starting a new election at term 40
+raft2019/06/20 04:45:04 INFO: 2 became candidate at term 41
+raft2019/06/20 04:45:04 INFO: 2 received MsgVoteResp from 2 at term 41
+raft2019/06/20 04:45:04 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 3 at term 41
+raft2019/06/20 04:45:04 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 4 at term 41
+raft2019/06/20 04:45:04 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 5 at term 41
+raft2019/06/20 04:45:04 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 1 at term 41
+raft2019/06/20 04:45:04 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 3 [logterm: 17, index: 14] at term 41
+raft2019/06/20 04:45:04 INFO: 2 received MsgVoteResp rejection from 4 at term 41
+raft2019/06/20 04:45:04 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 1 vote rejections
+raft2019/06/20 04:45:04 INFO: 2 received MsgVoteResp rejection from 3 at term 41
+raft2019/06/20 04:45:04 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 2 vote rejections
+raft2019/06/20 04:45:05 INFO: 2 [term: 41] received a MsgVote message with higher term from 3 [term: 42]
+raft2019/06/20 04:45:05 INFO: 2 became follower at term 42
+raft2019/06/20 04:45:05 INFO: 2 [logterm: 8, index: 10, vote: 0] cast MsgVote for 3 [logterm: 17, index: 14] at term 42
+2019-06-20 04:45:05.470225 W | rafthttp: lost the TCP streaming connection with peer 5 (stream Message reader)
+2019-06-20 04:45:05.470330 E | rafthttp: failed to read 5 on stream Message (read tcp 10.50.0.3:41516->10.50.0.6:22003: i/o timeout)
+2019-06-20 04:45:05.470361 I | rafthttp: peer 5 became inactive
+raft2019/06/20 04:45:05 INFO: 2 [logterm: 8, index: 10, vote: 3] rejected MsgVote from 4 [logterm: 6, index: 9] at term 42
+raft2019/06/20 04:45:06 INFO: 2 [term: 42] received a MsgVote message with higher term from 3 [term: 43]
+raft2019/06/20 04:45:06 INFO: 2 became follower at term 43
+raft2019/06/20 04:45:06 INFO: 2 [logterm: 8, index: 10, vote: 0] cast MsgVote for 3 [logterm: 17, index: 14] at term 43
+2019-06-20 04:45:07.210925 W | rafthttp: lost the TCP streaming connection with peer 5 (stream Message writer)
+INFO [06-20|04:45:07.211] peer is currently unreachable            peer id=5
+2019-06-20 04:45:07.211172 I | rafthttp: peer 5 became active
+2019-06-20 04:45:07.211218 I | rafthttp: established a TCP streaming connection with peer 5 (stream Message writer)
+INFO [06-20|04:45:07.216] peer is currently unreachable            peer id=1
+2019-06-20 04:45:07.782288 I | rafthttp: established a TCP streaming connection with peer 5 (stream Message reader)
+raft2019/06/20 04:45:08 INFO: 2 is starting a new election at term 43
+raft2019/06/20 04:45:08 INFO: 2 became candidate at term 44
+raft2019/06/20 04:45:08 INFO: 2 received MsgVoteResp from 2 at term 44
+raft2019/06/20 04:45:08 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 3 at term 44
+raft2019/06/20 04:45:08 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 4 at term 44
+raft2019/06/20 04:45:08 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 5 at term 44
+raft2019/06/20 04:45:08 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 1 at term 44
+raft2019/06/20 04:45:08 INFO: 2 [term: 44] ignored a MsgVote message with lower term from 4 [term: 43]
+INFO [06-20|04:45:09.105] peer is currently unreachable            peer id=1
+raft2019/06/20 04:45:09 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 3 [logterm: 17, index: 14] at term 44
+raft2019/06/20 04:45:09 INFO: 2 received MsgVoteResp rejection from 3 at term 44
+raft2019/06/20 04:45:09 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 1 vote rejections
+raft2019/06/20 04:45:09 INFO: 2 received MsgVoteResp from 4 at term 44
+raft2019/06/20 04:45:09 INFO: 2 [quorum:3] has received 2 MsgVoteResp votes and 1 vote rejections
+2019-06-20 04:45:09.801354 W | rafthttp: lost the TCP streaming connection with peer 5 (stream MsgApp v2 reader)
+2019-06-20 04:45:09.801469 E | rafthttp: failed to read 5 on stream MsgApp v2 (read tcp 10.50.0.3:41502->10.50.0.6:22003: i/o timeout)
+2019-06-20 04:45:09.801519 I | rafthttp: peer 5 became inactive
+raft2019/06/20 04:45:10 INFO: 2 is starting a new election at term 44
+raft2019/06/20 04:45:10 INFO: 2 became candidate at term 45
+raft2019/06/20 04:45:10 INFO: 2 received MsgVoteResp from 2 at term 45
+raft2019/06/20 04:45:10 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 1 at term 45
+raft2019/06/20 04:45:10 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 3 at term 45
+raft2019/06/20 04:45:10 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 4 at term 45
+raft2019/06/20 04:45:10 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 5 at term 45
+2019-06-20 04:45:10.908960 I | rafthttp: peer 5 became active
+2019-06-20 04:45:10.909038 I | rafthttp: established a TCP streaming connection with peer 5 (stream MsgApp v2 reader)
+raft2019/06/20 04:45:10 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 3 [logterm: 17, index: 14] at term 45
+raft2019/06/20 04:45:10 INFO: 2 received MsgVoteResp rejection from 3 at term 45
+raft2019/06/20 04:45:10 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 1 vote rejections
+INFO [06-20|04:45:10.984] peer is currently unreachable            peer id=1
+raft2019/06/20 04:45:10 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 4 [logterm: 6, index: 9] at term 45
+raft2019/06/20 04:45:10 INFO: 2 received MsgVoteResp rejection from 4 at term 45
+raft2019/06/20 04:45:10 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 2 vote rejections
+raft2019/06/20 04:45:12 INFO: 2 is starting a new election at term 45
+raft2019/06/20 04:45:12 INFO: 2 became candidate at term 46
+raft2019/06/20 04:45:12 INFO: 2 received MsgVoteResp from 2 at term 46
+raft2019/06/20 04:45:12 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 1 at term 46
+raft2019/06/20 04:45:12 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 3 at term 46
+raft2019/06/20 04:45:12 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 4 at term 46
+raft2019/06/20 04:45:12 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 5 at term 46
+raft2019/06/20 04:45:12 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 4 [logterm: 6, index: 9] at term 46
+raft2019/06/20 04:45:12 INFO: 2 received MsgVoteResp rejection from 4 at term 46
+raft2019/06/20 04:45:12 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 1 vote rejections
+2019-06-20 04:45:12.782739 W | rafthttp: lost the TCP streaming connection with peer 5 (stream Message reader)
+2019-06-20 04:45:12.782830 E | rafthttp: failed to read 5 on stream Message (read tcp 10.50.0.3:42200->10.50.0.6:22003: i/o timeout)
+2019-06-20 04:45:12.782862 I | rafthttp: peer 5 became inactive
+raft2019/06/20 04:45:12 INFO: 2 received MsgVoteResp rejection from 3 at term 46
+raft2019/06/20 04:45:12 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 2 vote rejections
+INFO [06-20|04:45:12.967] peer is currently unreachable            peer id=1
+2019-06-20 04:45:13.279705 I | rafthttp: peer 5 became active
+2019-06-20 04:45:13.279772 I | rafthttp: established a TCP streaming connection with peer 5 (stream Message reader)
+raft2019/06/20 04:45:13 INFO: 2 is starting a new election at term 46
+raft2019/06/20 04:45:13 INFO: 2 became candidate at term 47
+raft2019/06/20 04:45:13 INFO: 2 received MsgVoteResp from 2 at term 47
+raft2019/06/20 04:45:13 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 1 at term 47
+raft2019/06/20 04:45:13 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 3 at term 47
+raft2019/06/20 04:45:13 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 4 at term 47
+raft2019/06/20 04:45:13 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 5 at term 47
+DEBUG[06-20|04:45:14.138] Recalculated downloader QoS values       rtt=20s confidence=0.750 ttl=1m0s
+raft2019/06/20 04:45:14 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 3 [logterm: 17, index: 14] at term 47
+raft2019/06/20 04:45:14 INFO: 2 received MsgVoteResp rejection from 3 at term 47
+raft2019/06/20 04:45:14 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 1 vote rejections
+INFO [06-20|04:45:14.570] peer is currently unreachable            peer id=1
+raft2019/06/20 04:45:14 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 4 [logterm: 6, index: 9] at term 47
+raft2019/06/20 04:45:14 INFO: 2 received MsgVoteResp rejection from 4 at term 47
+raft2019/06/20 04:45:14 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 2 vote rejections
+raft2019/06/20 04:45:15 INFO: 2 is starting a new election at term 47
+raft2019/06/20 04:45:15 INFO: 2 became candidate at term 48
+raft2019/06/20 04:45:15 INFO: 2 received MsgVoteResp from 2 at term 48
+raft2019/06/20 04:45:15 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 1 at term 48
+raft2019/06/20 04:45:15 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 3 at term 48
+raft2019/06/20 04:45:15 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 4 at term 48
+raft2019/06/20 04:45:15 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 5 at term 48
+2019-06-20 04:45:16.109575 W | rafthttp: lost the TCP streaming connection with peer 5 (stream MsgApp v2 reader)
+2019-06-20 04:45:16.125895 E | rafthttp: failed to read 5 on stream MsgApp v2 (read tcp 10.50.0.3:42594->10.50.0.6:22003: i/o timeout)
+2019-06-20 04:45:16.125976 I | rafthttp: peer 5 became inactive
+INFO [06-20|04:45:16.391] peer is currently unreachable            peer id=1
+raft2019/06/20 04:45:16 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 4 [logterm: 6, index: 9] at term 48
+raft2019/06/20 04:45:16 INFO: 2 received MsgVoteResp rejection from 4 at term 48
+raft2019/06/20 04:45:16 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 1 vote rejections
+raft2019/06/20 04:45:16 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 3 [logterm: 17, index: 14] at term 48
+raft2019/06/20 04:45:16 INFO: 2 received MsgVoteResp rejection from 3 at term 48
+raft2019/06/20 04:45:16 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 2 vote rejections
+2019-06-20 04:45:16.508351 I | rafthttp: peer 5 became active
+2019-06-20 04:45:16.508472 I | rafthttp: established a TCP streaming connection with peer 5 (stream MsgApp v2 reader)
+raft2019/06/20 04:45:17 INFO: 2 is starting a new election at term 48
+raft2019/06/20 04:45:17 INFO: 2 became candidate at term 49
+raft2019/06/20 04:45:17 INFO: 2 received MsgVoteResp from 2 at term 49
+raft2019/06/20 04:45:17 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 1 at term 49
+raft2019/06/20 04:45:17 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 3 at term 49
+raft2019/06/20 04:45:17 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 4 at term 49
+raft2019/06/20 04:45:17 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 5 at term 49
+raft2019/06/20 04:45:18 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 3 [logterm: 17, index: 14] at term 49
+raft2019/06/20 04:45:18 INFO: 2 received MsgVoteResp rejection from 3 at term 49
+raft2019/06/20 04:45:18 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 1 vote rejections
+INFO [06-20|04:45:18.165] peer is currently unreachable            peer id=1
+2019-06-20 04:45:18.280179 W | rafthttp: lost the TCP streaming connection with peer 5 (stream Message reader)
+2019-06-20 04:45:18.280269 E | rafthttp: failed to read 5 on stream Message (read tcp 10.50.0.3:42860->10.50.0.6:22003: i/o timeout)
+2019-06-20 04:45:18.280300 I | rafthttp: peer 5 became inactive
+raft2019/06/20 04:45:18 INFO: 2 received MsgVoteResp from 4 at term 49
+raft2019/06/20 04:45:18 INFO: 2 [quorum:3] has received 2 MsgVoteResp votes and 1 vote rejections
+raft2019/06/20 04:45:19 INFO: 2 is starting a new election at term 49
+raft2019/06/20 04:45:19 INFO: 2 became candidate at term 50
+raft2019/06/20 04:45:19 INFO: 2 received MsgVoteResp from 2 at term 50
+raft2019/06/20 04:45:19 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 1 at term 50
+raft2019/06/20 04:45:19 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 3 at term 50
+raft2019/06/20 04:45:19 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 4 at term 50
+raft2019/06/20 04:45:19 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 5 at term 50
+raft2019/06/20 04:45:20 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 3 [logterm: 17, index: 14] at term 50
+INFO [06-20|04:45:20.104] peer is currently unreachable            peer id=1
+raft2019/06/20 04:45:20 INFO: 2 received MsgVoteResp rejection from 3 at term 50
+raft2019/06/20 04:45:20 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 1 vote rejections
+raft2019/06/20 04:45:20 INFO: 2 received MsgVoteResp from 4 at term 50
+raft2019/06/20 04:45:20 INFO: 2 [quorum:3] has received 2 MsgVoteResp votes and 1 vote rejections
+2019-06-20 04:45:20.298411 I | rafthttp: peer 5 became active
+2019-06-20 04:45:20.379709 I | rafthttp: established a TCP streaming connection with peer 5 (stream Message reader)
+raft2019/06/20 04:45:20 INFO: 2 [term: 50] ignored a MsgVoteResp message with lower term from 5 [term: 46]
+raft2019/06/20 04:45:20 INFO: 2 [term: 50] ignored a MsgVoteResp message with lower term from 5 [term: 47]
+raft2019/06/20 04:45:21 INFO: 2 [term: 50] ignored a MsgVoteResp message with lower term from 5 [term: 48]
+raft2019/06/20 04:45:21 INFO: 2 [term: 50] ignored a MsgVoteResp message with lower term from 5 [term: 49]
+raft2019/06/20 04:45:21 INFO: 2 received MsgVoteResp rejection from 5 at term 50
+raft2019/06/20 04:45:21 INFO: 2 [quorum:3] has received 2 MsgVoteResp votes and 2 vote rejections
+raft2019/06/20 04:45:21 INFO: 2 is starting a new election at term 50
+raft2019/06/20 04:45:21 INFO: 2 became candidate at term 51
+raft2019/06/20 04:45:21 INFO: 2 received MsgVoteResp from 2 at term 51
+raft2019/06/20 04:45:21 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 1 at term 51
+raft2019/06/20 04:45:21 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 3 at term 51
+raft2019/06/20 04:45:21 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 4 at term 51
+raft2019/06/20 04:45:21 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 5 at term 51
+raft2019/06/20 04:45:22 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 4 [logterm: 6, index: 9] at term 51
+raft2019/06/20 04:45:22 INFO: 2 received MsgVoteResp rejection from 4 at term 51
+raft2019/06/20 04:45:22 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 1 vote rejections
+INFO [06-20|04:45:22.012] peer is currently unreachable            peer id=1
+raft2019/06/20 04:45:22 INFO: 2 received MsgVoteResp from 5 at term 51
+raft2019/06/20 04:45:22 INFO: 2 [quorum:3] has received 2 MsgVoteResp votes and 1 vote rejections
+raft2019/06/20 04:45:22 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 3 [logterm: 17, index: 14] at term 51
+raft2019/06/20 04:45:22 INFO: 2 received MsgVoteResp rejection from 3 at term 51
+raft2019/06/20 04:45:22 INFO: 2 [quorum:3] has received 2 MsgVoteResp votes and 2 vote rejections
+raft2019/06/20 04:45:22 INFO: 2 is starting a new election at term 51
+raft2019/06/20 04:45:22 INFO: 2 became candidate at term 52
+raft2019/06/20 04:45:22 INFO: 2 received MsgVoteResp from 2 at term 52
+raft2019/06/20 04:45:22 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 3 at term 52
+raft2019/06/20 04:45:22 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 4 at term 52
+raft2019/06/20 04:45:22 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 5 at term 52
+raft2019/06/20 04:45:22 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 1 at term 52
+INFO [06-20|04:45:23.405] peer is currently unreachable            peer id=1
+raft2019/06/20 04:45:23 INFO: 2 received MsgVoteResp rejection from 3 at term 52
+raft2019/06/20 04:45:23 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 1 vote rejections
+raft2019/06/20 04:45:23 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 5 [logterm: 6, index: 9] at term 52
+raft2019/06/20 04:45:23 INFO: 2 received MsgVoteResp rejection from 5 at term 52
+raft2019/06/20 04:45:23 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 2 vote rejections
+raft2019/06/20 04:45:23 INFO: 2 received MsgVoteResp from 4 at term 52
+raft2019/06/20 04:45:23 INFO: 2 [quorum:3] has received 2 MsgVoteResp votes and 2 vote rejections
+2019-06-20 04:45:23.938920 W | rafthttp: health check for peer 1 could not connect: dial tcp 10.50.0.2:22003: connect: connection refused
+TRACE[06-20|04:45:24.740] Dial task done                           task="wait for dial hist expire (25.575758014s)"
+raft2019/06/20 04:45:24 INFO: 2 is starting a new election at term 52
+raft2019/06/20 04:45:24 INFO: 2 became candidate at term 53
+raft2019/06/20 04:45:24 INFO: 2 received MsgVoteResp from 2 at term 53
+raft2019/06/20 04:45:24 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 3 at term 53
+raft2019/06/20 04:45:24 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 4 at term 53
+raft2019/06/20 04:45:24 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 5 at term 53
+raft2019/06/20 04:45:24 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 1 at term 53
+TRACE[06-20|04:45:24.740] New dial task                            task="wait for dial hist expire (11.1695ms)"
+TRACE[06-20|04:45:24.949] Dial task done                           task="wait for dial hist expire (11.1695ms)"
+TRACE[06-20|04:45:24.949] New dial task                            task="staticdial 53f17d79f3b36441 10.50.0.3:22001"
+TRACE[06-20|04:45:24.950] Accepted connection                      addr=10.50.0.3:35098
+INFO [06-20|04:45:25.002] peer is currently unreachable            peer id=1
+raft2019/06/20 04:45:25 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 5 [logterm: 6, index: 9] at term 53
+raft2019/06/20 04:45:25 INFO: 2 received MsgVoteResp rejection from 5 at term 53
+raft2019/06/20 04:45:25 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 1 vote rejections
+TRACE[06-20|04:45:25.479] Quorum permissioning                     id=53f17d79f3b36441 addr=10.50.0.3:35098 conn=inbound    EnableNodePermission=false DataDir=/node2/node/qdata Current Node ID=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e Node Name=Geth/v1.8.12-stable/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=53f17d79f3b36441 Connection String=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e
+TRACE[06-20|04:45:25.551] Node Permissioning is Disabled.          id=53f17d79f3b36441 addr=10.50.0.3:35098 conn=inbound
+TRACE[06-20|04:45:25.551] New dial task                            task="staticdial b6976a6e71bd65ac 10.50.0.2:22001"
+TRACE[06-20|04:45:25.552] Rejected peer before protocol handshake  id=53f17d79f3b36441 addr=10.50.0.3:35098 conn=inbound    err="connected to self"
+TRACE[06-20|04:45:25.962] Quorum permissioning                     id=53f17d79f3b36441 addr=10.50.0.3:22001 conn=staticdial EnableNodePermission=false DataDir=/node2/node/qdata Current Node ID=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e Node Name=Geth/v1.8.12-stable/linux-amd64/go1.10.2 Dialed Dest="enode://53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e@10.50.0.3:22001?discport=0&raftport=22003" Connection ID=53f17d79f3b36441 Connection String=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e
+TRACE[06-20|04:45:25.962] Node Permissioning is Disabled.          id=53f17d79f3b36441 addr=10.50.0.3:22001 conn=staticdial
+TRACE[06-20|04:45:25.963] Rejected peer before protocol handshake  id=53f17d79f3b36441 addr=10.50.0.3:22001 conn=staticdial err="connected to self"
+raft2019/06/20 04:45:26 INFO: 2 received MsgVoteResp rejection from 3 at term 53
+raft2019/06/20 04:45:26 INFO: 2 [quorum:3] has received 1 MsgVoteResp votes and 2 vote rejections
+raft2019/06/20 04:45:26 INFO: 2 received MsgVoteResp from 4 at term 53
+raft2019/06/20 04:45:26 INFO: 2 [quorum:3] has received 2 MsgVoteResp votes and 2 vote rejections
+raft2019/06/20 04:45:26 INFO: 2 [term: 53] received a MsgVote message with higher term from 5 [term: 54]
+raft2019/06/20 04:45:26 INFO: 2 became follower at term 54
+raft2019/06/20 04:45:26 INFO: 2 [logterm: 8, index: 10, vote: 0] rejected MsgVote from 5 [logterm: 6, index: 9] at term 54
+TRACE[06-20|04:45:26.126] Dial error                               task="staticdial b6976a6e71bd65ac 10.50.0.2:22001" err="dial tcp 10.50.0.2:22001: connect: connection refused"
+DEBUG[06-20|04:45:26.535] Can't resolve node                       id=b6976a6e71bd65ac err="discovery is disabled"
+TRACE[06-20|04:45:26.541] Dial task done                           task="staticdial b6976a6e71bd65ac 10.50.0.2:22001"
+TRACE[06-20|04:45:26.347] Setting up connection failed             id=53f17d79f3b36441 err="connected to self"
+TRACE[06-20|04:45:26.541] Dial error                               task="staticdial 53f17d79f3b36441 10.50.0.3:22001" err="connected to self"
+TRACE[06-20|04:45:26.541] Dial task done                           task="staticdial 53f17d79f3b36441 10.50.0.3:22001"
+TRACE[06-20|04:45:26.541] New dial task                            task="wait for dial hist expire (2.619035304s)"
+TRACE[06-20|04:45:26.374] Setting up connection failed             id=53f17d79f3b36441 err="connected to self"
+raft2019/06/20 04:45:28 INFO: 2 is starting a new election at term 54
+raft2019/06/20 04:45:28 INFO: 2 became candidate at term 55
+raft2019/06/20 04:45:30 INFO: 2 received MsgVoteResp from 2 at term 55
+2019-06-20 04:45:30.854883 W | rafthttp: health check for peer 1 could not connect: dial tcp 10.50.0.2:22003: connect: connection refused
+raft2019/06/20 04:45:30 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 4 at term 55
+raft2019/06/20 04:45:30 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 5 at term 55
+raft2019/06/20 04:45:30 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 1 at term 55
+raft2019/06/20 04:45:30 INFO: 2 [logterm: 8, index: 10] sent MsgVote request to 3 at term 55
+raft2019/06/20 04:45:30 INFO: 2 [logterm: 8, index: 10, vote: 2] rejected MsgVote from 5 [logterm: 6, index: 9] at term 55
+TRACE[06-20|04:45:30.924] Dial task done                           task="wait for dial hist expire (2.619035304s)"
+2019-06-20 04:45:38.822680 W | rafthttp: lost the TCP streaming connection with peer 3 (stream MsgApp v2 reader)
+2019-06-20 04:45:51.734806 W | rafthttp: lost the TCP streaming connection with peer 3 (stream Message reader)
+2019-06-20 04:46:20.897523 W | rafthttp: lost the TCP streaming connection with peer 4 (stream Message reader)
+DEBUG[06-20|04:45:38.852] Recalculated downloader QoS values       rtt=20s confidence=0.875 ttl=1m0s
+raft2019/06/20 04:48:30 INFO: 2 is starting a new election at term 55
+[*] Starting node2 node
+[*] Waiting for Constellation/Tessera to start...
+[*] Starting node2 node
+[*] geth --verbosity 6 --datadir qdata --raft --nodiscover --gcmode=archive --networkid 36934 --rpc --rpcaddr 0.0.0.0 --rpcapi admin,db,eth,debug,miner,net,shh,txpool,personal,web3,quorum,raft --emitcheckpoints --raftport 22003 --rpcport 22000 --port 22001 --nat extip:10.50.0.3
+WARN [06-20|04:52:25.488] Sanitizing cache to Go's GC limits       provided=1024 updated=641
+DEBUG[06-20|04:52:25.488] Sanitizing Go's GC trigger               percent=100
+INFO [06-20|04:52:25.489] Maximum peer count                       ETH=25 LES=0 total=25
+TRACE[06-20|04:52:25.490] Started watching keystore folder         path=/node2/node/qdata/keystore
+DEBUG[06-20|04:52:25.490] FS scan times                            list=728.08µs set=14.101µs diff=9.885µs
+TRACE[06-20|04:52:25.491] Handled keystore changes                 time=537.881µs
+INFO [06-20|04:52:25.494] Starting peer-to-peer node               instance=Geth/v1.8.12-stable/linux-amd64/go1.10.2
+INFO [06-20|04:52:25.494] Allocated cache and file handles         database=/node2/node/qdata/geth/chaindata cache=480 handles=524288
+INFO [06-20|04:52:25.535] Initialised chain configuration          config="{ChainID: 36934 Homestead: 0 DAO: <nil> DAOSupport: false EIP150: 1 EIP155: 0 EIP158: 1 Byzantium: 1 IsQuorum: true Constantinople: <nil> Engine: unknown}"
+WARN [06-20|04:52:25.535] Ethash used in full fake mode 
+INFO [06-20|04:52:25.535] Initialising Ethereum protocol           versions="[63 62]" network=36934
+INFO [06-20|04:52:25.537] Loaded most recent local header          number=1 hash=1642fe…128b89 td=131072
+INFO [06-20|04:52:25.537] Loaded most recent local full block      number=1 hash=1642fe…128b89 td=131072
+INFO [06-20|04:52:25.537] Loaded most recent local fast block      number=1 hash=1642fe…128b89 td=131072
+DEBUG[06-20|04:52:25.537] Reinjecting stale transactions           count=0
+INFO [06-20|04:52:25.538] Loaded local transaction journal         transactions=0 dropped=0
+INFO [06-20|04:52:25.538] Regenerated local transaction journal    transactions=0 accounts=0
+WARN [06-20|04:52:25.538] Blockchain not empty, fast sync disabled 
+DEBUG[06-20|04:52:25.539] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+INFO [06-20|04:52:25.568] Starting P2P networking 
+INFO [06-20|04:52:25.568] starting raft protocol handler 
+INFO [06-20|04:52:25.569] RLPx listener up                         self="enode://53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e@[::]:22001?discport=0"
+INFO [06-20|04:52:25.570] Mapped network port                      proto=tcp extport=22001 intport=22001 interface=ExtIP(10.50.0.3)
+TRACE[06-20|04:52:25.570] New dial task                            task="staticdial d13780ba2b8daf50 10.50.0.4:22001"
+TRACE[06-20|04:52:25.571] New dial task                            task="staticdial 9f5a916121dd31ad 10.50.0.5:22001"
+TRACE[06-20|04:52:25.571] New dial task                            task="staticdial 1da5e54ff64b475f 10.50.0.6:22001"
+TRACE[06-20|04:52:25.571] New dial task                            task="staticdial b6976a6e71bd65ac 10.50.0.2:22001"
+TRACE[06-20|04:52:25.571] New dial task                            task="staticdial 53f17d79f3b36441 10.50.0.3:22001"
+INFO [06-20|04:52:25.570] loaded the latest applied index          lastAppliedIndex=9
+TRACE[06-20|04:52:25.572] Accepted connection                      addr=10.50.0.3:41358
+INFO [06-20|04:52:25.574] loading snapshot 
+INFO [06-20|04:52:25.574] applying snapshot to raft storage 
+INFO [06-20|04:52:25.574] updating cluster membership per raft snapshot 
+INFO [06-20|04:52:25.574] adding new raft peer                     raft id=1
+2019-06-20 04:52:25.575021 I | rafthttp: starting peer 1...
+2019-06-20 04:52:25.575105 I | rafthttp: started HTTP pipelining with peer 1
+TRACE[06-20|04:52:25.575] Dial error                               task="staticdial 9f5a916121dd31ad 10.50.0.5:22001" err="dial tcp 10.50.0.5:22001: connect: connection refused"
+DEBUG[06-20|04:52:25.575] Can't resolve node                       id=9f5a916121dd31ad err="discovery is disabled"
+TRACE[06-20|04:52:25.575] Dial error                               task="staticdial 1da5e54ff64b475f 10.50.0.6:22001" err="dial tcp 10.50.0.6:22001: connect: connection refused"
+DEBUG[06-20|04:52:25.576] Can't resolve node                       id=1da5e54ff64b475f err="discovery is disabled"
+TRACE[06-20|04:52:25.576] Adding static node                       node="enode://b6976a6e71bd65acffb60d194d48b51ed070bc52aed790c195e5746d4844f5ac863b740d81fc46e042dc62e084745650dfcb2f8b970528e8a734a4c36a836a8a@10.50.0.2:22001?discport=0"
+TRACE[06-20|04:52:25.577] Dial task done                           task="staticdial 9f5a916121dd31ad 10.50.0.5:22001"
+TRACE[06-20|04:52:25.577] Dial task done                           task="staticdial 1da5e54ff64b475f 10.50.0.6:22001"
+2019-06-20 04:52:25.580761 I | rafthttp: started peer 1
+2019-06-20 04:52:25.580867 I | rafthttp: added peer 1
+INFO [06-20|04:52:25.580] adding new raft peer                     raft id=3
+2019-06-20 04:52:25.581044 I | rafthttp: starting peer 3...
+2019-06-20 04:52:25.581092 I | rafthttp: started HTTP pipelining with peer 3
+2019-06-20 04:52:25.586421 I | rafthttp: started streaming with peer 1 (stream Message reader)
+2019-06-20 04:52:25.586741 I | rafthttp: started peer 3
+2019-06-20 04:52:25.586850 I | rafthttp: added peer 3
+INFO [06-20|04:52:25.586] adding new raft peer                     raft id=4
+TRACE[06-20|04:52:25.587] Adding static node                       node="enode://d13780ba2b8daf500e30189fa28b8e6fd20b6b75c9bf6e9ecf579808a16cd11d4241be0a2d007a4e6dd6edb268f754ad97313d3d3d5b739b0b0eac90c31c0cb0@10.50.0.4:22001?discport=0"
+TRACE[06-20|04:52:25.587] Adding static node                       node="enode://9f5a916121dd31ad9da95fd4bc9feb6e4b8ab6986982609528f95da5e24f638cbda9f1ae313d54adf8560fcb37ed91ff071c25448605f14961cf8da942b36fad@10.50.0.5:22001?discport=0"
+2019-06-20 04:52:25.587303 I | rafthttp: started streaming with peer 1 (writer)
+2019-06-20 04:52:25.587385 I | rafthttp: started streaming with peer 3 (writer)
+2019-06-20 04:52:25.587421 I | rafthttp: starting peer 4...
+2019-06-20 04:52:25.587468 I | rafthttp: started HTTP pipelining with peer 4
+2019-06-20 04:52:25.587559 I | rafthttp: started streaming with peer 1 (stream MsgApp v2 reader)
+2019-06-20 04:52:25.593234 I | rafthttp: peer 1 became active
+2019-06-20 04:52:25.593324 I | rafthttp: started streaming with peer 4 (stream Message reader)
+2019-06-20 04:52:25.593421 I | rafthttp: established a TCP streaming connection with peer 1 (stream Message reader)
+2019-06-20 04:52:25.593550 I | rafthttp: started streaming with peer 3 (stream MsgApp v2 reader)
+2019-06-20 04:52:25.593938 I | rafthttp: started streaming with peer 4 (writer)
+2019-06-20 04:52:25.594008 I | rafthttp: started streaming with peer 4 (writer)
+2019-06-20 04:52:25.594108 I | rafthttp: started streaming with peer 4 (stream MsgApp v2 reader)
+TRACE[06-20|04:52:25.589] Quorum permissioning                     id=53f17d79f3b36441 addr=10.50.0.3:41358 conn=inbound EnableNodePermission=false DataDir=/node2/node/qdata Current Node ID=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e Node Name=Geth/v1.8.12-stable/linux-amd64/go1.10.2 Dialed Dest=nil Connection ID=53f17d79f3b36441 Connection String=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e
+TRACE[06-20|04:52:25.594] Node Permissioning is Disabled.          id=53f17d79f3b36441 addr=10.50.0.3:41358 conn=inbound
+TRACE[06-20|04:52:25.594] Rejected peer before protocol handshake  id=53f17d79f3b36441 addr=10.50.0.3:41358 conn=inbound err="connected to self"
+2019-06-20 04:52:25.594763 I | rafthttp: started peer 4
+2019-06-20 04:52:25.594838 I | rafthttp: added peer 4
+INFO [06-20|04:52:25.594] adding new raft peer                     raft id=5
+2019-06-20 04:52:25.594982 I | rafthttp: starting peer 5...
+2019-06-20 04:52:25.595054 I | rafthttp: started HTTP pipelining with peer 5
+TRACE[06-20|04:52:25.595] Quorum permissioning                     id=d13780ba2b8daf50 addr=10.50.0.4:22001 conn=staticdial EnableNodePermission=false DataDir=/node2/node/qdata Current Node ID=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e Node Name=Geth/v1.8.12-stable/linux-amd64/go1.10.2 Dialed Dest="enode://d13780ba2b8daf500e30189fa28b8e6fd20b6b75c9bf6e9ecf579808a16cd11d4241be0a2d007a4e6dd6edb268f754ad97313d3d3d5b739b0b0eac90c31c0cb0@10.50.0.4:22001?discport=0&raftport=22003" Connection ID=d13780ba2b8daf50 Connection String=d13780ba2b8daf500e30189fa28b8e6fd20b6b75c9bf6e9ecf579808a16cd11d4241be0a2d007a4e6dd6edb268f754ad97313d3d3d5b739b0b0eac90c31c0cb0
+TRACE[06-20|04:52:25.595] Node Permissioning is Disabled.          id=d13780ba2b8daf50 addr=10.50.0.4:22001 conn=staticdial
+TRACE[06-20|04:52:25.596] Setting up connection failed             id=53f17d79f3b36441 err="connected to self"
+TRACE[06-20|04:52:25.593] Quorum permissioning                     id=b6976a6e71bd65ac addr=10.50.0.2:22001 conn=staticdial EnableNodePermission=false DataDir=/node2/node/qdata Current Node ID=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e Node Name=Geth/v1.8.12-stable/linux-amd64/go1.10.2 Dialed Dest="enode://b6976a6e71bd65acffb60d194d48b51ed070bc52aed790c195e5746d4844f5ac863b740d81fc46e042dc62e084745650dfcb2f8b970528e8a734a4c36a836a8a@10.50.0.2:22001?discport=0&raftport=22003" Connection ID=b6976a6e71bd65ac Connection String=b6976a6e71bd65acffb60d194d48b51ed070bc52aed790c195e5746d4844f5ac863b740d81fc46e042dc62e084745650dfcb2f8b970528e8a734a4c36a836a8a
+TRACE[06-20|04:52:25.596] Node Permissioning is Disabled.          id=b6976a6e71bd65ac addr=10.50.0.2:22001 conn=staticdial
+2019-06-20 04:52:25.597005 I | rafthttp: started streaming with peer 3 (stream Message reader)
+2019-06-20 04:52:25.597515 I | rafthttp: started streaming with peer 3 (writer)
+2019-06-20 04:52:25.597579 I | rafthttp: started streaming with peer 1 (writer)
+2019-06-20 04:52:25.599080 I | rafthttp: peer 3 became active
+2019-06-20 04:52:25.599155 I | rafthttp: established a TCP streaming connection with peer 3 (stream Message reader)
+TRACE[06-20|04:52:25.599] Adding static node                       node="enode://1da5e54ff64b475f4ffa3d6581cdc1b576eef942f77d7489a9d23f36c028aaed3e312137d06e51d359222a951ecdeca571b1c6a0d0cc3a3839dfc31904da002d@10.50.0.6:22001?discport=0"
+2019-06-20 04:52:25.599587 I | rafthttp: established a TCP streaming connection with peer 3 (stream MsgApp v2 reader)
+2019-06-20 04:52:25.600825 I | rafthttp: established a TCP streaming connection with peer 1 (stream MsgApp v2 reader)
+DEBUG[06-20|04:52:25.602] Adding p2p peer                          name=Geth/v1.8.12-stable/... addr=10.50.0.4:22001 peers=1
+TRACE[06-20|04:52:25.602] Starting protocol eth/63                 id=d13780ba2b8daf50 conn=staticdial
+DEBUG[06-20|04:52:25.602] Ethereum peer connected                  id=d13780ba2b8daf50 conn=staticdial name=Geth/v1.8.12-stable/linux-amd64/go1.10.2
+TRACE[06-20|04:52:25.602] connection set up                        id=d13780ba2b8daf50 addr=10.50.0.4:22001 conn=staticdial inbound=false
+TRACE[06-20|04:52:25.602] Dial task done                           task="staticdial d13780ba2b8daf50 10.50.0.4:22001"
+DEBUG[06-20|04:52:25.603] Adding p2p peer                          name=Geth/v1.8.12-stable/...                  addr=10.50.0.2:22001 peers=2
+TRACE[06-20|04:52:25.603] connection set up                        id=b6976a6e71bd65ac addr=10.50.0.2:22001 conn=staticdial inbound=false
+TRACE[06-20|04:52:25.603] Dial task done                           task="staticdial b6976a6e71bd65ac 10.50.0.2:22001"
+TRACE[06-20|04:52:25.603] Starting protocol eth/63                 id=b6976a6e71bd65ac conn=staticdial
+DEBUG[06-20|04:52:25.604] Ethereum peer connected                  id=b6976a6e71bd65ac conn=staticdial name=Geth/v1.8.12-stable/linux-amd64/go1.10.2
+2019-06-20 04:52:25.603834 I | rafthttp: started streaming with peer 5 (writer)
+TRACE[06-20|04:52:25.606] Registering sync peer                    peer=b6976a6e71bd65ac
+TRACE[06-20|04:52:25.607] Registering sync peer                    peer=d13780ba2b8daf50
+DEBUG[06-20|04:52:25.607] Relaxed downloader QoS values            rtt=20s confidence=0.500 ttl=1m0s
+2019-06-20 04:52:25.608460 I | rafthttp: started streaming with peer 5 (writer)
+2019-06-20 04:52:25.608835 I | rafthttp: started peer 5
+2019-06-20 04:52:25.608961 I | rafthttp: added peer 5
+INFO [06-20|04:52:25.608] updated cluster membership 
+2019-06-20 04:52:25.609103 I | rafthttp: started streaming with peer 5 (stream Message reader)
+INFO [06-20|04:52:25.609] blockchain is caught up; no need to synchronize 
+INFO [06-20|04:52:25.609] replaying WAL 
+INFO [06-20|04:52:25.610] loading WAL                              term=0 index=0
+TRACE[06-20|04:52:25.609] Pooled new future transaction            hash=2ed4cd…30b03d from=0xe5645bd4B52ca4D08a04A4F577A9aF347DD9926F to=0x1faDB5864Bb655e4a2BAD70B908DA6A6b1ADE4f7
+TRACE[06-20|04:52:25.611] Promoting queued transaction             hash=2ed4cd…30b03d
+TRACE[06-20|04:52:25.611] Promoting queued transaction             hash=2ed4cd…30b03d
+TRACE[06-20|04:52:25.611] Discarding already known transaction     hash=2ed4cd…30b03d
+2019-06-20 04:52:25.610776 I | rafthttp: started streaming with peer 5 (stream MsgApp v2 reader)
+TRACE[06-20|04:52:25.612] Broadcast transaction                    hash=2ed4cd…30b03d recipients=0
+TRACE[06-20|04:52:25.614] Quorum permissioning                     id=53f17d79f3b36441 addr=10.50.0.3:22001 conn=staticdial EnableNodePermission=false DataDir=/node2/node/qdata Current Node ID=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e Node Name=Geth/v1.8.12-stable/linux-amd64/go1.10.2 Dialed Dest="enode://53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e@10.50.0.3:22001?discport=0&raftport=22003" Connection ID=53f17d79f3b36441 Connection String=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e
+TRACE[06-20|04:52:25.614] Node Permissioning is Disabled.          id=53f17d79f3b36441 addr=10.50.0.3:22001 conn=staticdial
+TRACE[06-20|04:52:25.615] Rejected peer before protocol handshake  id=53f17d79f3b36441 addr=10.50.0.3:22001 conn=staticdial err="connected to self"
+TRACE[06-20|04:52:25.615] Setting up connection failed             id=53f17d79f3b36441 err="connected to self"
+TRACE[06-20|04:52:25.615] Dial error                               task="staticdial 53f17d79f3b36441 10.50.0.3:22001" err="connected to self"
+TRACE[06-20|04:52:25.616] Dial task done                           task="staticdial 53f17d79f3b36441 10.50.0.3:22001"
+TRACE[06-20|04:52:25.616] New dial task                            task="wait for dial hist expire (29.960877517s)"
+INFO [06-20|04:52:25.652] startRaft                                raft ID=2
+INFO [06-20|04:52:25.652] remounting an existing raft log; connecting to peers. 
+raft2019/06/20 04:52:25 INFO: 2 became follower at term 55
+raft2019/06/20 04:52:25 INFO: newRaft 2 [peers: [1,2,3,4,5], term: 55, commit: 9, applied: 9, lastindex: 10, lastterm: 8]
+DEBUG[06-20|04:52:25.653] InProc registered                        service=&{node:0xc42050c780} namespace=admin
+DEBUG[06-20|04:52:25.653] InProc registered                        service=&{node:0xc42050c780} namespace=admin
+DEBUG[06-20|04:52:25.654] InProc registered                        service="&{mu:{state:0 sema:0} cpuW:<nil> cpuFile: traceW:<nil> traceFile:}" namespace=debug
+DEBUG[06-20|04:52:25.654] InProc registered                        service=&{node:0xc42050c780}                                                 namespace=debug
+DEBUG[06-20|04:52:25.654] InProc registered                        service=&{stack:0xc42050c780}                                                namespace=web3
+DEBUG[06-20|04:52:25.654] InProc registered                        service=&{b:0xc42020fce0}                                                    namespace=eth
+DEBUG[06-20|04:52:25.655] InProc registered                        service=&{b:0xc42020fce0}                                                    namespace=eth
+DEBUG[06-20|04:52:25.656] InProc registered                        service="&{b:0xc42020fce0 nonceLock:0xc4200638a0}"                           namespace=eth
+DEBUG[06-20|04:52:25.656] InProc registered                        service=&{b:0xc42020fce0}                                                    namespace=txpool
+DEBUG[06-20|04:52:25.656] InProc registered                        service=&{b:0xc42020fce0}                                                    namespace=debug
+DEBUG[06-20|04:52:25.656] InProc registered                        service=&{b:0xc42020fce0}                                                    namespace=debug
+DEBUG[06-20|04:52:25.656] InProc registered                        service=&{am:0xc4203900d0}                                                   namespace=eth
+DEBUG[06-20|04:52:25.657] InProc registered                        service="&{am:0xc4203900d0 nonceLock:0xc4200638a0 b:0xc42020fce0}"           namespace=personal
+DEBUG[06-20|04:52:25.657] InProc registered                        service=&{e:0xc420234700}                                                    namespace=eth
+DEBUG[06-20|04:52:25.658] InProc registered                        service="&{e:0xc420234700 agent:0xc42038eb00}"                               namespace=eth
+DEBUG[06-20|04:52:25.658] InProc registered                        service="&{d:0xc4202ead00 mux:0xc4201f5530 installSyncSubscription:0xc42021d3e0 uninstallSyncSubscription:0xc42021d440}" namespace=eth
+DEBUG[06-20|04:52:25.658] InProc registered                        service=&{e:0xc420234700}                                                                                                namespace=miner
+DEBUG[06-20|04:52:25.659] InProc registered                        service="&{backend:0xc42020fce0 mux:0xc4201f5530 quit:<nil> chainDb:0xc4200f08f0 events:0xc42f56a6e0 filtersMu:{state:0 sema:0} filters:map[]}" namespace=eth
+DEBUG[06-20|04:52:25.659] InProc registered                        service=&{eth:0xc420234700}                                                                                                                     namespace=admin
+DEBUG[06-20|04:52:25.659] InProc registered                        service=&{eth:0xc420234700}                                                                                                                     namespace=debug
+DEBUG[06-20|04:52:25.660] InProc registered                        service="&{config:0xc42030c090 eth:0xc420234700}"                                                                                               namespace=debug
+DEBUG[06-20|04:52:25.689] InProc registered                        service="&{net:0xc42050ca00 networkVersion:36934}"                                                                                              namespace=net
+DEBUG[06-20|04:52:25.689] InProc registered                        service=&{raftService:0xc4201b43f0}                                                                                                             namespace=raft
+DEBUG[06-20|04:52:25.689] IPC registered                           namespace=admin
+DEBUG[06-20|04:52:25.689] IPC registered                           namespace=admin
+DEBUG[06-20|04:52:25.690] IPC registered                           namespace=debug
+DEBUG[06-20|04:52:25.690] IPC registered                           namespace=debug
+DEBUG[06-20|04:52:25.690] IPC registered                           namespace=web3
+DEBUG[06-20|04:52:25.690] IPC registered                           namespace=eth
+DEBUG[06-20|04:52:25.690] IPC registered                           namespace=eth
+DEBUG[06-20|04:52:25.691] IPC registered                           namespace=eth
+DEBUG[06-20|04:52:25.691] IPC registered                           namespace=txpool
+DEBUG[06-20|04:52:25.691] IPC registered                           namespace=debug
+DEBUG[06-20|04:52:25.691] IPC registered                           namespace=debug
+DEBUG[06-20|04:52:25.691] IPC registered                           namespace=eth
+DEBUG[06-20|04:52:25.691] IPC registered                           namespace=personal
+DEBUG[06-20|04:52:25.691] IPC registered                           namespace=eth
+DEBUG[06-20|04:52:25.692] IPC registered                           namespace=eth
+DEBUG[06-20|04:52:25.692] IPC registered                           namespace=eth
+DEBUG[06-20|04:52:25.692] IPC registered                           namespace=miner
+DEBUG[06-20|04:52:25.692] IPC registered                           namespace=eth
+DEBUG[06-20|04:52:25.692] IPC registered                           namespace=admin
+DEBUG[06-20|04:52:25.692] IPC registered                           namespace=debug
+DEBUG[06-20|04:52:25.692] IPC registered                           namespace=debug
+DEBUG[06-20|04:52:25.692] IPC registered                           namespace=net
+DEBUG[06-20|04:52:25.693] IPC registered                           namespace=raft
+INFO [06-20|04:52:25.693] IPC endpoint opened                      url=/node2/node/qdata/geth.ipc
+DEBUG[06-20|04:52:25.697] HTTP registered                          namespace=admin
+DEBUG[06-20|04:52:25.698] HTTP registered                          namespace=admin
+DEBUG[06-20|04:52:25.699] HTTP registered                          namespace=debug
+DEBUG[06-20|04:52:25.699] HTTP registered                          namespace=debug
+DEBUG[06-20|04:52:25.699] HTTP registered                          namespace=web3
+DEBUG[06-20|04:52:25.700] HTTP registered                          namespace=eth
+DEBUG[06-20|04:52:25.700] HTTP registered                          namespace=eth
+DEBUG[06-20|04:52:25.700] HTTP registered                          namespace=eth
+DEBUG[06-20|04:52:25.700] HTTP registered                          namespace=txpool
+DEBUG[06-20|04:52:25.700] HTTP registered                          namespace=debug
+DEBUG[06-20|04:52:25.700] HTTP registered                          namespace=debug
+DEBUG[06-20|04:52:25.700] HTTP registered                          namespace=eth
+DEBUG[06-20|04:52:25.700] HTTP registered                          namespace=personal
+DEBUG[06-20|04:52:25.700] HTTP registered                          namespace=eth
+DEBUG[06-20|04:52:25.700] HTTP registered                          namespace=eth
+DEBUG[06-20|04:52:25.701] HTTP registered                          namespace=eth
+DEBUG[06-20|04:52:25.701] HTTP registered                          namespace=miner
+DEBUG[06-20|04:52:25.701] HTTP registered                          namespace=eth
+DEBUG[06-20|04:52:25.701] HTTP registered                          namespace=admin
+DEBUG[06-20|04:52:25.701] HTTP registered                          namespace=debug
+DEBUG[06-20|04:52:25.701] HTTP registered                          namespace=debug
+DEBUG[06-20|04:52:25.701] HTTP registered                          namespace=net
+DEBUG[06-20|04:52:25.701] HTTP registered                          namespace=raft
+INFO [06-20|04:52:25.701] HTTP endpoint opened                     url=http://0.0.0.0:22000       cors=* vhosts=localhost
+DEBUG[06-20|04:52:25.701] WebSocket registered                     service=&{node:0xc42050c780}                                                                                                                    namespace=admin
+DEBUG[06-20|04:52:25.702] WebSocket registered                     service=&{node:0xc42050c780}                                                                                                                    namespace=admin
+DEBUG[06-20|04:52:25.702] WebSocket registered                     service="&{mu:{state:0 sema:0} cpuW:<nil> cpuFile: traceW:<nil> traceFile:}"                                                                    namespace=debug
+DEBUG[06-20|04:52:25.702] WebSocket registered                     service=&{node:0xc42050c780}                                                                                                                    namespace=debug
+DEBUG[06-20|04:52:25.702] WebSocket registered                     service=&{stack:0xc42050c780}                                                                                                                   namespace=web3
+DEBUG[06-20|04:52:25.702] WebSocket registered                     service=&{b:0xc42020fce0}                                                                                                                       namespace=eth
+DEBUG[06-20|04:52:25.702] WebSocket registered                     service=&{b:0xc42020fce0}                                                                                                                       namespace=eth
+DEBUG[06-20|04:52:25.703] WebSocket registered                     service="&{b:0xc42020fce0 nonceLock:0xc4200638a0}"                                                                                              namespace=eth
+DEBUG[06-20|04:52:25.703] WebSocket registered                     service=&{b:0xc42020fce0}                                                                                                                       namespace=txpool
+DEBUG[06-20|04:52:25.703] WebSocket registered                     service=&{b:0xc42020fce0}                                                                                                                       namespace=debug
+DEBUG[06-20|04:52:25.703] WebSocket registered                     service=&{b:0xc42020fce0}                                                                                                                       namespace=debug
+DEBUG[06-20|04:52:25.703] WebSocket registered                     service=&{am:0xc4203900d0}                                                                                                                      namespace=eth
+DEBUG[06-20|04:52:25.703] WebSocket registered                     service="&{am:0xc4203900d0 nonceLock:0xc4200638a0 b:0xc42020fce0}"                                                                              namespace=personal
+DEBUG[06-20|04:52:25.703] WebSocket registered                     service=&{e:0xc420234700}                                                                                                                       namespace=eth
+DEBUG[06-20|04:52:25.703] WebSocket registered                     service="&{e:0xc420234700 agent:0xc42038eb00}"                                                                                                  namespace=eth
+DEBUG[06-20|04:52:25.703] WebSocket registered                     service="&{d:0xc4202ead00 mux:0xc4201f5530 installSyncSubscription:0xc42021d3e0 uninstallSyncSubscription:0xc42021d440}"                        namespace=eth
+DEBUG[06-20|04:52:25.703] WebSocket registered                     service=&{e:0xc420234700}                                                                                                                       namespace=miner
+DEBUG[06-20|04:52:25.704] WebSocket registered                     service="&{backend:0xc42020fce0 mux:0xc4201f5530 quit:<nil> chainDb:0xc4200f08f0 events:0xc42f56a6e0 filtersMu:{state:0 sema:0} filters:map[]}" namespace=eth
+DEBUG[06-20|04:52:25.704] WebSocket registered                     service=&{eth:0xc420234700}                                                                                                                     namespace=admin
+DEBUG[06-20|04:52:25.704] WebSocket registered                     service=&{eth:0xc420234700}                                                                                                                     namespace=debug
+DEBUG[06-20|04:52:25.704] WebSocket registered                     service="&{config:0xc42030c090 eth:0xc420234700}"                                                                                               namespace=debug
+DEBUG[06-20|04:52:25.704] WebSocket registered                     service="&{net:0xc42050ca00 networkVersion:36934}"                                                                                              namespace=net
+DEBUG[06-20|04:52:25.704] WebSocket registered                     service=&{raftService:0xc4201b43f0}                                                                                                             namespace=raft
+DEBUG[06-20|04:52:25.704] Allowed origin(s) for WS RPC interface [*]
+ 
+INFO [06-20|04:52:25.704] WebSocket endpoint opened                url=ws://[::]:22005
+2019-06-20 04:52:25.742892 I | rafthttp: established a TCP streaming connection with peer 3 (stream Message writer)
+2019-06-20 04:52:25.745718 I | rafthttp: established a TCP streaming connection with peer 3 (stream MsgApp v2 writer)
+2019-06-20 04:52:25.752454 I | rafthttp: established a TCP streaming connection with peer 1 (stream MsgApp v2 writer)
+2019-06-20 04:52:25.753384 I | rafthttp: established a TCP streaming connection with peer 1 (stream Message writer)
+raft2019/06/20 04:52:26 INFO: 2 [term: 55] ignored a MsgVote message with lower term from 1 [term: 34]
+TRACE[06-20|04:52:26.481] Accepted connection                      addr=10.50.0.6:35038
+TRACE[06-20|04:52:26.483] Accepted connection                      addr=10.50.0.5:39534
+INFO [06-20|04:52:26.485] Etherbase automatically configured       address=0x48Ea3c7C7EA659a0c46F8b88207B9d7A56361491
+TRACE[06-20|04:52:26.547] Quorum permissioning                     id=1da5e54ff64b475f addr=10.50.0.6:35038 conn=inbound    EnableNodePermission=false DataDir=/node2/node/qdata Current Node ID=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e Node Name=Geth/v1.8.12-stable/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=1da5e54ff64b475f Connection String=1da5e54ff64b475f4ffa3d6581cdc1b576eef942f77d7489a9d23f36c028aaed3e312137d06e51d359222a951ecdeca571b1c6a0d0cc3a3839dfc31904da002d
+TRACE[06-20|04:52:26.547] Node Permissioning is Disabled.          id=1da5e54ff64b475f addr=10.50.0.6:35038 conn=inbound
+TRACE[06-20|04:52:26.555] Quorum permissioning                     id=9f5a916121dd31ad addr=10.50.0.5:39534 conn=inbound    EnableNodePermission=false DataDir=/node2/node/qdata Current Node ID=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e Node Name=Geth/v1.8.12-stable/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=9f5a916121dd31ad Connection String=9f5a916121dd31ad9da95fd4bc9feb6e4b8ab6986982609528f95da5e24f638cbda9f1ae313d54adf8560fcb37ed91ff071c25448605f14961cf8da942b36fad
+TRACE[06-20|04:52:26.555] Node Permissioning is Disabled.          id=9f5a916121dd31ad addr=10.50.0.5:39534 conn=inbound
+DEBUG[06-20|04:52:26.578] Adding p2p peer                          name=Geth/v1.8.12-stable/...                  addr=10.50.0.5:39534 peers=3
+TRACE[06-20|04:52:26.580] connection set up                        id=9f5a916121dd31ad addr=10.50.0.5:39534 conn=inbound    inbound=true
+TRACE[06-20|04:52:26.580] Starting protocol eth/63                 id=9f5a916121dd31ad conn=inbound
+DEBUG[06-20|04:52:26.580] Ethereum peer connected                  id=9f5a916121dd31ad conn=inbound    name=Geth/v1.8.12-stable/linux-amd64/go1.10.2
+2019-06-20 04:52:26.613726 I | rafthttp: peer 4 became active
+2019-06-20 04:52:26.613834 I | rafthttp: established a TCP streaming connection with peer 4 (stream MsgApp v2 writer)
+2019-06-20 04:52:26.618718 I | rafthttp: established a TCP streaming connection with peer 4 (stream Message writer)
+2019-06-20 04:52:26.713866 E | rafthttp: failed to dial 4 on stream MsgApp v2 (dial tcp 10.50.0.5:22003: connect: connection refused)
+2019-06-20 04:52:26.714314 I | rafthttp: peer 4 became inactive
+DEBUG[06-20|04:52:26.713] Adding p2p peer                          name=Geth/v1.8.12-stable/...                  addr=10.50.0.6:35038 peers=4
+TRACE[06-20|04:52:26.714] connection set up                        id=1da5e54ff64b475f addr=10.50.0.6:35038 conn=inbound    inbound=true
+TRACE[06-20|04:52:26.715] Starting protocol eth/63                 id=1da5e54ff64b475f conn=inbound
+DEBUG[06-20|04:52:26.715] Ethereum peer connected                  id=1da5e54ff64b475f conn=inbound    name=Geth/v1.8.12-stable/linux-amd64/go1.10.2
+2019-06-20 04:52:26.717117 I | rafthttp: peer 5 became active
+2019-06-20 04:52:26.717207 I | rafthttp: established a TCP streaming connection with peer 5 (stream Message writer)
+2019-06-20 04:52:26.718381 I | rafthttp: established a TCP streaming connection with peer 5 (stream MsgApp v2 writer)
+TRACE[06-20|04:52:26.721] Registering sync peer                    peer=1da5e54ff64b475f
+DEBUG[06-20|04:52:26.721] Relaxed downloader QoS values            rtt=20s confidence=0.333 ttl=1m0s
+TRACE[06-20|04:52:26.721] Sending batch of transactions            id=1da5e54ff64b475f conn=inbound    count=1 bytes=781.00B
+TRACE[06-20|04:52:26.724] Discarding already known transaction     hash=2ed4cd…30b03d
+TRACE[06-20|04:52:26.744] Registering sync peer                    peer=9f5a916121dd31ad
+DEBUG[06-20|04:52:26.744] Relaxed downloader QoS values            rtt=20s confidence=0.250 ttl=1m0s
+TRACE[06-20|04:52:26.744] Sending batch of transactions            id=9f5a916121dd31ad conn=inbound    count=1 bytes=781.00B
+TRACE[06-20|04:52:26.760] Discarding already known transaction     hash=2ed4cd…30b03d
+2019-06-20 04:52:26.775595 E | rafthttp: failed to dial 5 on stream MsgApp v2 (dial tcp 10.50.0.6:22003: connect: connection refused)
+2019-06-20 04:52:26.775707 I | rafthttp: peer 5 became inactive
+2019-06-20 04:52:26.816457 I | rafthttp: peer 5 became active
+2019-06-20 04:52:26.816528 I | rafthttp: established a TCP streaming connection with peer 5 (stream Message reader)
+2019-06-20 04:52:26.818693 I | rafthttp: peer 4 became active
+2019-06-20 04:52:26.818741 I | rafthttp: established a TCP streaming connection with peer 4 (stream MsgApp v2 reader)
+2019-06-20 04:52:26.828724 I | rafthttp: established a TCP streaming connection with peer 4 (stream Message reader)
+2019-06-20 04:52:26.877921 I | rafthttp: established a TCP streaming connection with peer 5 (stream MsgApp v2 reader)
+raft2019/06/20 04:52:26 INFO: 2 [term: 55] received a MsgVote message with higher term from 3 [term: 56]
+raft2019/06/20 04:52:26 INFO: 2 became follower at term 56
+raft2019/06/20 04:52:26 INFO: 2 [logterm: 8, index: 10, vote: 0] cast MsgVote for 3 [logterm: 17, index: 14] at term 56
+raft2019/06/20 04:52:26 INFO: raft.node: 2 elected leader 3 at term 56
+INFO [06-20|04:52:26.907] QUORUM-CHECKPOINT                        name=BECAME-VERIFIER
+INFO [06-20|04:52:26.921] persisted the latest applied index       index=10
+INFO [06-20|04:52:26.930] QUORUM-CHECKPOINT                        name=TX-ACCEPTED                              tx=0x2ed4cd9e80e2a931fce18c50fcecbeb6f3eaa4b10ec4948494bdc6019f30b03d
+DEBUG[06-20|04:52:26.945] Trie cache stats after commit            misses=0 unloads=0
+DEBUG[06-20|04:52:26.946] Trie cache stats after commit            misses=0 unloads=0
+DEBUG[06-20|04:52:26.946] Trie cache stats after commit            misses=0 unloads=0
+DEBUG[06-20|04:52:26.946] Persisted trie from memory database      nodes=0 size=0.00B time=7.057µs   gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+DEBUG[06-20|04:52:26.947] Persisted trie from memory database      nodes=20 size=2.51kB time=582.195µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+DEBUG[06-20|04:52:26.948] Inserted new block                       number=2 hash=43eb7b…831583 uncles=0 txs=1 gas=300164 elapsed=18.015ms
+INFO [06-20|04:52:26.948] Imported new chain segment               blocks=1 txs=1 mgas=0.300 elapsed=18.276ms mgasps=16.423 number=2 hash=43eb7b…831583 cache=0.00B
+INFO [06-20|04:52:26.948] QUORUM-CHECKPOINT                        name=BLOCK-CREATED                            block=43eb7bea626aec20a48ee8b632899b5fbcd6fa22a2a99b8d2567a74f37831583
+INFO [06-20|04:52:26.948] persisted the latest applied index       index=11
+DEBUG[06-20|04:52:26.949] Reinjecting stale transactions           count=0
+TRACE[06-20|04:52:26.949] Removed old pending transaction          hash=2ed4cd…30b03d
+INFO [06-20|04:52:26.949] Non-extending block                      block=aca3f7…d2ef54                                                    parent=1642fe…128b89 head=43eb7b…831583
+INFO [06-20|04:52:26.949] persisted the latest applied index       index=12
+INFO [06-20|04:52:26.949] persisted the latest applied index       index=13
+INFO [06-20|04:52:26.949] Non-extending block                      block=1a4ba0…79c83a                                                    parent=1642fe…128b89 head=43eb7b…831583
+INFO [06-20|04:52:26.949] persisted the latest applied index       index=14
+INFO [06-20|04:52:26.949] persisted the latest applied index       index=15
+INFO [06-20|04:52:26.949] Non-extending block                      block=e8ca82…db222f                                                    parent=1642fe…128b89 head=43eb7b…831583
+INFO [06-20|04:52:26.949] Handling InvalidRaftOrdering             invalid block=aca3f7…d2ef54 current head=43eb7b…831583
+INFO [06-20|04:52:26.950] Someone else mined invalid block; ignoring block=aca3f7…d2ef54
+INFO [06-20|04:52:26.950] Handling InvalidRaftOrdering             invalid block=1a4ba0…79c83a current head=43eb7b…831583
+INFO [06-20|04:52:26.950] Someone else mined invalid block; ignoring block=1a4ba0…79c83a
+INFO [06-20|04:52:26.950] Handling InvalidRaftOrdering             invalid block=e8ca82…db222f current head=43eb7b…831583
+INFO [06-20|04:52:26.950] Someone else mined invalid block; ignoring block=e8ca82…db222f
+INFO [06-20|04:52:26.950] persisted the latest applied index       index=16
+DEBUG[06-20|04:52:45.540] Recalculated downloader QoS values       rtt=20s confidence=0.625 ttl=1m0s
+TRACE[06-20|04:52:55.577] Dial task done                           task="wait for dial hist expire (29.960877517s)"
+TRACE[06-20|04:52:55.577] New dial task                            task="wait for dial hist expire (25.023622ms)"
+TRACE[06-20|04:52:55.603] Dial task done                           task="wait for dial hist expire (25.023622ms)"
+TRACE[06-20|04:52:55.603] New dial task                            task="wait for dial hist expire (491.052µs)"
+TRACE[06-20|04:52:55.604] Dial task done                           task="wait for dial hist expire (491.052µs)"
+TRACE[06-20|04:52:55.604] New dial task                            task="wait for dial hist expire (11.636657ms)"
+TRACE[06-20|04:52:55.616] Dial task done                           task="wait for dial hist expire (11.636657ms)"
+TRACE[06-20|04:52:55.617] New dial task                            task="staticdial 53f17d79f3b36441 10.50.0.3:22001"
+TRACE[06-20|04:52:55.617] Accepted connection                      addr=10.50.0.3:41812
+TRACE[06-20|04:52:55.626] Quorum permissioning                     id=53f17d79f3b36441 addr=10.50.0.3:41812 conn=inbound    EnableNodePermission=false DataDir=/node2/node/qdata Current Node ID=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e Node Name=Geth/v1.8.12-stable/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=53f17d79f3b36441 Connection String=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e
+TRACE[06-20|04:52:55.627] Node Permissioning is Disabled.          id=53f17d79f3b36441 addr=10.50.0.3:41812 conn=inbound
+TRACE[06-20|04:52:55.627] Rejected peer before protocol handshake  id=53f17d79f3b36441 addr=10.50.0.3:41812 conn=inbound    err="connected to self"
+TRACE[06-20|04:52:55.627] Setting up connection failed             id=53f17d79f3b36441 err="connected to self"
+TRACE[06-20|04:52:55.629] Quorum permissioning                     id=53f17d79f3b36441 addr=10.50.0.3:22001 conn=staticdial EnableNodePermission=false DataDir=/node2/node/qdata Current Node ID=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e Node Name=Geth/v1.8.12-stable/linux-amd64/go1.10.2 Dialed Dest="enode://53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e@10.50.0.3:22001?discport=0&raftport=22003" Connection ID=53f17d79f3b36441 Connection String=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e
+TRACE[06-20|04:52:55.630] Node Permissioning is Disabled.          id=53f17d79f3b36441 addr=10.50.0.3:22001 conn=staticdial
+TRACE[06-20|04:52:55.630] Rejected peer before protocol handshake  id=53f17d79f3b36441 addr=10.50.0.3:22001 conn=staticdial err="connected to self"
+TRACE[06-20|04:52:55.630] Setting up connection failed             id=53f17d79f3b36441 err="connected to self"
+TRACE[06-20|04:52:55.630] Dial error                               task="staticdial 53f17d79f3b36441 10.50.0.3:22001" err="connected to self"
+TRACE[06-20|04:52:55.631] Dial task done                           task="staticdial 53f17d79f3b36441 10.50.0.3:22001"
+TRACE[06-20|04:52:55.631] New dial task                            task="wait for dial hist expire (29.999986595s)"
+DEBUG[06-20|04:53:05.541] Recalculated downloader QoS values       rtt=20s confidence=0.812 ttl=1m0s
+DEBUG[06-20|04:53:25.541] Recalculated downloader QoS values       rtt=20s confidence=0.906 ttl=1m0s
+TRACE[06-20|04:53:25.631] Dial task done                           task="wait for dial hist expire (29.999986595s)"
+TRACE[06-20|04:53:25.631] New dial task                            task="staticdial 53f17d79f3b36441 10.50.0.3:22001"
+TRACE[06-20|04:53:25.632] Accepted connection                      addr=10.50.0.3:41822
+TRACE[06-20|04:53:25.650] Quorum permissioning                     id=53f17d79f3b36441 addr=10.50.0.3:41822 conn=inbound    EnableNodePermission=false DataDir=/node2/node/qdata Current Node ID=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e Node Name=Geth/v1.8.12-stable/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=53f17d79f3b36441 Connection String=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e
+TRACE[06-20|04:53:25.650] Node Permissioning is Disabled.          id=53f17d79f3b36441 addr=10.50.0.3:41822 conn=inbound
+TRACE[06-20|04:53:25.650] Rejected peer before protocol handshake  id=53f17d79f3b36441 addr=10.50.0.3:41822 conn=inbound    err="connected to self"
+TRACE[06-20|04:53:25.651] Setting up connection failed             id=53f17d79f3b36441 err="connected to self"
+TRACE[06-20|04:53:25.653] Quorum permissioning                     id=53f17d79f3b36441 addr=10.50.0.3:22001 conn=staticdial EnableNodePermission=false DataDir=/node2/node/qdata Current Node ID=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e Node Name=Geth/v1.8.12-stable/linux-amd64/go1.10.2 Dialed Dest="enode://53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e@10.50.0.3:22001?discport=0&raftport=22003" Connection ID=53f17d79f3b36441 Connection String=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e
+TRACE[06-20|04:53:25.653] Node Permissioning is Disabled.          id=53f17d79f3b36441 addr=10.50.0.3:22001 conn=staticdial
+TRACE[06-20|04:53:25.653] Rejected peer before protocol handshake  id=53f17d79f3b36441 addr=10.50.0.3:22001 conn=staticdial err="connected to self"
+TRACE[06-20|04:53:25.653] Setting up connection failed             id=53f17d79f3b36441 err="connected to self"
+TRACE[06-20|04:53:25.654] Dial error                               task="staticdial 53f17d79f3b36441 10.50.0.3:22001" err="connected to self"
+TRACE[06-20|04:53:25.654] Dial task done                           task="staticdial 53f17d79f3b36441 10.50.0.3:22001"
+TRACE[06-20|04:53:25.654] New dial task                            task="wait for dial hist expire (29.999991411s)"
+DEBUG[06-20|04:53:45.542] Recalculated downloader QoS values       rtt=20s confidence=0.953 ttl=1m0s
+TRACE[06-20|04:53:55.654] Dial task done                           task="wait for dial hist expire (29.999991411s)"
+TRACE[06-20|04:53:55.655] New dial task                            task="staticdial 53f17d79f3b36441 10.50.0.3:22001"
+TRACE[06-20|04:53:55.656] Accepted connection                      addr=10.50.0.3:41832
+TRACE[06-20|04:53:55.673] Quorum permissioning                     id=53f17d79f3b36441 addr=10.50.0.3:41832 conn=inbound    EnableNodePermission=false DataDir=/node2/node/qdata Current Node ID=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e Node Name=Geth/v1.8.12-stable/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=53f17d79f3b36441 Connection String=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e
+TRACE[06-20|04:53:55.673] Node Permissioning is Disabled.          id=53f17d79f3b36441 addr=10.50.0.3:41832 conn=inbound
+TRACE[06-20|04:53:55.674] Rejected peer before protocol handshake  id=53f17d79f3b36441 addr=10.50.0.3:41832 conn=inbound    err="connected to self"
+TRACE[06-20|04:53:55.675] Setting up connection failed             id=53f17d79f3b36441 err="connected to self"
+TRACE[06-20|04:53:55.675] Quorum permissioning                     id=53f17d79f3b36441 addr=10.50.0.3:22001 conn=staticdial EnableNodePermission=false DataDir=/node2/node/qdata Current Node ID=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e Node Name=Geth/v1.8.12-stable/linux-amd64/go1.10.2 Dialed Dest="enode://53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e@10.50.0.3:22001?discport=0&raftport=22003" Connection ID=53f17d79f3b36441 Connection String=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e
+TRACE[06-20|04:53:55.675] Node Permissioning is Disabled.          id=53f17d79f3b36441 addr=10.50.0.3:22001 conn=staticdial
+TRACE[06-20|04:53:55.675] Rejected peer before protocol handshake  id=53f17d79f3b36441 addr=10.50.0.3:22001 conn=staticdial err="connected to self"
+TRACE[06-20|04:53:55.676] Setting up connection failed             id=53f17d79f3b36441 err="connected to self"
+TRACE[06-20|04:53:55.676] Dial error                               task="staticdial 53f17d79f3b36441 10.50.0.3:22001" err="connected to self"
+TRACE[06-20|04:53:55.676] Dial task done                           task="staticdial 53f17d79f3b36441 10.50.0.3:22001"
+TRACE[06-20|04:53:55.676] New dial task                            task="wait for dial hist expire (29.999990436s)"
+DEBUG[06-20|04:54:05.542] Recalculated downloader QoS values       rtt=20s confidence=0.977 ttl=1m0s
+DEBUG[06-20|04:54:25.543] Recalculated downloader QoS values       rtt=20s confidence=0.988 ttl=1m0s
+TRACE[06-20|04:54:25.676] Dial task done                           task="wait for dial hist expire (29.999990436s)"
+TRACE[06-20|04:54:25.677] New dial task                            task="staticdial 53f17d79f3b36441 10.50.0.3:22001"
+TRACE[06-20|04:54:25.678] Accepted connection                      addr=10.50.0.3:41842
+TRACE[06-20|04:54:25.694] Quorum permissioning                     id=53f17d79f3b36441 addr=10.50.0.3:41842 conn=inbound    EnableNodePermission=false DataDir=/node2/node/qdata Current Node ID=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e Node Name=Geth/v1.8.12-stable/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=53f17d79f3b36441 Connection String=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e
+TRACE[06-20|04:54:25.694] Node Permissioning is Disabled.          id=53f17d79f3b36441 addr=10.50.0.3:41842 conn=inbound
+TRACE[06-20|04:54:25.695] Rejected peer before protocol handshake  id=53f17d79f3b36441 addr=10.50.0.3:41842 conn=inbound    err="connected to self"
+TRACE[06-20|04:54:25.695] Setting up connection failed             id=53f17d79f3b36441 err="connected to self"
+TRACE[06-20|04:54:25.697] Quorum permissioning                     id=53f17d79f3b36441 addr=10.50.0.3:22001 conn=staticdial EnableNodePermission=false DataDir=/node2/node/qdata Current Node ID=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e Node Name=Geth/v1.8.12-stable/linux-amd64/go1.10.2 Dialed Dest="enode://53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e@10.50.0.3:22001?discport=0&raftport=22003" Connection ID=53f17d79f3b36441 Connection String=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e
+TRACE[06-20|04:54:25.697] Node Permissioning is Disabled.          id=53f17d79f3b36441 addr=10.50.0.3:22001 conn=staticdial
+TRACE[06-20|04:54:25.697] Rejected peer before protocol handshake  id=53f17d79f3b36441 addr=10.50.0.3:22001 conn=staticdial err="connected to self"
+TRACE[06-20|04:54:25.698] Setting up connection failed             id=53f17d79f3b36441 err="connected to self"
+TRACE[06-20|04:54:25.698] Dial error                               task="staticdial 53f17d79f3b36441 10.50.0.3:22001" err="connected to self"
+TRACE[06-20|04:54:25.698] Dial task done                           task="staticdial 53f17d79f3b36441 10.50.0.3:22001"
+TRACE[06-20|04:54:25.698] New dial task                            task="wait for dial hist expire (29.999990637s)"
+DEBUG[06-20|04:54:45.544] Recalculated downloader QoS values       rtt=20s confidence=0.994 ttl=1m0s
+TRACE[06-20|04:54:55.699] Dial task done                           task="wait for dial hist expire (29.999990637s)"
+TRACE[06-20|04:54:55.699] New dial task                            task="staticdial 53f17d79f3b36441 10.50.0.3:22001"
+TRACE[06-20|04:54:55.702] Accepted connection                      addr=10.50.0.3:41854
+TRACE[06-20|04:54:55.711] Quorum permissioning                     id=53f17d79f3b36441 addr=10.50.0.3:41854 conn=inbound    EnableNodePermission=false DataDir=/node2/node/qdata Current Node ID=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e Node Name=Geth/v1.8.12-stable/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=53f17d79f3b36441 Connection String=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e
+TRACE[06-20|04:54:55.711] Node Permissioning is Disabled.          id=53f17d79f3b36441 addr=10.50.0.3:41854 conn=inbound
+TRACE[06-20|04:54:55.716] Quorum permissioning                     id=53f17d79f3b36441 addr=10.50.0.3:22001 conn=staticdial EnableNodePermission=false DataDir=/node2/node/qdata Current Node ID=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e Node Name=Geth/v1.8.12-stable/linux-amd64/go1.10.2 Dialed Dest="enode://53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e@10.50.0.3:22001?discport=0&raftport=22003" Connection ID=53f17d79f3b36441 Connection String=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e
+TRACE[06-20|04:54:55.716] Node Permissioning is Disabled.          id=53f17d79f3b36441 addr=10.50.0.3:22001 conn=staticdial
+TRACE[06-20|04:54:55.716] Rejected peer before protocol handshake  id=53f17d79f3b36441 addr=10.50.0.3:41854 conn=inbound    err="connected to self"
+TRACE[06-20|04:54:55.717] Rejected peer before protocol handshake  id=53f17d79f3b36441 addr=10.50.0.3:22001 conn=staticdial err="connected to self"
+TRACE[06-20|04:54:55.717] Setting up connection failed             id=53f17d79f3b36441 err="connected to self"
+TRACE[06-20|04:54:55.717] Dial error                               task="staticdial 53f17d79f3b36441 10.50.0.3:22001" err="connected to self"
+TRACE[06-20|04:54:55.718] Dial task done                           task="staticdial 53f17d79f3b36441 10.50.0.3:22001"
+TRACE[06-20|04:54:55.718] New dial task                            task="wait for dial hist expire (29.999988208s)"
+TRACE[06-20|04:54:55.721] Setting up connection failed             id=53f17d79f3b36441 err="connected to self"
+DEBUG[06-20|04:55:04.802] Executing EVM call finished              runtime=26.470896ms
+DEBUG[06-20|04:55:04.808] VM returned with error                   err="invalid opcode 0xfe"
+DEBUG[06-20|04:55:04.809] Executing EVM call finished              runtime=1.703996ms
+DEBUG[06-20|04:55:04.953] Executing EVM call finished              runtime=7.453754ms
+DEBUG[06-20|04:55:04.961] VM returned with error                   err="invalid opcode 0xfe"
+DEBUG[06-20|04:55:04.962] Executing EVM call finished              runtime=1.768867ms
+DEBUG[06-20|04:55:04.983] Executing EVM call finished              runtime=3.599641ms
+DEBUG[06-20|04:55:04.986] Executing EVM call finished              runtime=12.707213ms
+DEBUG[06-20|04:55:04.987] VM returned with error                   err="invalid opcode 0xfe"
+DEBUG[06-20|04:55:04.987] Executing EVM call finished              runtime=1.781621ms
+DEBUG[06-20|04:55:04.992] VM returned with error                   err="invalid opcode 0xfe"
+DEBUG[06-20|04:55:04.992] Executing EVM call finished              runtime=999.778µs
+DEBUG[06-20|04:55:04.999] Executing EVM call finished              runtime=5.419762ms
+DEBUG[06-20|04:55:05.004] Executing EVM call finished              runtime=2.092012ms
+DEBUG[06-20|04:55:05.545] Recalculated downloader QoS values       rtt=20s confidence=0.997 ttl=1m0s
+DEBUG[06-20|04:55:07.273] Executing EVM call finished              runtime=2.060918ms
+DEBUG[06-20|04:55:07.278] VM returned with error                   err="invalid opcode 0xfe"
+DEBUG[06-20|04:55:07.278] Executing EVM call finished              runtime=2.03381ms
+DEBUG[06-20|04:55:07.441] Executing EVM call finished              runtime=3.264288ms
+DEBUG[06-20|04:55:07.448] VM returned with error                   err="invalid opcode 0xfe"
+DEBUG[06-20|04:55:07.448] Executing EVM call finished              runtime=993.729µs
+DEBUG[06-20|04:55:07.456] Executing EVM call finished              runtime=2.357575ms
+DEBUG[06-20|04:55:07.459] VM returned with error                   err="invalid opcode 0xfe"
+DEBUG[06-20|04:55:07.459] Executing EVM call finished              runtime=962.781µs
+DEBUG[06-20|04:55:07.466] Executing EVM call finished              runtime=5.97095ms
+DEBUG[06-20|04:55:07.467] Executing EVM call finished              runtime=3.113891ms
+DEBUG[06-20|04:55:07.470] Executing EVM call finished              runtime=2.017779ms
+DEBUG[06-20|04:55:07.471] VM returned with error                   err="invalid opcode 0xfe"
+DEBUG[06-20|04:55:07.471] Executing EVM call finished              runtime=1.336488ms
+DEBUG[06-20|04:55:25.546] Recalculated downloader QoS values       rtt=20s confidence=0.999 ttl=1m0s
+TRACE[06-20|04:55:25.719] Dial task done                           task="wait for dial hist expire (29.999988208s)"
+TRACE[06-20|04:55:25.719] New dial task                            task="staticdial 53f17d79f3b36441 10.50.0.3:22001"
+TRACE[06-20|04:55:25.720] Accepted connection                      addr=10.50.0.3:41958
+TRACE[06-20|04:55:25.772] Quorum permissioning                     id=53f17d79f3b36441 addr=10.50.0.3:41958 conn=inbound    EnableNodePermission=false DataDir=/node2/node/qdata Current Node ID=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e Node Name=Geth/v1.8.12-stable/linux-amd64/go1.10.2 Dialed Dest=nil                                                                                                                                                                                  Connection ID=53f17d79f3b36441 Connection String=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e
+TRACE[06-20|04:55:25.772] Node Permissioning is Disabled.          id=53f17d79f3b36441 addr=10.50.0.3:41958 conn=inbound
+TRACE[06-20|04:55:25.772] Rejected peer before protocol handshake  id=53f17d79f3b36441 addr=10.50.0.3:41958 conn=inbound    err="connected to self"
+TRACE[06-20|04:55:25.773] Setting up connection failed             id=53f17d79f3b36441 err="connected to self"
+TRACE[06-20|04:55:25.773] Quorum permissioning                     id=53f17d79f3b36441 addr=10.50.0.3:22001 conn=staticdial EnableNodePermission=false DataDir=/node2/node/qdata Current Node ID=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e Node Name=Geth/v1.8.12-stable/linux-amd64/go1.10.2 Dialed Dest="enode://53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e@10.50.0.3:22001?discport=0&raftport=22003" Connection ID=53f17d79f3b36441 Connection String=53f17d79f3b3644149cf68af4b89d1aa98595fb3094ffe9a8ebe1a41d26de814fd1e301d33ac7abe1d0c2fa14c9253c6cf74d410cf14794adc671b939554372e
+TRACE[06-20|04:55:25.773] Node Permissioning is Disabled.          id=53f17d79f3b36441 addr=10.50.0.3:22001 conn=staticdial
+TRACE[06-20|04:55:25.773] Rejected peer before protocol handshake  id=53f17d79f3b36441 addr=10.50.0.3:22001 conn=staticdial err="connected to self"
+TRACE[06-20|04:55:25.774] Setting up connection failed             id=53f17d79f3b36441 err="connected to self"
+TRACE[06-20|04:55:25.774] Dial error                               task="staticdial 53f17d79f3b36441 10.50.0.3:22001" err="connected to self"
+TRACE[06-20|04:55:25.774] Dial task done                           task="staticdial 53f17d79f3b36441 10.50.0.3:22001"
+TRACE[06-20|04:55:25.774] New dial task                            task="wait for dial hist expire (29.99999076s)"
+DEBUG[06-20|04:55:33.712] Executing EVM call finished              runtime=2.982828ms
+DEBUG[06-20|04:55:33.715] VM returned with error                   err="invalid opcode 0xfe"
+DEBUG[06-20|04:55:33.715] Executing EVM call finished              runtime=1.129322ms
+DEBUG[06-20|04:55:33.870] Executing EVM call finished              runtime=6.675859ms
+DEBUG[06-20|04:55:33.873] VM returned with error                   err="invalid opcode 0xfe"
+DEBUG[06-20|04:55:33.874] Executing EVM call finished              runtime=898.527µs
+DEBUG[06-20|04:55:33.881] Executing EVM call finished              runtime=2.158719ms
+DEBUG[06-20|04:55:33.881] Executing EVM call finished              runtime=2.050192ms
+DEBUG[06-20|04:55:33.886] VM returned with error                   err="invalid opcode 0xfe"
+DEBUG[06-20|04:55:33.886] Executing EVM call finished              runtime=965.956µs
+DEBUG[06-20|04:55:33.888] Executing EVM call finished              runtime=2.548631ms
+DEBUG[06-20|04:55:33.899] Executing EVM call finished              runtime=4.575554ms
+DEBUG[06-20|04:55:33.911] VM returned with error                   err="invalid opcode 0xfe"
+DEBUG[06-20|04:55:33.911] Executing EVM call finished              runtime=858.942µs
+DEBUG[06-20|04:55:35.432] Executing EVM call finished              runtime=1.935368ms
+DEBUG[06-20|04:55:35.434] VM returned with error                   err="invalid opcode 0xfe"
+DEBUG[06-20|04:55:35.435] Executing EVM call finished              runtime=769.653µs
+DEBUG[06-20|04:55:35.493] Executing EVM call finished              runtime=3.65627ms
+DEBUG[06-20|04:55:35.496] Executing EVM call finished              runtime=3.664535ms
+DEBUG[06-20|04:55:35.497] VM returned with error                   err="invalid opcode 0xfe"
+DEBUG[06-20|04:55:35.498] Executing EVM call finished              runtime=1.039107ms
+DEBUG[06-20|04:55:35.499] VM returned with error                   err="invalid opcode 0xfe"
+DEBUG[06-20|04:55:35.499] Executing EVM call finished              runtime=1.003224ms
+DEBUG[06-20|04:55:35.501] Executing EVM call finished              runtime=2.052984ms
+DEBUG[06-20|04:55:35.508] Executing EVM call finished              runtime=2.104735ms
+DEBUG[06-20|04:55:35.508] Executing EVM call finished              runtime=2.065888ms
+DEBUG[06-20|04:55:35.512] VM returned with error                   err="invalid opcode 0xfe"
+DEBUG[06-20|04:55:35.512] Executing EVM call finished              runtime=1.43163ms
+2019-06-20 04:55:36.706414 W | rafthttp: lost the TCP streaming connection with peer 1 (stream MsgApp v2 reader)
+2019-06-20 04:55:36.706556 E | rafthttp: failed to read 1 on stream MsgApp v2 (unexpected EOF)
+2019-06-20 04:55:36.706592 I | rafthttp: peer 1 became inactive
+2019-06-20 04:55:36.707087 W | rafthttp: lost the TCP streaming connection with peer 1 (stream Message reader)
+DEBUG[06-20|04:55:36.707] Ethereum message handling failed         id=b6976a6e71bd65ac conn=staticdial err=EOF
+DEBUG[06-20|04:55:36.707] Removing Ethereum peer                   peer=b6976a6e71bd65ac
+TRACE[06-20|04:55:36.708] Unregistering sync peer                  peer=b6976a6e71bd65ac
+DEBUG[06-20|04:55:36.710] Removing p2p peer                        id=b6976a6e71bd65ac conn=staticdial duration=3m11.107s peers=3 req=false err=EOF
+TRACE[06-20|04:55:36.712] New dial task                            task="staticdial b6976a6e71bd65ac 10.50.0.2:22001"
+TRACE[06-20|04:55:36.713] Dial error                               task="staticdial b6976a6e71bd65ac 10.50.0.2:22001" err="dial tcp 10.50.0.2:22001: connect: connection refused"
+DEBUG[06-20|04:55:36.713] Can't resolve node                       id=b6976a6e71bd65ac err="discovery is disabled"
+TRACE[06-20|04:55:36.713] Dial task done                           task="staticdial b6976a6e71bd65ac 10.50.0.2:22001"
