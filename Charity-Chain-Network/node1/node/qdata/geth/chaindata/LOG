@@ -24,3 +24,36 @@
 04:52:24.832099 version@stat F·[2] S·8KiB[8KiB] Sc·[0.50]
 04:52:24.848254 db@janitor F·4 G·0
 04:52:24.848380 db@open done T·48.107887ms
+=============== Jun 20, 2019 (UTC) ===============
+07:56:53.833518 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+07:56:53.833675 version@stat F·[2] S·8KiB[8KiB] Sc·[0.50]
+07:56:53.833687 db@open opening
+07:56:53.833736 journal@recovery F·1
+07:56:53.836850 journal@recovery recovering @6
+07:56:53.907160 memdb@flush created L0@8 N·49 S·4KiB "\x12h\xa1..\xcb\xfc\x9a,v66":"\xf4\xf9\xdc..\xf5\x16\x9c,v83"
+07:56:53.924583 version@stat F·[3] S·12KiB[12KiB] Sc·[0.75]
+07:56:54.008013 db@janitor F·5 G·0
+07:56:54.008129 db@open done T·174.400516ms
+07:57:10.421931 table@compaction L0·3 -> L1·0 S·12KiB Q·98
+07:57:10.643718 table@build created L1@11 N·81 S·11KiB "\x12h\xa1..\xcb\xfc\x9a,v66":"\xfcd\xdb..\x91\x95\xfc,v31"
+07:57:10.643779 version@stat F·[0 1] S·11KiB[0B 11KiB] Sc·[0.00 0.00]
+07:57:10.777428 table@compaction committed F-2 S-786B Ke·0 D·12 T·355.458312ms
+07:57:10.777524 table@remove removed @8
+07:57:10.777600 table@remove removed @5
+07:57:10.777648 table@remove removed @2
+=============== Jun 20, 2019 (UTC) ===============
+08:02:42.043079 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+08:02:42.043271 version@stat F·[0 1] S·11KiB[0B 11KiB] Sc·[0.00 0.00]
+08:02:42.043285 db@open opening
+08:02:42.043337 journal@recovery F·1
+08:02:42.046995 journal@recovery recovering @9
+08:02:42.142776 memdb@flush created L0@12 N·2 S·238B "Dat..ion,v97":"Las..der,v98"
+08:02:42.146603 version@stat F·[1 1] S·12KiB[238B 11KiB] Sc·[0.25 0.00]
+08:02:42.306732 db@janitor F·4 G·0
+08:02:42.306839 db@open done T·263.533322ms
+15:27:28.785331 table@compaction L0·1 -> L1·1 S·12KiB Q·101
+15:27:28.881038 table@build created L1@15 N·81 S·11KiB "\x12h\xa1..\xcb\xfc\x9a,v66":"\xfcd\xdb..\x91\x95\xfc,v31"
+15:27:28.881274 version@stat F·[0 1] S·11KiB[0B 11KiB] Sc·[0.00 0.00]
+15:27:28.969918 table@compaction committed F-1 S-240B Ke·0 D·2 T·184.498684ms
+15:27:28.970133 table@remove removed @12
+15:27:28.970263 table@remove removed @11
