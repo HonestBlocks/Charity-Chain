@@ -1,0 +1,64 @@
+<div style="width:100%">
+    <a class="projectObj" href="#!/project/product1" style="background-color:#87b822">
+        <div class="wrap">
+            <div class="name">Welcome to our decentralized portal of donations! </div>
+            <img class="img" src="images/element.png" />
+        </div>
+    </a>
+<footer>
+  <a href="mailto:someone@example.com">Copyright - Charity Chain Project</a>.</p>
+</footer> 
+
+<script>
+$('.projectObj').bind('click', function (e) {
+    e.preventDefault();
+
+    var me = this;
+    var width = $(me).width() / 1.5;
+    $(me).find('.wrap').width($(me).find('.wrap').width());
+
+    $(me).animate({
+        opacity: 0,
+        marginLeft: -width
+    }, 500);
+
+    var delayN = 150;
+    var delayP = 150;
+
+    var nextEl = $(me).nextAll('.projectObj');
+    var prevEl = $(me).prevAll('.projectObj');
+
+    nextEl.each(function (index, elem) {
+        setTimeout(function () {
+            
+            $(elem).find('.wrap').width($(elem).find('.wrap').width());
+
+            $(elem).animate({
+                opacity: 0,
+                marginLeft: -width
+              }, 500, function () {
+            });
+        }, delayN);
+        delayN += 100;
+    });
+
+    prevEl.each(function (index, elem) {
+        setTimeout(function () {
+            $(elem).find('.wrap').width($(elem).find('.wrap').width());
+
+            $(elem).animate({
+                opacity: 0,
+                marginLeft: -width
+              }, 500, function () {
+            });
+        }, delayP);
+        delayP += 100;
+    });
+
+    setTimeout(function () {
+        document.location = $(me).attr('href');
+    },1000)
+
+    return false;
+});
+</script>
