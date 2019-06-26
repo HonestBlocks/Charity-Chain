@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Signup/Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <!-- add styles -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <!-- add javascripts -->
+    <script src="js/jquery-2.0.3.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+</head>
+<body>
+
+  
+<div class="container">
+  <h2>Signup/Login</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" id="login" data-toggle="modal" data-target="#myModal1">Login</button>
+
+  <button type="button" class="btn btn-info btn-lg" id="signup" data-toggle="modal" data-target="#myModal2">Signup</button>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" id="login" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Login</h4>
+        </div>
+        <div class="modal-body">
+              <form action="" id="form1">
+       		 <fieldset>
+            		<legend>Login</legend> E-mail Address:
+            		<br>
+            		<input type="email" name="emailaddress" value="">
+            		<br> Password:
+            		<br>
+            		<input type="password" name="pass" value="">
+            		<br>
+            		<br>
+            		<input type="submit" value="Submit"> </fieldset>
+    	      </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" id="signup" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Signup</h4>
+        </div>
+        <div class="modal-body">
+          <form action="" id="form2">
+       		 <fieldset>
+            		<legend>Signup</legend> E-mail Address:
+            		<br>
+            		<input type="email" name="emailaddress" value="">
+            		<br> Password:
+            		<br>
+            		<input type="password" name="pass" value="">
+            		<br>
+            		<br>
+            		<input type="submit" value="Submit"> </fieldset>
+    	      </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" id="signup" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
