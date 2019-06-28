@@ -9,9 +9,44 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<style>
+	.button {
+	  background-color: #4CAF50; /* Green */
+	  border: none;
+	  color: white;
+	  padding: 16px 32px;
+	  text-align: center;
+	  border-radius: 8px;
+	  position: center;
+	  top: 50%;
+	  margin : auto;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 16px;
+	  margin: 4px 2px;
 
-    <!-- add styles -->
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
+	}
+	.button1 {
+	  background-color: white; 
+	  color: black; 
+	  border: 2px solid #4CAF50;
+	}
+
+	.button1:hover {
+	  background-color: #4CAF50;
+	  color: white;
+	}
+	.button1 {
+	  background-color: white; 
+	  color: black; 
+	  border: 2px solid #4CAF50;
+	}
+
+	.button1:hover {
+	  background-color: #4CAF50;
+	  color: white;
+	}
+	</style>	  	
 
     <!-- add javascripts -->
     <script src="js/jquery-2.0.3.min.js"></script>
@@ -25,9 +60,9 @@
 <div class="container">
   <h2>Signup/Login</h2>
   <!-- Trigger the modal with a button -->
-  <button type="button" class="btn btn-info btn-lg" id="login" data-toggle="modal" data-target="#myModal1">Login</button>
+  <button type="button" class="button button1" id="login" data-toggle="modal" data-target="#myModal1">Login</button>
 
-  <button type="button" class="btn btn-info btn-lg" id="signup" data-toggle="modal" data-target="#myModal2">Signup</button>
+  <button type="button" class="button button1" id="signup" data-toggle="modal" data-target="#myModal2">Signup</button>
   <!-- Modal -->
   <div class="modal fade" id="myModal1" role="dialog">
     <div class="modal-dialog">
@@ -70,21 +105,21 @@
           <h4 class="modal-title">Signup</h4>
         </div>
         <div class="modal-body">
-          <form action="" id="form2">
+          <form action="insert.php" method="POST" id="form2">
        		 <fieldset>
             		<legend>Signup</legend> E-mail Address<br>
-			<input type="email" name="emailaddress" value="">
+			<input type="email" name="emailaddress" required value="">
 			<br>
-            		Full Name <br><input type="text" name="Full Name" value="">
+            		Full Name <br><input type="text" name="fullname" required value="">
             		<br>
 			Type <br>
-			<input type="radio" name="donorg" value="donor">Donor
+			<input type="radio" name="type" required value="d">Donor
             		<br>
-			<input type="radio" name="donorg" value="co">Charity Organization
+			<input type="radio" name="type" required value="c">Charity Organization
             		<br>
 	 		<br> Password:
             		<br>
-            		<input type="password" name="pass" value="">
+            		<input type="password" name="pass" required value="">
             		<br>
             		<br>
             		<input type="submit" value="Submit"> </fieldset>
