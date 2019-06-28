@@ -62,3 +62,13 @@
 17:49:25.732210 version@stat F·[1 1] S·12KiB[238B 11KiB] Sc·[0.25 0.00]
 17:49:25.925905 db@janitor F·4 G·0
 17:49:25.926050 db@open done T·601.352184ms
+=============== Jun 28, 2019 (UTC) ===============
+09:02:17.907209 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+09:02:17.974253 version@stat F·[1 1] S·12KiB[238B 11KiB] Sc·[0.25 0.00]
+09:02:17.974324 db@open opening
+09:02:17.974553 journal@recovery F·1
+09:02:18.049147 journal@recovery recovering @16
+09:02:18.254773 memdb@flush created L0@18 N·2 S·238B "Dat..ion,v103":"Las..der,v104"
+09:02:18.272422 version@stat F·[2 1] S·12KiB[476B 11KiB] Sc·[0.50 0.00]
+09:02:18.519156 db@janitor F·5 G·0
+09:02:18.522346 db@open done T·547.987619ms

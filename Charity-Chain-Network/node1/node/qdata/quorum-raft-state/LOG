@@ -52,3 +52,13 @@
 17:49:27.557298 table@remove removed @8
 17:49:27.557432 table@remove removed @5
 17:49:27.557551 table@remove removed @2
+=============== Jun 28, 2019 (UTC) ===============
+09:02:18.579473 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+09:02:18.767279 version@stat F·[0 1] S·128B[0B 128B] Sc·[0.00 0.00]
+09:02:18.767378 db@open opening
+09:02:18.767760 journal@recovery F·1
+09:02:18.775346 journal@recovery recovering @12
+09:02:19.026005 memdb@flush created L0@15 N·1 S·128B "applied,v23":"applied,v23"
+09:02:19.035000 version@stat F·[1 1] S·256B[128B 128B] Sc·[0.25 0.00]
+09:02:19.230943 db@janitor F·4 G·0
+09:02:19.231843 db@open done T·464.415257ms
