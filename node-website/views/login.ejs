@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <% include partials/head %> 
+</head>
+<body>
+<% include partials/menu %>
+<br>
+<div class="container">
+  <h2>Signup/Login</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="button button1" id="login" data-toggle="modal" data-target="#myModal1">Login</button>
+
+  <button type="button" class="button button1" id="signup" data-toggle="modal" data-target="#myModal2">Signup</button>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" id="login" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Login</h4>
+        </div>
+        <div class="modal-body">
+              <form action="" id="form1">
+       		 <fieldset>
+            		<legend>Login</legend> E-mail Address:
+            		<br>
+            		<input type="email" name="emailaddress" value="">
+            		<br> Password:
+            		<br>
+            		<input type="password" name="pass" value="">
+            		<br>
+            		<br>
+            		<input type="submit" value="Submit"> </fieldset>
+    	      </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" id="signup" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Signup</h4>
+        </div>
+        <div class="modal-body">
+          <form action="insert.php" method="POST" id="form2">
+       		 <fieldset>
+            		<legend>Signup</legend> E-mail Address<br>
+			<input type="email" name="emailaddress" required value="">
+			<br>
+            		Full Name <br><input type="text" name="fullname" required value="">
+            		<br>
+			Type <br>
+			<input type="radio" name="type" required value="d">Donor
+            		<br>
+			<input type="radio" name="type" required value="c">Charity Organization
+            		<br>
+	 		<br> Password:
+            		<br>
+            		<input type="password" name="pass" required value="">
+            		<br>
+            		<br>
+            		<input type="submit" value="Submit"> </fieldset>
+    	      </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" id="signup" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<br>
+
+
+
+
+
+</body>
+<% include partials/script %>
+</html>

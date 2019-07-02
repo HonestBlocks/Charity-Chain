@@ -18,7 +18,5 @@ router.get('/login', function(req, res, next) {
   res.render('login', {page:'Login', menuId:'login'});
 });
 
-router.get('/signup', function(req, res, next) {
-  res.render('signup', {page:'Signup', menuId:'signup'});
-});
+
 module.exports = router;

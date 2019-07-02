@@ -4,6 +4,9 @@ var logger = require('morgan');
 var index = require('./routes/index');
 var app = express();
 
+app.get("/url", (req, res, next) => {
+ res.json(["Tony","Lisa","Michael","Ginger","Food"]);
+});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
