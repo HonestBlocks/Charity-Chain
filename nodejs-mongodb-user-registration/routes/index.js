@@ -10,7 +10,27 @@ const { matchedData, sanitize }   = require('express-validator/filter');
   router.get('/', function(req, res, next) {
       res.render('index', { title: 'Charity Chain Signup'});
    })
-   
+
+
+  /*router.post('/login', function(req, res){
+   var email = req.body.email;
+   var password = req.body.password;
+
+   User.findOne({email : email, password : password}, function(err, user){
+   	if(err){
+		console.log(err);
+		//return.res.status(500).send();
+	}
+	if(!user){
+		//return.res.status(404).send();	
+	}
+	
+	//return.res.status(200).send();
+
+  })	
+  });*/
+
+  
   /* POST user registration page. */
   router.post('/register',[ 
    

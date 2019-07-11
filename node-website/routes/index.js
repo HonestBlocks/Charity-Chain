@@ -18,5 +18,8 @@ router.get('/login', function(req, res, next) {
   res.render('login', {page:'Login', menuId:'login'});
 });
 
+router.get('/landing', function(req, res, next) {
+  res.render('landing', {page:'Landing', menuId:'landing'});
+});
 
 module.exports = router;

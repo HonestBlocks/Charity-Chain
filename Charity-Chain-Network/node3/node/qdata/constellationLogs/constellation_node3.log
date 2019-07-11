@@ -1,7 +1,7 @@
 [*] Starting Constellation node
-09:01:55 [INFO] Log level is LevelWarn
-09:01:56 [WARN] /node3/node/keys/node3.key is too accessible. Please run: chmod 0600 /node3/node/keys/node3.key
-09:01:59 [WARN] Synchronization failed: HttpExceptionRequest Request {
+09:25:32 [INFO] Log level is LevelWarn
+09:25:33 [WARN] /node3/node/keys/node3.key is too accessible. Please run: chmod 0600 /node3/node/keys/node3.key
+09:25:35 [WARN] Synchronization failed: HttpExceptionRequest Request {
   host                 = "10.50.0.2"
   port                 = 22002
   secure               = False
