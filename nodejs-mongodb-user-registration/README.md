@@ -21,7 +21,7 @@
      > SET DEBUG=nodejs-user-registration-mongodb:* & npm start
      
  - To view runnign app
-    Open browser and type the URL: http://localhost:3000
+    Open browser and type the URL: http://localhost:3001
     
 
 For detailed tutorial, visit 
