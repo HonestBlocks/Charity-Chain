@@ -1,23 +1,23 @@
-pragma solidity ^0.5.9;
+pragma solidity ^0.5.0;
 
 interface ERC20 {
-    function totalSupply() external constant returns (uint _totalSupply);
-    function balanceOf(address _owner) external constant returns (uint balance);
+    function totalSupply()view external  returns (uint _totalSupply);
+    function balanceOf(address _owner)view external returns (uint balance);
     function transfer(address _to, uint _value) external returns (bool success);
     function transferFrom(address _from, address _to, uint _value) external returns (bool success);
     function approve(address _spender, uint _value) external returns (bool success);
-    function allowance(address _owner, address _spender) external constant returns (uint remaining);
+    function allowance(address _owner, address _spender)view external  returns (uint remaining);
     event Transfer(address indexed _from, address indexed _to, uint _value);
     event Approval(address indexed _owner, address indexed _spender, uint _value);
 }
 
 
 contract MyFirstToken is ERC20 {
-    string public constant symbol = "MFT";
-    string public constant name = "My First Token";
-    uint8 public constant decimals = 18;
+    string public  symbol = "MFT";
+    string public  name = "My First Token";
+    uint8 public  decimals = 18;
     
-    uint private constant __totalSupply = 1000000;
+    uint private constant  __totalSupply = 1000000;
     mapping (address => uint) public  __balanceOf;
     mapping (address => mapping (address => uint)) private __allowances;
     
@@ -25,11 +25,11 @@ contract MyFirstToken is ERC20 {
             __balanceOf[msg.sender] = __totalSupply;
     }
     
-    function totalSupply() public constant returns (uint _totalSupply) {
+    function totalSupply()view public  returns (uint _totalSupply) {
         _totalSupply = __totalSupply;
     }
     
-    function balanceOf(address _addr) public constant returns (uint balance) {
+    function balanceOf(address _addr)view public  returns (uint balance) {
         return __balanceOf[_addr];
     }
     
@@ -61,7 +61,7 @@ contract MyFirstToken is ERC20 {
         return true;
     }
     
-    function allowance(address _owner, address _spender) public constant returns (uint remaining) {
+    function allowance(address _owner, address _spender)view public  returns (uint remaining) {
         return __allowances[_owner][_spender];
     }
 }

@@ -1,4 +1,4 @@
-pragma solidity ^0.5.9;
+pragma solidity ^0.5.0;
 
 import "./token.sol";
 import "./Claims.sol";
@@ -70,7 +70,7 @@ contract Ownable {
 
 contract donor_init is Ownable,MyFirstToken{
 
-    function initialize(address _newDonor) onlyAdmin{
+    function initialize(address _newDonor)private onlyOwner{
         __balanceOf[_newDonor]+=100;
     }
 }

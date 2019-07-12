@@ -179,3 +179,36 @@
 09:25:55.248242 version@stat F·[1 1] S·58KiB[239B 58KiB] Sc·[0.25 0.00]
 09:25:55.456557 db@janitor F·4 G·0
 09:25:55.456682 db@open done T·801.627476ms
+=============== Jul 12, 2019 (UTC) ===============
+08:27:41.909148 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+08:27:41.909796 version@stat F·[1 1] S·58KiB[239B 58KiB] Sc·[0.25 0.00]
+08:27:41.909845 db@open opening
+08:27:41.910071 journal@recovery F·1
+08:27:41.951314 journal@recovery recovering @45
+08:27:42.075569 memdb@flush created L0@47 N·2 S·239B "Dat..ion,v504":"Las..der,v505"
+08:27:42.109007 version@stat F·[2 1] S·58KiB[478B 58KiB] Sc·[0.50 0.00]
+08:27:42.363490 db@janitor F·5 G·0
+08:27:42.363538 db@open done T·453.663284ms
+08:29:27.298980 table@compaction L0·2 -> L1·1 S·58KiB Q·508
+08:29:27.357247 table@build created L1@50 N·345 S·58KiB "\x03\xddc.. \x01\x1e,v140":"\xfeܜ..\xed\xf8\xa1,v345"
+08:29:27.357296 version@stat F·[0 1] S·58KiB[0B 58KiB] Sc·[0.00 0.00]
+08:29:27.390740 table@compaction committed F-2 S-478B Ke·0 D·4 T·91.690476ms
+08:29:27.390891 table@remove removed @47
+08:29:27.390981 table@remove removed @44
+08:29:27.391049 table@remove removed @43
+=============== Jul 12, 2019 (UTC) ===============
+08:34:04.893118 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+08:34:04.893342 version@stat F·[0 1] S·58KiB[0B 58KiB] Sc·[0.00 0.00]
+08:34:04.893358 db@open opening
+08:34:04.893429 journal@recovery F·1
+08:34:04.898295 journal@recovery recovering @48
+08:34:04.970015 memdb@flush created L0@51 N·2 S·239B "Dat..ion,v507":"Las..der,v508"
+08:34:04.976871 version@stat F·[1 1] S·58KiB[239B 58KiB] Sc·[0.25 0.00]
+08:34:05.026288 db@janitor F·4 G·0
+08:34:05.026471 db@open done T·133.044367ms
+08:35:48.469658 table@compaction L0·1 -> L1·1 S·58KiB Q·511
+08:35:48.524893 table@build created L1@54 N·345 S·58KiB "\x03\xddc.. \x01\x1e,v140":"\xfeܜ..\xed\xf8\xa1,v345"
+08:35:48.524959 version@stat F·[0 1] S·58KiB[0B 58KiB] Sc·[0.00 0.00]
+08:35:48.558497 table@compaction committed F-1 S-239B Ke·0 D·2 T·88.795888ms
+08:35:48.558566 table@remove removed @51
+08:35:48.558617 table@remove removed @50

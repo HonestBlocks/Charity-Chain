@@ -131,3 +131,32 @@
 09:25:55.933116 version@stat F·[3 1] S·607B[479B 128B] Sc·[0.75 0.00]
 09:25:56.133445 db@janitor F·6 G·0
 09:25:56.133528 db@open done T·349.764711ms
+=============== Jul 12, 2019 (UTC) ===============
+08:27:42.371475 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+08:27:42.371808 version@stat F·[3 1] S·607B[479B 128B] Sc·[0.75 0.00]
+08:27:42.371827 db@open opening
+08:27:42.371946 journal@recovery F·1
+08:27:42.374553 journal@recovery recovering @35
+08:27:42.509395 memdb@flush created L0@37 N·1 S·128B "applied,v52":"applied,v52"
+08:27:42.513690 version@stat F·[4 1] S·735B[607B 128B] Sc·[1.00 0.00]
+08:27:42.669546 db@janitor F·7 G·0
+08:27:42.669621 db@open done T·297.770127ms
+08:27:42.671127 table@compaction L0·4 -> L1·1 S·735B Q·53
+08:27:42.743336 table@build created L1@40 N·1 S·128B "applied,v52":"applied,v52"
+08:27:42.766131 version@stat F·[0 1] S·128B[0B 128B] Sc·[0.00 0.00]
+08:27:43.046916 table@compaction committed F-4 S-607B Ke·0 D·14 T·375.699255ms
+08:27:43.047195 table@remove removed @37
+08:27:43.047403 table@remove removed @34
+08:27:43.047543 table@remove removed @31
+08:27:43.047696 table@remove removed @28
+08:27:43.047805 table@remove removed @27
+=============== Jul 12, 2019 (UTC) ===============
+08:34:05.039618 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+08:34:05.040099 version@stat F·[0 1] S·128B[0B 128B] Sc·[0.00 0.00]
+08:34:05.040135 db@open opening
+08:34:05.040317 journal@recovery F·1
+08:34:05.046534 journal@recovery recovering @38
+08:34:05.081635 memdb@flush created L0@41 N·1 S·128B "applied,v54":"applied,v54"
+08:34:05.086166 version@stat F·[1 1] S·256B[128B 128B] Sc·[0.25 0.00]
+08:34:05.138350 db@janitor F·4 G·0
+08:34:05.138438 db@open done T·98.279371ms

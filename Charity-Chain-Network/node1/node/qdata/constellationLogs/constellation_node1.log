@@ -1,3 +1,3 @@
 [*] Starting Constellation node
-09:25:32 [INFO] Log level is LevelWarn
-09:25:33 [WARN] /node1/node/keys/node1.key is too accessible. Please run: chmod 0600 /node1/node/keys/node1.key
+08:33:52 [INFO] Log level is LevelWarn
+08:33:52 [WARN] /node1/node/keys/node1.key is too accessible. Please run: chmod 0600 /node1/node/keys/node1.key
