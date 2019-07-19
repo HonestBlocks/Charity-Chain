@@ -1,0 +1,23 @@
+var Web3=require('web3')
+
+var quorumjs=require('quorum-js')
+
+var web3=new Web3(new Web3.providers.HttpProvider('http://10.50.0.3:22000'))
+
+web3.eth.personal.unlockAccount("0x48Ea3c7C7EA659a0c46F8b88207B9d7A56361491",'', 22003)
+
+web3.eth.sendTransaction({from: "0x48Ea3c7C7EA659a0c46F8b88207B9d7A56361491" ,to: "0xfd943eABe7F9b6226e618Dcfa68bef244Cc635C8", value:"10"}).then(console.log(result))
+
+web3.eth.personal.unlockAccount("0x48Ea3c7C7EA659a0c46F8b88207B9d7A56361491",'', 22003)
+
+
+const rawTransactionManager = quorumjs.RawTransactionManager(web3, enclaveOptions)
+
+var txHash = eth.sendTransaction({from:acc2, to:acc1, "privateFor": [acc1], value: 22})
+
+web3.eth.sendTransaction({from: "0x48Ea3c7C7EA659a0c46F8b88207B9d7A56361491" ,to: "0xfd943eABe7F9b6226e618Dcfa68bef244Cc635C8", value:"37", privateFor: ["4FxzO507+1XZlbwVHiZtPNf32dahBOZudr8VLOjw4gA=, OLwSKmnY0G++d2zz5t4okbRCihSWgM1pBiwtYg4A1k0="]})
+
+web3.eth.sendRawPrivateTransaction('0x' + serializedTx.toString('hex'), {privateFor: ["OLwSKmnY0G++d2zz5t4okbRCihSWgM1pBiwtYg4A1k0="]}, function(err, hash) { if (!err) console.log(hash)})
+
+web3.eth.sendTransaction({from: "0x48Ea3c7C7EA659a0c46F8b88207B9d7A56361491", data: code, privateFor: ["OLwSKmnY0G++d2zz5t4okbRCihSWgM1pBiwtYg4A1k0="], value: "22"},function(err, address) {if (!err) {console.log(address)})
+

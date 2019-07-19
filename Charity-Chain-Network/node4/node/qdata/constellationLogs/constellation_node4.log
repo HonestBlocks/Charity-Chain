@@ -1,3 +1,18 @@
 [*] Starting Constellation node
-08:33:54 [INFO] Log level is LevelWarn
-08:33:54 [WARN] /node4/node/keys/node4.key is too accessible. Please run: chmod 0600 /node4/node/keys/node4.key
+08:37:06 [INFO] Log level is LevelWarn
+08:37:11 [WARN] /node4/node/keys/node4.key is too accessible. Please run: chmod 0600 /node4/node/keys/node4.key
+08:37:17 [WARN] Synchronization failed: HttpExceptionRequest Request {
+  host                 = "10.50.0.2"
+  port                 = 22002
+  secure               = False
+  requestHeaders       = []
+  path                 = "/partyinfo"
+  queryString          = ""
+  method               = "POST"
+  proxy                = Nothing
+  rawBody              = False
+  redirectCount        = 10
+  responseTimeout      = ResponseTimeoutDefault
+  requestVersion       = HTTP/1.1
+}
+ (ConnectionFailure Network.Socket.connect: <socket: 23>: does not exist (Connection refused))

@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <% include partials/head %> 
+ <% include partials/head %>
+<script src="./node_modules/web3/dist/web3.min.js"></script>
+ 
 </head>
 <body>
 <% include partials/menu %>
 
 <br><br><br>
 <form action="#">
-	Send to (public address):<br>
-  	<input type="text" name="saddr" value="">
+	Send:<br>
+  	<input type="text" id="saddr" value="">
   	<br>
-         <button type="submit">Donate</button>
+         <button id="btn" onclick="sendTrans()">Send</button>
       </form>
+<h3>"(testing)the value is: " <span id="myText"></span></h3>
 </body>
-<% include partials/script %>
+<script>
+	
+		function sendTrans() {
+		var x = document.getElementById("saddr").value;
+		document.getElementById("myText").innerHTML = x; //testing	
+		var Web3=require('web3');
+		var quorumjs=require('quorum-js');
+		var web3=new Web3(new Web3.providers.HttpProvider('http://10.50.0.3:22000'));
+		web3.eth.personal.unlockAccount("0x48Ea3c7C7EA659a0c46F8b88207B9d7A56361491",'', 22003);
+		web3.eth.sendTransaction({from: "0x48Ea3c7C7EA659a0c46F8b88207B9d7A56361491" ,to: "0xfd943eABe7F9b6226e618Dcfa68bef244Cc635C8", value:"10"});
+	}
+</script>
 </html>
